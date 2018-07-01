@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Update Sets" max_length="40" name="x_trz_update_sets" type="collection">
+        <element label="Configuration" max_length="32" name="configuration" reference="x_trz_config" type="reference"/>
+        <element label="Dev Sys ID" max_length="40" name="dev_sys_id" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element label="Dev" sequence="0" value="Dev"/>
+                <element label="Test" sequence="1" value="Test"/>
+                <element label="Prod" sequence="2" value="Prod"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="configuration"/>
+        </index>
+    </element>
+</database>

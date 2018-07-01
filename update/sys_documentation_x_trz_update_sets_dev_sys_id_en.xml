@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="dev_sys_id" label="Dev Sys ID" language="en" table="x_trz_update_sets">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>dev_sys_id</element>
+            <help/>
+            <hint/>
+            <label>Dev Sys ID</label>
+            <language>en</language>
+            <name>x_trz_update_sets</name>
+            <plural>Dev Sys IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-06-30 10:20:15</sys_created_on>
+            <sys_id>6f555905db87d3800414d141ce9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Dev Sys ID</sys_name>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_documentation_x_trz_update_sets_dev_sys_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-06-30 10:20:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
