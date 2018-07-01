@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Tracy - Admin Dashboard">459506d5db47d380b3fb56d4ce96192f</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-01 08:30:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14c542d5db47d380b3fb56d4ce96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>459506d5db47d380b3fb56d4ce96192f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_14c542d5db47d380b3fb56d4ce96190f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-01 08:30:09</sys_updated_on>
+        <tab display_value="New Tab">d0c542d5db47d380b3fb56d4ce96190d</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

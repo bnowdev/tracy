@@ -13,21 +13,22 @@ HttpService.prototype = {
     this.masterInstanceUrl = gs.getProperty("");
     this.basicAuthUser = gs.getProperty("");
     this.basicAuthPassword = gs.getProperty("");
+    this.updateTableUrl = "/api/now/table/{tableName}";
   },
 
-  createNewChangeVersion: function(changedRecord) {
+  createNewChangeVersion: function(record) {
     try {
       var request = new sn_ws.RESTMessageV2();
-      request.setEndpoint(this.masterInstanceUrl);
+      request.setEndpoint(this.masterInstanceUrl + this.updateTableUrl);
       request.setHttpMethod("POST");
 
       request.setBasicAuth(this.basicAuthUser, this.basicAuthPassword);
       request.setRequestHeader("Accept", "application/json");
       request.setRequestHeader("Content-Type", "application/json");
-      request.setRequestBody(JSON.stringify(newRecord));
+      request.setRequestBody(JSON.stringify(record));
       var response = request.execute();
-      var body = request.getBody();
-      var statusCode = JSON.parse(request.getStatusCode());
+      var body = response.getBody();
+      var statusCode = JSON.parse(response.getStatusCode());
 
       return {
         body: body,
@@ -35,11 +36,13 @@ HttpService.prototype = {
       };
 
     } catch (exception) {
-      gs.error(exception.message);  
+      gs.error(exception.getMessage());  
     }
 
    
   },
+
+
 
   type: "HttpService"
 };
@@ -48,13 +51,13 @@ HttpService.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-30 07:41:46</sys_created_on>
         <sys_id>07a0388ddb07d3800414d141ce9619ca</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>HttpService</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_include_07a0388ddb07d3800414d141ce9619ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-30 07:41:46</sys_updated_on>
+        <sys_updated_on>2018-07-01 11:51:07</sys_updated_on>
     </sys_script_include>
 </record_update>

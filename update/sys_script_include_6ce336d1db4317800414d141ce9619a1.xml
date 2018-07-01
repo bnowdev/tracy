@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_trz.UpdateVersionUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>UpdateVersionUtil</name>
+        <script><![CDATA[var UpdateVersionUtil = Class.create();
+UpdateVersionUtil.prototype = {
+    initialize: function() {
+      //this.updateVersionTable = "sys_update_version";
+    },
+
+    findLatestVersion: function(updatedRecord) {
+      var sysId = updatedRecord.sys_id.toString();
+      var gr = new GlideRecord("sys_update_version");
+      gr.addQuery("name", "LIKE", sysId);
+      gr.addQuery("state", "=","current");
+      gr.query();
+      gr.next();
+      return gr;
+    },
+
+    getVersionData: function(updateVersionRecord){
+      var gr = updateVersionRecord;
+      var versionData = {
+        name: gr.record_name.toString(),
+        payload: gr.payload.toString(),
+        instance_name: gr.instance_name.toString(),
+        action: gr.action.toString(), 
+        update_set: gr.source.toString(),
+        type: gr.type.toString(),
+      };
+      return versionData;
+    },
+	
+    type: 'UpdateVersionUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-01 11:52:07</sys_created_on>
+        <sys_id>6ce336d1db4317800414d141ce9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UpdateVersionUtil</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_6ce336d1db4317800414d141ce9619a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-01 11:52:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

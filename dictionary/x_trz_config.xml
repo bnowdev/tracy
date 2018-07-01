@@ -5,6 +5,19 @@
         <element label="Architect" mandatory="true" max_length="200" name="architect" type="string"/>
         <element label="Available options" mandatory="true" max_length="6000" name="available_options" type="string"/>
         <element label="Business problem" mandatory="true" max_length="6000" name="business_problem" type="string"/>
+        <element choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element label="Business Rule" sequence="1" value="sys_script"/>
+                <element label="Client Script" sequence="2" value="sys_script_client"/>
+                <element label="Script Include" sequence="3" value="sys_script_include"/>
+                <element label="UI Script" sequence="4" value="sys_ui_script"/>
+                <element label="UI Page" sequence="5" value="sys_ui_page"/>
+                <element label="UI Action" sequence="6" value="sys_ui_action"/>
+                <element label="UI Policy" sequence="7" value="sys_ui_policy"/>
+                <element label="UI Macro" sequence="8" value="sys_ui_macro"/>
+                <element label="ACL" sequence="9" value="sys_security_acl"/>
+            </choice>
+        </element>
         <element label="Contributors" max_length="200" name="contributors" type="string"/>
         <element label="Cost-Benefit Analysis" mandatory="true" max_length="6000" name="cost_benefit_analysis" type="string"/>
         <element label="Description of configuration" max_length="6000" name="description" type="string"/>
@@ -16,6 +29,15 @@
         <element label="Recovery Description" mandatory="true" max_length="6000" name="recovery_description" type="string"/>
         <element label="Recovery Time" mandatory="true" max_length="40" name="recovery_time" type="integer"/>
         <element label="Customer's stakeholder" mandatory="true" max_length="200" name="stakeholder" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Development" sequence="1" value="development"/>
+                <element label="Ready for Testing" sequence="2" value="ready for testing"/>
+                <element label="Testing" sequence="3" value="testing"/>
+                <element label="Ready for Deployment" sequence="4" value="ready for deployment"/>
+                <element label="Deployed" sequence="5" value="deployed"/>
+            </choice>
+        </element>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" read_only="true" type="sys_class_name" use_dynamic_default="true"/>
         <element label="Table" max_length="200" name="table" read_only="true" type="string"/>
         <element choice="1" label="Up to date" mandatory="true" max_length="40" name="up_to_date" type="choice">
