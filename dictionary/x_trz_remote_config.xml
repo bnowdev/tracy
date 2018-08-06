@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Remote Confiugurations" max_length="40" name="x_trz_remote_config" type="collection">
+        <element label="Description" max_length="100" name="description" type="string"/>
+        <element label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="string">
+            <choice/>
+        </element>
+    </element>
+</database>

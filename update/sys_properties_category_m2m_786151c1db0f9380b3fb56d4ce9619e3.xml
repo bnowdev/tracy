@@ -3,7 +3,7 @@
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
         <category display_value="Main">71905981db0f9380b3fb56d4ce9619b8</category>
         <order>100</order>
-        <property display_value="x_trz.master_environment" name="x_trz.master_environment">fe015d81db0f9380b3fb56d4ce96197e</property>
+        <property display_value="x_trz.environment" name="x_trz.environment">fe015d81db0f9380b3fb56d4ce96197e</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-30 10:02:52</sys_created_on>

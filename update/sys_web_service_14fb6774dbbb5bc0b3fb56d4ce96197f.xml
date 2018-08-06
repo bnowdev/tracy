@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_web_service">
+    <sys_web_service action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <function_name>execute</function_name>
+        <name>tracyUpdateSetStateReceiver</name>
+        <scoped_name>x_trz_tracyUpdateSetStateReceiver</scoped_name>
+        <script><![CDATA[(function scriptedWebServiceOperation(request, response) {
+
+	// I am the receiver on SDLC production server and receive the sys_id's update set get in different instances
+	// I expect their to be 3 systems; dev, test, prod
+	
+	// We expect all update sets to exist on dev first. And I cannot handle anything else... so don't expect me to
+	var gr = new GlideRecord('x_trz_update_sets');
+	if(gr.get('dev_sys_id', request.sys_id)) {
+		gr.name        = request.name;
+		gr.configuration       = request.story;
+		//gr.u_state       = request.state;
+		gr.link        = request.link;
+		//gr.dev_hash    = request.hash;
+		gr.update();
+		
+	} else {
+		var gr1 = new GlideRecord('x_trz_update_sets');
+		gr1.initialize();
+		gr1.dev_sys_id  = request.sys_id;
+		gr1.name        = request.name;
+		gr1.configuration   = request.story;
+		//gr1.u_state       = request.state;
+		gr1.link        = request.link;
+		//gr1.u_dev_hash    = request.hash;
+		gr.insert();		
+	}
+	response.result = true;
+
+})(request, response);]]></script>
+        <short_description>Receive update set details</short_description>
+        <sys_class_name>sys_web_service</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-06 09:30:11</sys_created_on>
+        <sys_id>14fb6774dbbb5bc0b3fb56d4ce96197f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>tracyUpdateSetStateReceiver</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_web_service_14fb6774dbbb5bc0b3fb56d4ce96197f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-06 10:04:38</sys_updated_on>
+        <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyUpdateSetStateReceiver.do?WSDL</wsdl>
+        <wsdl_compliance>false</wsdl_compliance>
+    </sys_web_service>
+</record_update>

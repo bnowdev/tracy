@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_remote_update_set</collection>
+        <condition>gs.getProperty('x_trz.environment') != "Development"&amp;&amp;gs.getProperty('x_trz.prod_instance_endpoint')!="" </condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_remote_update_set">state=committed^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="committed"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Tracy-inject update set retreived on dev</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Try to deploy to test
+	// if you are using this code after a clone.. test is assumed to be ready for automatic deployment.
+	
+	var story = new GlideRecord('u_remote_config');
+	set = current.update_set.getRefRecord();
+	
+	if(set.u_story.nil() || set.u_story == '') {
+		var r = new RegExp('^(CFG[0-9]*)','jg');
+		var found = set.name.toString().match(r);
+		
+		if(found.length > 0) {
+			if(story.get('u_number',found[0])) {
+				set.u_story = story.sys_id;
+				try {
+					// Lie to production and make it thing we are deploying
+					var s = new sn_ws.SOAPMessageV2('tracyDevUpdateReceiver', 'execute');
+					s.setEndpoint(gs.getProperty('x_trz.prod_instance_endpoint'));
+					s.setStringParameter('execute.sys_id', set.sys_id.toString());
+					s.setStringParameter('execute.state', 'in progress');
+					s.setStringParameter('execute.name', set.name.toString());
+					s.setStringParameter('execute.link', gs.getProperty('glide.servlet.uri') + set.getLink() );
+					s.setStringParameter('execute.story', set.u_story.toString() );
+					var response = s.execute();
+				}
+				catch(ex) {
+				}
+				
+				// Update will publish complete and trigger the deployment to test.
+				set.setForceUpdate(true);
+				set.update();
+			}
+		}
+	}
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-03 11:09:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2aa5e8ccdb7b1bc00414d141ce961935</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Tracy-inject update set retreived on dev</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_2aa5e8ccdb7b1bc00414d141ce961935</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-03 12:54:25</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2aa5e8ccdb7b1bc00414d141ce961935"/>
+</record_update>

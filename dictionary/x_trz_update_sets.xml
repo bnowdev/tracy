@@ -2,15 +2,32 @@
 <database>
     <element label="Update Sets" max_length="40" name="x_trz_update_sets" type="collection">
         <element label="Configuration" max_length="32" name="configuration" reference="x_trz_config" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Deployment Status" max_length="40" name="deployment_status" type="string">
+            <choice>
+                <element label="Missing" sequence="0" value="Missing"/>
+                <element label="Previewed" sequence="1" value="Previewed"/>
+                <element label="Committed" sequence="2" value="Committed"/>
+            </choice>
+        </element>
         <element label="Dev Sys ID" max_length="40" name="dev_sys_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Link" max_length="1024" name="link" type="url"/>
         <element label="Name" max_length="40" name="name" type="string"/>
-        <element choice="1" label="Status" max_length="40" name="status" type="string">
+        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element choice="1" default="Dev" label="Instance Status" max_length="40" name="status" type="string">
             <choice>
                 <element label="Dev" sequence="0" value="Dev"/>
                 <element label="Test" sequence="1" value="Test"/>
                 <element label="Prod" sequence="2" value="Prod"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Test Move Status" max_length="40" name="test_move_status" type="string">
+            <choice>
+                <element label="Missing" sequence="0" value="Missing"/>
+                <element label="Previewed" sequence="1" value="Previewed"/>
+                <element label="Committed" sequence="2" value="Committed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="work_notes" type="journal"/>
         <index name="index">
             <element name="configuration"/>
         </index>

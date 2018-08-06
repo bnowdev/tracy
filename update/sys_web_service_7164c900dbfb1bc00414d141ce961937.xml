@@ -3,15 +3,14 @@
     <sys_web_service action="INSERT_OR_UPDATE">
         <active>true</active>
         <function_name>execute</function_name>
-        <name>deployUpdateSet</name>
-        <scoped_name>x_trz_deployUpdateSet</scoped_name>
+        <name>tracyDeployUpdateSet</name>
+        <scoped_name>x_trz_tracyDeployUpdateSet</scoped_name>
         <script><![CDATA[(function scriptedWebServiceOperation(request, response) {
-	
-	response.result = 'wrongplatform';
+    response.result = 'wrongplatform';
 	response.report = '';
 	
-	//if(gs.getProperty('sdlc.test') == gs.getProperty('instance_name')) {
-		// Good we are test platform
+	if(gs.getProperty('x_trz.dev_instance_name') == gs.getProperty('instance_name')) {
+		// Checking for test instance
 		response.result = 'missing';
 		response.report = '';
 		
@@ -26,8 +25,8 @@
 		var progressId = myworker.progressID;
 		
 		// Wait for a while
-		var progress = new GlideRecord('sys_progress_worker');
-		for(var i = 0; i < parseInt(100000); i++) {
+		var progress = GlideRecord('sys_progress_worker');
+		for(var i = 0; i < 100000; i++) {
 			progress.get(progressId);
 			if(progress.state == 'complete') {
 				break;
@@ -42,31 +41,31 @@
 
 		response.result = remote_updateset.sys_id;
 	
-		if(!remote_updateset.sys_id.toString().nil()) {
+		if(!remote_updateset.sys_id.nil()) {
 			
-			// Mark as previed - see PreviewAjax...
+			// Mark as previewed - see PreviewAjax...
 			remote_updateset.state = "previewed";
 			remote_updateset.update();
 			
 			// Let make sure the reply has some data
 			response.result = 'previewed';
 			response.report = gs.getProperty('glide.servlet.uri') + remote_updateset.getLink();
-			gs.log("This is a test:"+gs.getProperty('glide.servlet.uri'),"Haris Testing");
-			// Well we don't nee a worker
+			
+			// Don't need a worker
 			var t = new UpdateSetPreviewer();
 			
-			// Lets make this rerun safe
+			// Rerun check
 			t.removePreviewRecords(remote_updateset.sys_id);
 			t.generatePreviewRecords(remote_updateset.sys_id);
 			
-			// If all is fine commit
+			// If there are no preview issues then commit
 			if(!GlidePreviewProblemHandler.hasUnresolvedProblems(remote_updateset.sys_id)) {
 				var lus = new GlideRecord('sys_update_set');
 				var worker = new GlideUpdateSetWorker();
 				var lsysid = worker.remoteUpdateSetCommit(lus, remote_updateset, remote_updateset.update_source.url);
 				var rsysid = remote_updateset.sys_id;
 				
-				// great success
+				// Success
 				response.result = 'commited';
 				
 				// Copy XML - done by hand in the ScriptInclude so we copy this
@@ -94,28 +93,29 @@
 				
 				remote_updateset.update();
 				
-				// Seems odd to send information back to the worker that it provided... but why not.
+				// Send information back to the worker
 				worker.setUpdateSetSysId(lsysid);
 				worker.setBackground(false);
 				worker.start();
 			}
 		}
-	//}
+	}
+
 })(request, response);]]></script>
-        <short_description/>
+        <short_description>Retrive update set and install </short_description>
         <sys_class_name>sys_web_service</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-30 16:10:20</sys_created_on>
-        <sys_id>7f55228ddb0bd3800414d141ce9619c9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>deployUpdateSet</sys_name>
+        <sys_created_on>2018-08-03 13:22:59</sys_created_on>
+        <sys_id>7164c900dbfb1bc00414d141ce961937</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>tracyDeployUpdateSet</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>sys_web_service_7f55228ddb0bd3800414d141ce9619c9</sys_update_name>
+        <sys_update_name>sys_web_service_7164c900dbfb1bc00414d141ce961937</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-01 10:06:07</sys_updated_on>
-        <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_deployUpdateSet.do?WSDL</wsdl>
+        <sys_updated_on>2018-08-06 10:36:34</sys_updated_on>
+        <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyDeployUpdateSet.do?WSDL</wsdl>
         <wsdl_compliance>false</wsdl_compliance>
     </sys_web_service>
 </record_update>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_web_service">
+    <sys_web_service action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <function_name>execute</function_name>
+        <name>tracyConfigReceiver</name>
+        <scoped_name>x_trz_tracyConfigReceiver</scoped_name>
+        <script><![CDATA[(function scriptedWebServiceOperation(request, response) {
+
+	var gr = new GlideRecord('x_trz_remote_config');
+	if(gr.get(request.sys_id)) {
+		gr.number            = request.number;
+		gr.description = request.short_description;
+		gr.state             = request.state;
+		gr.update();
+	} else {
+		var gr1 = new GlideRecord('x_trz_remote_config');
+		gr1.setNewGuidValue(request.sys_id);
+		gr1.number            = request.number;
+		gr1.description = request.short_description;
+		gr1.state             = request.state;
+		gr1.insert();
+	}
+	response.result = true;
+})(request, response);]]></script>
+        <short_description>This will be invoked whenever a new configuration is inserted/updated into Prod</short_description>
+        <sys_class_name>sys_web_service</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-03 13:29:32</sys_created_on>
+        <sys_id>5566c180dbfb1bc00414d141ce96199d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>tracyConfigReceiver</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_web_service_5566c180dbfb1bc00414d141ce96199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-06 09:09:46</sys_updated_on>
+        <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyConfigReceiver.do?WSDL</wsdl>
+        <wsdl_compliance>false</wsdl_compliance>
+    </sys_web_service>
+</record_update>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_trz.Tracy_helper</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Tracy_helper</name>
+        <script><![CDATA[var Tracy_helper = Class.create();
+Tracy_helper.prototype = {
+    initialize: function() {
+    },
+hash: function(sys_id) {
+		
+		var sum = 0;
+		
+		var r = new GlideRecord('sys_remote_update_set');
+		var l = new GlideRecord('sys_update_set');
+		var gr = new GlideRecord('sys_update_xml'); // both store XML in sys_update_xml
+		
+		if(r.get(sys_id)) {
+			gr.addQuery('remote_update_set','=',sys_id);
+		} else if(l.get(sys_id)) {
+			gr.addQuery('update_set','=',sys_id);
+		} else {
+			return 0;
+		}
+		
+		gr.query();
+		while(gr.next()) {
+			sum += parseInt(new GlideChecksum(gr.payload.toString()).getMD5(),16);
+		}
+		return new GlideChecksum(sum.toString(16)).getMD5();
+	},
+	
+//	_checksum: function(platform, sys_id) {
+		
+	//	var platform_url = '//' + gs.getProperty('sdlc.'+platform);
+				
+//		try {
+	//		var s = new sn_ws.SOAPMessageV2('SDLCUpdateSetTest', 'execute');
+	//		s.setEndpoint(s.getEndpoint().replace(/\/[^.]*/,platform_url));
+	/*		s.setStringParameterNoEscape('execute.sys_id', sys_id);
+			var response = s.execute();
+			var responseBody = response.getBody();
+			var status = response.getStatusCode();
+
+			if(status == 200) {
+				var doc = new XMLDocument(responseBody);
+				var checksum = doc.getNodeText("//checksum");
+				return checksum;
+			}
+			
+			return null;
+		}
+		catch(ex) {
+			return null;
+		}		
+	},
+	
+	_field_map: {
+		'u_dev_hash'           : {'test': 'u_test_retrived_sys_id',  'key': 'u_dev_sys_id',           'platform': 'dev'},
+		'u_test_retrived_hash' : {'test': 'u_test_installed_sys_id', 'key': 'u_test_retrived_sys_id', 'platform': 'test'},
+		'u_test_installed_hash': {'test': 'u_test_installed_sys_id', 'key': 'u_test_installed_sys_id','platform': 'test'},
+		'u_prod_retrived_hash' : {'test': 'u_prod_retrived_sys_id',  'key': 'u_prod_retrived_sys_id', 'platform': 'production'},
+		'u_prod_installed_hash': {'test': 'u_prod_installed_sys_id', 'key': 'u_prod_installed_sys_id','platform': 'production'},
+	},
+	
+	_update_hash: function(sys_id, field) {
+		var gr = new GlideRecord('u_update_set');
+		if(gr.get(sys_id)) {
+			
+			var map = this._field_map[field];
+			
+			var test     = gr.getValue(map['test']);
+			var result   = gr.getValue(field);
+			var r_sys_id = gr.getValue(map['key']);
+			var platform = map['platform'];
+			
+			// is their data in requested field get hash
+			if(test != null && r_sys_id != null) {
+				gr.setValue(field, this._checksum(platform,r_sys_id));
+				gr.update();
+			}
+		}
+	},
+	
+	update_hash: function(sys_id) {
+		for(var field in this._field_map) {
+			this._update_hash(sys_id, field);
+		}
+	},*/
+	
+	type: 'TDCH_SDLChelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-03 10:25:39</sys_created_on>
+        <sys_id>842c1088db7b1bc00414d141ce96198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tracy_helper</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_842c1088db7b1bc00414d141ce96198d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-03 10:25:39</sys_updated_on>
+    </sys_script_include>
+</record_update>
