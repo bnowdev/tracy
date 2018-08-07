@@ -8,15 +8,11 @@
             </choice>
         </element>
         <element label="Code Reviewed by" max_length="200" name="code_reviewed_by" type="string"/>
-        <element label="Configuration" max_length="32" name="configuration" reference="x_trz_remote_config" type="reference"/>
         <element choice="1" label="Contains Code" mandatory="true" max_length="40" name="contains_code" type="choice">
             <choice>
                 <element label="Yes" sequence="1" value="yes"/>
                 <element label="No" sequence="2" value="no"/>
             </choice>
         </element>
-        <index name="index">
-            <element name="configuration"/>
-        </index>
     </element>
 </database>
