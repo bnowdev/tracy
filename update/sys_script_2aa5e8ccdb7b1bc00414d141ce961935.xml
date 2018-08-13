@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_remote_update_set</collection>
-        <condition>gs.getProperty('x_trz.environment') != "Development"&amp;&amp;gs.getProperty('x_trz.prod_instance_endpoint')!="" </condition>
+        <condition>gs.getProperty('x_trz.environment') != "Dev"&amp;&amp;gs.getProperty('x_trz.prod_instance_endpoint')!="" </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="sys_remote_update_set">state=committed^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="committed"/>
@@ -74,7 +74,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2aa5e8ccdb7b1bc00414d141ce961935</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Tracy-inject update set retreived on dev</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -82,7 +82,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_2aa5e8ccdb7b1bc00414d141ce961935</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-03 12:54:25</sys_updated_on>
+        <sys_updated_on>2018-08-08 07:02:27</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

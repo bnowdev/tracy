@@ -18,13 +18,12 @@
                 <element label="ACL" sequence="9" value="sys_security_acl"/>
             </choice>
         </element>
-        <element label="Configuration" max_length="32" name="configuration" reference="x_trz_remote_config" type="reference"/>
         <element label="Contributors" max_length="200" name="contributors" type="string"/>
         <element label="Cost-Benefit Analysis" mandatory="true" max_length="6000" name="cost_benefit_analysis" type="string"/>
         <element label="Description of configuration" max_length="6000" name="description" type="string"/>
         <element label="Documented" max_length="40" name="documented" read_only="true" type="boolean"/>
         <element label="Name" max_length="200" name="name" read_only="true" type="string"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Recommended Solution" mandatory="true" max_length="6000" name="recommended_solution" type="string"/>
         <element attributes="show_all_tables,readonly_clickthrough=true" dependent="table" dependent_on_field="table" label="Record" max_length="32" name="record" type="document_id" use_dependent_field="true"/>
         <element label="Recovery Description" mandatory="true" max_length="6000" name="recovery_description" type="string"/>
@@ -47,9 +46,6 @@
             </choice>
         </element>
         <index name="index">
-            <element name="configuration"/>
-        </index>
-        <index name="index2">
             <element name="record"/>
         </index>
     </element>

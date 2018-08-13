@@ -9,38 +9,32 @@
     response.result = 'wrongplatform';
 	response.report = '';
 	
-	if(gs.getProperty('x_trz.dev_instance_name') == gs.getProperty('instance_name')) {
-		// Checking for test instance
 		response.result = 'missing';
 		response.report = '';
 		
-		// Get completed update set from all sources that are active
+		// Get completed update sets from Dev instance
 		var gr = new GlideRecord('sys_update_set_source');
-		gr.get('active', true);
-
-		var myworker = new GlideUpdateSetWorker();
-		myworker.setUpdateSourceSysId(gr.sys_id); // ID of update server
-		myworker.setBackground(true);
-		myworker.start();
-		var progressId = myworker.progressID;
+		gr.addQuery('active', true);
+	    gr.addQuery('type','dev');
+	    if(gr.next()){
+		var progressId = new global.TracyGlobalUtil(gr.sys_id + '');
 		
-		// Wait for a while
-		var progress = GlideRecord('sys_progress_worker');
+		// Wait for a while-this is stupid, but let this be here for a while,I will add this to the workflow on story table and then broadcast an event from the progress table rather than just wasting time here
+		var progress = new GlideRecord('sys_progress_worker');
 		for(var i = 0; i < 100000; i++) {
 			progress.get(progressId);
 			if(progress.state == 'complete') {
 				break;
 			}
 		}
-	
-		// Now find the update we are looking for
+	   
+		// Now find the updates we are looking for
 		var remote_updateset = new GlideRecord('sys_remote_update_set');
 		remote_updateset.addQuery('remote_sys_id', request.sys_id);
 		remote_updateset.query();
 		remote_updateset.next();
 
 		response.result = remote_updateset.sys_id;
-	
 		if(!remote_updateset.sys_id.nil()) {
 			
 			// Mark as previewed - see PreviewAjax...
@@ -51,70 +45,31 @@
 			response.result = 'previewed';
 			response.report = gs.getProperty('glide.servlet.uri') + remote_updateset.getLink();
 			
-			// Don't need a worker
-			var t = new UpdateSetPreviewer();
 			
-			// Rerun check
-			t.removePreviewRecords(remote_updateset.sys_id);
-			t.generatePreviewRecords(remote_updateset.sys_id);
-			
-			// If there are no preview issues then commit
-			if(!GlidePreviewProblemHandler.hasUnresolvedProblems(remote_updateset.sys_id)) {
-				var lus = new GlideRecord('sys_update_set');
-				var worker = new GlideUpdateSetWorker();
-				var lsysid = worker.remoteUpdateSetCommit(lus, remote_updateset, remote_updateset.update_source.url);
-				var rsysid = remote_updateset.sys_id;
-				
+		    	var lsysid= new global.TracyGlobalUtil2(remote_updateset.sys_id + '');
+			   
 				// Success
 				response.result = 'commited';
 				
-				// Copy XML - done by hand in the ScriptInclude so we copy this
-				var xgr = new GlideRecord("sys_update_xml");
-				xgr.addQuery("remote_update_set", remote_updateset.sys_id);
-				xgr.query();
-				while(xgr.next()) {
-					var lxgr = new GlideRecord("sys_update_xml");
-					lxgr.initialize();
-					lxgr.name = xgr.name;
-					lxgr.payload = xgr.payload;
-					lxgr.action = xgr.action;
-					lxgr.type = xgr.type;
-					lxgr.target_name = xgr.target_name;
-					lxgr.view = xgr.view;
-					lxgr.update_domain = xgr.update_domain;
-					lxgr.table = xgr.table;
-					lxgr.category = xgr.category;
-					lxgr.application = xgr.application;
-					lxgr.update_set = lsysid;
-					if (lxgr.isValidField('replace_on_upgrade'))
-						lxgr.replace_on_upgrade = xgr.replace_on_upgrade;
-					lxgr.insert();
-				}
 				
 				remote_updateset.update();
 				
-				// Send information back to the worker
-				worker.setUpdateSetSysId(lsysid);
-				worker.setBackground(false);
-				worker.start();
 			}
 		}
-	}
-
 })(request, response);]]></script>
         <short_description>Retrive update set and install </short_description>
         <sys_class_name>sys_web_service</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-03 13:22:59</sys_created_on>
         <sys_id>7164c900dbfb1bc00414d141ce961937</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>tracyDeployUpdateSet</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_web_service_7164c900dbfb1bc00414d141ce961937</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-06 10:36:34</sys_updated_on>
+        <sys_updated_on>2018-08-13 12:29:40</sys_updated_on>
         <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyDeployUpdateSet.do?WSDL</wsdl>
         <wsdl_compliance>false</wsdl_compliance>
     </sys_web_service>

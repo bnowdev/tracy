@@ -7,7 +7,7 @@
         <basic_auth_user/>
         <certificate/>
         <enable_mutual_auth>false</enable_mutual_auth>
-        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_trz_tracyConfigReceiver">
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:x="http://www.service-now.com/x_trz_tracyStoryReceiver">
    <soapenv:Header/>
    <soapenv:Body>
       <x:execute>
@@ -28,23 +28,23 @@
         <key_store_password/>
         <lock>false</lock>
         <protocol_profile/>
-        <qualified_name>tracyConfigReceiver [ execute ]</qualified_name>
-        <soap_action>http://www.service-now.com/x_trz_tracyConfigReceiver/execute</soap_action>
-        <soap_endpoint>https://businessnowsvsdemo11.service-now.com/x_trz_tracyConfigReceiver.do?SOAP</soap_endpoint>
-        <soap_message display_value="tracyConfigReceiver">b0e7ac00dbbb1bc00414d141ce9619bf</soap_message>
+        <qualified_name>tracyStoryReceiver [ execute ]</qualified_name>
+        <soap_action>http://www.service-now.com/x_trz_tracyStoryReceiver/execute</soap_action>
+        <soap_endpoint>https://businessnowsvsdemo11.service-now.com/x_trz_tracyStoryReceiver.do?SOAP</soap_endpoint>
+        <soap_message display_value="tracyStoryReceiver">b0e7ac00dbbb1bc00414d141ce9619bf</soap_message>
         <strip_whitespace>false</strip_whitespace>
         <sys_class_name>sys_soap_message_function</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-03 11:17:41</sys_created_on>
         <sys_id>29386800dbbb1bc00414d141ce9619fc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>execute</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_soap_message_function_29386800dbbb1bc00414d141ce9619fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-03 13:31:50</sys_updated_on>
+        <sys_updated_on>2018-08-13 12:11:17</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_ws_security>false</use_ws_security>

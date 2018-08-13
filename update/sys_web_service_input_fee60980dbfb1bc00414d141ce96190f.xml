@@ -15,6 +15,6 @@
         <sys_update_name>sys_web_service_input_fee60980dbfb1bc00414d141ce96190f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-08-03 13:30:18</sys_updated_on>
-        <web_service display_value="tracyConfigReceiver">5566c180dbfb1bc00414d141ce96199d</web_service>
+        <web_service display_value="tracyStoryReceiver">5566c180dbfb1bc00414d141ce96199d</web_service>
     </sys_web_service_input>
 </record_update>

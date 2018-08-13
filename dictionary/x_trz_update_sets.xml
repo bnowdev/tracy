@@ -13,6 +13,13 @@
         <element attributes="edge_encryption_enabled=true" label="Link" max_length="1024" name="link" type="url"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element label="In Progress" sequence="100" value="in progress"/>
+                <element label="Complete" sequence="200" value="complete"/>
+                <element label="ignore" sequence="300" value="Ignore"/>
+            </choice>
+        </element>
         <element choice="1" default="Dev" label="Instance Status" max_length="40" name="status" type="string">
             <choice>
                 <element label="Dev" sequence="0" value="Dev"/>
@@ -20,6 +27,7 @@
                 <element label="Prod" sequence="2" value="Prod"/>
             </choice>
         </element>
+        <element label="Story" max_length="32" name="story" reference="rm_story" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Test Move Status" max_length="40" name="test_move_status" type="string">
             <choice>
                 <element label="Missing" sequence="0" value="Missing"/>
@@ -30,6 +38,9 @@
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="work_notes" type="journal"/>
         <index name="index">
             <element name="configuration"/>
+        </index>
+        <index name="index2">
+            <element name="story"/>
         </index>
     </element>
 </database>
