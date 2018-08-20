@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{"96a002d9db3b9bc0b3fb56d4ce96195d":"16a002d9db3b9bc0b3fb56d4ce961955","92a002d9db3b9bc0b3fb56d4ce96195b":"92a002d9db3b9bc0b3fb56d4ce961955","1ea002d9db3b9bc0b3fb56d4ce96196d":"12a002d9db3b9bc0b3fb56d4ce961955","56a002d9db3b9bc0b3fb56d4ce96195e":"1aa002d9db3b9bc0b3fb56d4ce961955","12a002d9db3b9bc0b3fb56d4ce96196d":"96a002d9db3b9bc0b3fb56d4ce961955"},"subflows":[],"stages":{"96a002d9db3b9bc0b3fb56d4ce961955":{"duration":"","order":300,"stageId":"96a002d9db3b9bc0b3fb56d4ce961955","name":"Deployment","value":"deployment"},"92a002d9db3b9bc0b3fb56d4ce961955":{"duration":"","order":500,"stageId":"92a002d9db3b9bc0b3fb56d4ce961955","name":"Cancelled","value":"cancelled"},"12a002d9db3b9bc0b3fb56d4ce961955":{"duration":"","order":100,"stageId":"12a002d9db3b9bc0b3fb56d4ce961955","name":"Development","value":"development"},"16a002d9db3b9bc0b3fb56d4ce961955":{"duration":"","order":200,"stageId":"16a002d9db3b9bc0b3fb56d4ce961955","name":"Testing","value":"testing"},"1aa002d9db3b9bc0b3fb56d4ce961955":{"duration":"","order":400,"stageId":"1aa002d9db3b9bc0b3fb56d4ce961955","name":"Production","value":"production"}},"ends":["9ea002d9db3b9bc0b3fb56d4ce961958"]}</activity_stages>
+        <activity_stages>{"activities":{"3b836221db37dbc0b3fb56d4ce9619b1":"73832221db37dbc0b3fb56d4ce96198f","8d04a621db37dbc0b3fb56d4ce96198f":"b7832221db37dbc0b3fb56d4ce96198f","9fa3e221db37dbc0b3fb56d4ce961993":"3b832221db37dbc0b3fb56d4ce96198f","faf190e5db442b000414d141ce9619ca":"bb832221db37dbc0b3fb56d4ce96198f","7c62dc69db442b000414d141ce9619dd":"bb832221db37dbc0b3fb56d4ce96198f","f7836221db37dbc0b3fb56d4ce9619b8":"37832221db37dbc0b3fb56d4ce96198f","b3832221db37dbc0b3fb56d4ce961990":"bb832221db37dbc0b3fb56d4ce96198f","5735d8e9db442b000414d141ce9619a4":"bb832221db37dbc0b3fb56d4ce96198f"},"subflows":[],"stages":{"bb832221db37dbc0b3fb56d4ce96198f":{"order":300,"duration":"","stageId":"bb832221db37dbc0b3fb56d4ce96198f","name":"Deployment","value":"deployment"},"73832221db37dbc0b3fb56d4ce96198f":{"order":100,"duration":"","stageId":"73832221db37dbc0b3fb56d4ce96198f","name":"Development","value":"development"},"3b832221db37dbc0b3fb56d4ce96198f":{"order":500,"duration":"","stageId":"3b832221db37dbc0b3fb56d4ce96198f","name":"Cancelled","value":"cancelled"},"37832221db37dbc0b3fb56d4ce96198f":{"order":200,"duration":"","stageId":"37832221db37dbc0b3fb56d4ce96198f","name":"Testing","value":"testing"},"b7832221db37dbc0b3fb56d4ce96198f":{"order":400,"duration":"","stageId":"b7832221db37dbc0b3fb56d4ce96198f","name":"Production","value":"production"}},"ends":["77836221db37dbc0b3fb56d4ce9619bd"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -12,10 +12,10 @@
         </condition>
         <condition_type>run_match</condition_type>
         <description/>
-        <expected_sequences>52a002d9db3b9bc0b3fb56d4ce961957,52a002d9db3b9bc0b3fb56d4ce96195f,9aa002d9db3b9bc0b3fb56d4ce96195f,1ea002d9db3b9bc0b3fb56d4ce96196d,9aa002d9db3b9bc0b3fb56d4ce96195c,96a002d9db3b9bc0b3fb56d4ce96195d,92a002d9db3b9bc0b3fb56d4ce96195b,9ea002d9db3b9bc0b3fb56d4ce96195b,9ea002d9db3b9bc0b3fb56d4ce961958,1aa002d9db3b9bc0b3fb56d4ce96196e,56a002d9db3b9bc0b3fb56d4ce961959,5aa002d9db3b9bc0b3fb56d4ce96195a</expected_sequences>
+        <expected_sequences>77836221db37dbc0b3fb56d4ce9619b2,77836221db37dbc0b3fb56d4ce9619b3,b7836221db37dbc0b3fb56d4ce9619bb,3b836221db37dbc0b3fb56d4ce9619b1,bb836221db37dbc0b3fb56d4ce9619ba,f7836221db37dbc0b3fb56d4ce9619b8,9fa3e221db37dbc0b3fb56d4ce961993,b3836221db37dbc0b3fb56d4ce9619be,77836221db37dbc0b3fb56d4ce9619bd,f3836221db37dbc0b3fb56d4ce9619b0,77836221db37dbc0b3fb56d4ce9619b4,3f836221db37dbc0b3fb56d4ce9619b6</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>52a002d9db3b9bc0b3fb56d4ce961957,52a002d9db3b9bc0b3fb56d4ce96195f,9aa002d9db3b9bc0b3fb56d4ce96195f,1ea002d9db3b9bc0b3fb56d4ce96196d,9aa002d9db3b9bc0b3fb56d4ce96195c,96a002d9db3b9bc0b3fb56d4ce96195d,92a002d9db3b9bc0b3fb56d4ce96195b,9ea002d9db3b9bc0b3fb56d4ce96195b,9ea002d9db3b9bc0b3fb56d4ce961958,1aa002d9db3b9bc0b3fb56d4ce96196e,56a002d9db3b9bc0b3fb56d4ce961959,5aa002d9db3b9bc0b3fb56d4ce96195a,12a002d9db3b9bc0b3fb56d4ce96196d,9ea002d9db3b9bc0b3fb56d4ce961955,9aa002d9db3b9bc0b3fb56d4ce961957,56a002d9db3b9bc0b3fb56d4ce96195e</full_sequences>
+        <full_sequences>77836221db37dbc0b3fb56d4ce9619b2,77836221db37dbc0b3fb56d4ce9619b3,b7836221db37dbc0b3fb56d4ce9619bb,3b836221db37dbc0b3fb56d4ce9619b1,bb836221db37dbc0b3fb56d4ce9619ba,f7836221db37dbc0b3fb56d4ce9619b8,9fa3e221db37dbc0b3fb56d4ce961993,b3836221db37dbc0b3fb56d4ce9619be,77836221db37dbc0b3fb56d4ce9619bd,f3836221db37dbc0b3fb56d4ce9619b0,77836221db37dbc0b3fb56d4ce9619b4,3f836221db37dbc0b3fb56d4ce9619b6,5735d8e9db442b000414d141ce9619a4,b3832221db37dbc0b3fb56d4ce961990,faf190e5db442b000414d141ce9619ca,7c62dc69db442b000414d141ce9619dd,77836221db37dbc0b3fb56d4ce9619bc,b7836221db37dbc0b3fb56d4ce9619b9,8d04a621db37dbc0b3fb56d4ce96198f</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>Tracy - Story and deployment workflow</name>
@@ -30,13 +30,13 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">52a002d9db3b9bc0b3fb56d4ce961957</start>
+        <start display_value="Begin">77836221db37dbc0b3fb56d4ce9619b2</start>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce961954</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>73832221db37dbc0b3fb56d4ce96198d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:55:24</sys_updated_on>
+        <sys_updated_on>2018-08-20 12:30:02</sys_updated_on>
         <table>rm_story</table>
         <timezone/>
         <validated>false</validated>
@@ -71,65 +71,65 @@
         <ola>1970-01-01 00:00:00</ola>
         <order>500</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce961955</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b832221db37dbc0b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>cancelled</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Deployment</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>300</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce961955</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb832221db37dbc0b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>deployment</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Development</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce961955</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>73832221db37dbc0b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>development</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Production</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>400</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce961955</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b7832221db37dbc0b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>production</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Testing</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>200</order>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce961955</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>37832221db37dbc0b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>testing</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_stage>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
@@ -147,21 +147,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=52a002d9db3b9bc0b3fb56d4ce961957"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77836221db37dbc0b3fb56d4ce9619b2"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">52a002d9db3b9bc0b3fb56d4ce961957</activity>
+        <activity display_value="Begin">77836221db37dbc0b3fb56d4ce9619b2</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -175,11 +175,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -197,49 +197,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>452</x>
         <y>395</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9aa002d9db3b9bc0b3fb56d4ce96195c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bb836221db37dbc0b3fb56d4ce9619ba"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195c</document_key>
+        <document_key>bb836221db37dbc0b3fb56d4ce9619ba</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195c</document_key>
+        <document_key>bb836221db37dbc0b3fb56d4ce9619ba</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Cancel Tracy Update set">9aa002d9db3b9bc0b3fb56d4ce96195c</activity>
+        <activity display_value="Cancel Tracy Update set">bb836221db37dbc0b3fb56d4ce9619ba</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -253,11 +253,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>33836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -273,61 +273,61 @@
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Development">12a002d9db3b9bc0b3fb56d4ce961955</stage>
+        <stage display_value="Development">73832221db37dbc0b3fb56d4ce96198f</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619b1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:13:52</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>222</x>
         <y>144</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1ea002d9db3b9bc0b3fb56d4ce96196d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3b836221db37dbc0b3fb56d4ce9619b1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ea002d9db3b9bc0b3fb56d4ce96196d</document_key>
+        <document_key>3b836221db37dbc0b3fb56d4ce9619b1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9ea002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619b1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>var gr = new GlideRecord('x_trz_config_script');&#13;
+        <sys_updated_on>2018-08-08 12:13:52</sys_updated_on>
+        <value>var gr = new GlideRecord('x_trz_remote_config');&#13;
 gr.initialize();&#13;
-gr.table = 'sys_script';&#13;
-gr.record = '15ae5326c611227500d1863613d89f49';&#13;
-gr.&#13;
-var sys_id = gr.insert();</value>
+gr.description = current.short_description;&#13;
+gr.story = current.sys_id;&#13;
+gr.state = current.state.getDisplayValue();&#13;
+gr.insert();</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1ea002d9db3b9bc0b3fb56d4ce96196d</document_key>
+        <document_key>3b836221db37dbc0b3fb56d4ce9619b1</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9ea002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619b1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>var gr = new GlideRecord('x_trz_config_script');&#13;
+        <sys_updated_on>2018-08-08 12:13:52</sys_updated_on>
+        <value>var gr = new GlideRecord('x_trz_remote_config');&#13;
 gr.initialize();&#13;
-gr.table = 'sys_script';&#13;
-gr.record = '15ae5326c611227500d1863613d89f49';&#13;
-gr.&#13;
-var sys_id = gr.insert();</value>
+gr.description = current.short_description;&#13;
+gr.story = current.sys_id;&#13;
+gr.state = current.state.getDisplayValue();&#13;
+gr.insert();</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Create Update set on dev">1ea002d9db3b9bc0b3fb56d4ce96196d</activity>
+        <activity display_value="Create Update set on dev">3b836221db37dbc0b3fb56d4ce9619b1</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -341,89 +341,11 @@ var sys_id = gr.insert();</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-    </wf_condition>
-    <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
-        <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>12</databus_lookup_id>
-        <height/>
-        <input>{}</input>
-        <is_parent>false</is_parent>
-        <name>Deploy to Production</name>
-        <new_activity_definition/>
-        <notes/>
-        <out_of_date>false</out_of_date>
-        <parent/>
-        <pinned>false</pinned>
-        <pinned_version/>
-        <stage display_value="Deployment">96a002d9db3b9bc0b3fb56d4ce961955</stage>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <timeout>1970-01-01 00:00:00</timeout>
-        <vars/>
-        <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
-        <x>1140</x>
-        <y>258</y>
-    </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=12a002d9db3b9bc0b3fb56d4ce96196d"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>12a002d9db3b9bc0b3fb56d4ce96196d</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value/>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>12a002d9db3b9bc0b3fb56d4ce96196d</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value/>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
-    </sys_variable_value>
-    <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Deploy to Production">12a002d9db3b9bc0b3fb56d4ce96196d</activity>
-        <condition>true</condition>
-        <condition_default/>
-        <condition_type>standard</condition_type>
-        <else_flag>false</else_flag>
-        <error>false</error>
-        <event>false</event>
-        <event_name/>
-        <is_positive>true</is_positive>
-        <name>Always</name>
-        <order>0</order>
-        <short_description/>
-        <skip_during_generate>false</skip_during_generate>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce96196d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -441,49 +363,49 @@ var sys_id = gr.insert();</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9ea002d9db3b9bc0b3fb56d4ce96195b</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b3836221db37dbc0b3fb56d4ce9619be</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>674</x>
         <y>148</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9ea002d9db3b9bc0b3fb56d4ce96195b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3836221db37dbc0b3fb56d4ce9619be"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce96195b</document_key>
+        <document_key>b3836221db37dbc0b3fb56d4ce9619be</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>37836221db37dbc0b3fb56d4ce9619be</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce96195b</document_key>
+        <document_key>b3836221db37dbc0b3fb56d4ce9619be</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>37836221db37dbc0b3fb56d4ce9619be</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Deploy to Test environment">9ea002d9db3b9bc0b3fb56d4ce96195b</activity>
+        <activity display_value="Deploy to Test environment">b3836221db37dbc0b3fb56d4ce9619be</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -497,11 +419,135 @@ var sys_id = gr.insert();</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce96195c</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619be</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>20</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Deploy Update Sets</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Deployment">bb832221db37dbc0b3fb56d4ce96198f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:33</sys_created_on>
+        <sys_id>7c62dc69db442b000414d141ce9619dd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:29:47</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>1025</x>
+        <y>294</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7c62dc69db442b000414d141ce9619dd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7c62dc69db442b000414d141ce9619dd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:33</sys_created_on>
+        <sys_id>2b6210a9db442b000414d141ce961996</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:29:47</sys_updated_on>
+        <value>var story=new GlideRecord("x_trz_update_sets");&#13;
+story.addQuery("story",current.sys_id);&#13;
+//story.addQuery("deployment_status","!=","Committed");&#13;
+//story.addQuery("status","!=","Prod");&#13;
+story.orderBy("order");&#13;
+story.query();&#13;
+gs.addInfoMessage("count:"+story.getRowCount());&#13;
+while(story.next()){&#13;
+ var remote_updateset = new GlideRecord('sys_remote_update_set');&#13;
+		remote_updateset.addQuery('remote_sys_id', story.dev_sys_id);&#13;
+		remote_updateset.query();&#13;
+		remote_updateset.next();&#13;
+        response.result = remote_updateset.sys_id;&#13;
+		if(!remote_updateset.sys_id.nil()) {&#13;
+			// Mark as previewed - see PreviewAjax...&#13;
+			remote_updateset.state = "previewed";&#13;
+			remote_updateset.update();&#13;
+			&#13;
+			// Let make sure the reply has some data&#13;
+			response.result = 'previewed';&#13;
+			response.report = gs.getProperty('glide.servlet.uri') + remote_updateset.getLink();&#13;
+			var lsysid= new global.TracyGlobalUtil2(remote_updateset.sys_id + '');&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7c62dc69db442b000414d141ce9619dd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:33</sys_created_on>
+        <sys_id>2b6210a9db442b000414d141ce961996</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:29:47</sys_updated_on>
+        <value>var story=new GlideRecord("x_trz_update_sets");&#13;
+story.addQuery("story",current.sys_id);&#13;
+//story.addQuery("deployment_status","!=","Committed");&#13;
+//story.addQuery("status","!=","Prod");&#13;
+story.orderBy("order");&#13;
+story.query();&#13;
+gs.addInfoMessage("count:"+story.getRowCount());&#13;
+while(story.next()){&#13;
+ var remote_updateset = new GlideRecord('sys_remote_update_set');&#13;
+		remote_updateset.addQuery('remote_sys_id', story.dev_sys_id);&#13;
+		remote_updateset.query();&#13;
+		remote_updateset.next();&#13;
+        response.result = remote_updateset.sys_id;&#13;
+		if(!remote_updateset.sys_id.nil()) {&#13;
+			// Mark as previewed - see PreviewAjax...&#13;
+			remote_updateset.state = "previewed";&#13;
+			remote_updateset.update();&#13;
+			&#13;
+			// Let make sure the reply has some data&#13;
+			response.result = 'previewed';&#13;
+			response.report = gs.getProperty('glide.servlet.uri') + remote_updateset.getLink();&#13;
+			var lsysid= new global.TracyGlobalUtil2(remote_updateset.sys_id + '');&#13;
+}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Deploy Update Sets">7c62dc69db442b000414d141ce9619dd</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:33</sys_created_on>
+        <sys_id>236210a9db442b000414d141ce961997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:33</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -519,30 +565,30 @@ var sys_id = gr.insert();</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>56a002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>1140</x>
         <y>151</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=56a002d9db3b9bc0b3fb56d4ce961959"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77836221db37dbc0b3fb56d4ce9619b4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>73836221db37dbc0b3fb56d4ce9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -560,71 +606,71 @@ var sys_id = gr.insert();</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d6a002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>state=2^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d6a002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>state=2^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce961959</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619b4</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce961959</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>73836221db37dbc0b3fb56d4ce9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -641,7 +687,7 @@ var sys_id = gr.insert();</value>
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Did the test fail?">56a002d9db3b9bc0b3fb56d4ce961959</activity>
+        <activity display_value="Did the test fail?">77836221db37dbc0b3fb56d4ce9619b4</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -655,14 +701,14 @@ var sys_id = gr.insert();</value>
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d2a002d9db3b9bc0b3fb56d4ce96195a</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Did the test fail?">56a002d9db3b9bc0b3fb56d4ce961959</activity>
+        <activity display_value="Did the test fail?">77836221db37dbc0b3fb56d4ce9619b4</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -676,11 +722,11 @@ var sys_id = gr.insert();</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce96195a</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f7836221db37dbc0b3fb56d4ce9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -698,19 +744,19 @@ var sys_id = gr.insert();</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9ea002d9db3b9bc0b3fb56d4ce961958</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619bd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>915</x>
         <y>765</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9ea002d9db3b9bc0b3fb56d4ce961958"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77836221db37dbc0b3fb56d4ce9619bd"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -727,30 +773,30 @@ var sys_id = gr.insert();</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b7836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>221</x>
         <y>385</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9aa002d9db3b9bc0b3fb56d4ce96195f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b7836221db37dbc0b3fb56d4ce9619bb"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195f</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619bb</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -758,50 +804,50 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195f</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619bb</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>dea002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195f</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619bb</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>dea002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce96195f</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619bb</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="If State is set to cancelled">9aa002d9db3b9bc0b3fb56d4ce96195f</activity>
+        <activity display_value="If State is set to cancelled">b7836221db37dbc0b3fb56d4ce9619bb</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -815,11 +861,111 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d2a002d9db3b9bc0b3fb56d4ce961960</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>ff836221db37dbc0b3fb56d4ce9619bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Retreive Update Sets</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Deployment">bb832221db37dbc0b3fb56d4ce96198f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b3832221db37dbc0b3fb56d4ce961990</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:15</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>547</x>
+        <y>281</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b3832221db37dbc0b3fb56d4ce961990"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b3832221db37dbc0b3fb56d4ce961990</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:19:14</sys_updated_on>
+        <value>//script to start the progress worker, this will just trigger the method and then the next activity will wait till its complete&#13;
+&#13;
+/*var gr = new GlideRecord('sys_update_set_source');&#13;
+		gr.addQuery('active', true);&#13;
+	    gr.addQuery('type','dev');&#13;
+	    if(gr.next()){&#13;
+		var progressId = new global.TracyGlobalUtil(gr.sys_id + '');}*/&#13;
+        var worker = new GlideUpdateSetWorker();&#13;
+		worker.setUpdateSourceSysId(this.sysID);&#13;
+		worker.setBackground(true);&#13;
+		worker.start();&#13;
+		var progress_id = worker.getProgressID();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b3832221db37dbc0b3fb56d4ce961990</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:19:14</sys_updated_on>
+        <value>//script to start the progress worker, this will just trigger the method and then the next activity will wait till its complete&#13;
+&#13;
+/*var gr = new GlideRecord('sys_update_set_source');&#13;
+		gr.addQuery('active', true);&#13;
+	    gr.addQuery('type','dev');&#13;
+	    if(gr.next()){&#13;
+		var progressId = new global.TracyGlobalUtil(gr.sys_id + '');}*/&#13;
+        var worker = new GlideUpdateSetWorker();&#13;
+		worker.setUpdateSourceSysId(this.sysID);&#13;
+		worker.setBackground(true);&#13;
+		worker.start();&#13;
+		var progress_id = worker.getProgressID();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Retreive Update Sets">b3832221db37dbc0b3fb56d4ce961990</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Rollback To">bd5711773b230000dada82c09ccf3d0d</activity_definition>
@@ -837,21 +983,21 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5aa002d9db3b9bc0b3fb56d4ce96195a</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619b6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>217</x>
         <y>49</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=5aa002d9db3b9bc0b3fb56d4ce96195a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3f836221db37dbc0b3fb56d4ce9619b6"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Rollback to development">5aa002d9db3b9bc0b3fb56d4ce96195a</activity>
+        <activity display_value="Rollback to development">3f836221db37dbc0b3fb56d4ce9619b6</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -865,16 +1011,16 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce96195a</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>16</databus_lookup_id>
+        <databus_lookup_id>17</databus_lookup_id>
         <height/>
         <input>{}</input>
         <is_parent>false</is_parent>
@@ -885,53 +1031,51 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Cancelled">92a002d9db3b9bc0b3fb56d4ce961955</stage>
+        <stage display_value="Cancelled">3b832221db37dbc0b3fb56d4ce96198f</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce96195b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:06:54</sys_created_on>
+        <sys_id>9fa3e221db37dbc0b3fb56d4ce961993</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:07:40</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
-        <x>693</x>
-        <y>412</y>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>712</x>
+        <y>413</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=92a002d9db3b9bc0b3fb56d4ce96195b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9fa3e221db37dbc0b3fb56d4ce961993"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>92a002d9db3b9bc0b3fb56d4ce96195b</document_key>
-        <order>1</order>
+        <document_key>9fa3e221db37dbc0b3fb56d4ce961993</document_key>
+        <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce96195b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:06:54</sys_created_on>
+        <sys_id>3dc3e221db37dbc0b3fb56d4ce96199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>current.state = '4';&#13;
-current.work_notes = 'Workflow cancelled by Tracy';</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <sys_updated_on>2018-08-08 12:07:26</sys_updated_on>
+        <value>state=4^work_notes=Workflow cancelled by Tracy^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>92a002d9db3b9bc0b3fb56d4ce96195b</document_key>
-        <order>1</order>
+        <document_key>9fa3e221db37dbc0b3fb56d4ce961993</document_key>
+        <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce96195b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:06:54</sys_created_on>
+        <sys_id>3dc3e221db37dbc0b3fb56d4ce96199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>current.state = '4';&#13;
-current.work_notes = 'Workflow cancelled by Tracy';</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <sys_updated_on>2018-08-08 12:07:26</sys_updated_on>
+        <value>state=4^work_notes=Workflow cancelled by Tracy^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Story's state to cancelled">92a002d9db3b9bc0b3fb56d4ce96195b</activity>
+        <activity display_value="Set Story's state to cancelled">9fa3e221db37dbc0b3fb56d4ce961993</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -945,16 +1089,16 @@ current.work_notes = 'Workflow cancelled by Tracy';</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce96195b</sys_id>
+        <sys_created_on>2018-08-08 12:06:54</sys_created_on>
+        <sys_id>b5c3e221db37dbc0b3fb56d4ce96199f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:06:54</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
-        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
-        <databus_lookup_id>15</databus_lookup_id>
+        <databus_lookup_id>18</databus_lookup_id>
         <height/>
         <input>{}</input>
         <is_parent>false</is_parent>
@@ -965,51 +1109,51 @@ current.work_notes = 'Workflow cancelled by Tracy';</value>
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Production">1aa002d9db3b9bc0b3fb56d4ce961955</stage>
+        <stage display_value="Production">b7832221db37dbc0b3fb56d4ce96198f</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>56a002d9db3b9bc0b3fb56d4ce96195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:08:05</sys_created_on>
+        <sys_id>8d04a621db37dbc0b3fb56d4ce96198f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-20 11:09:50</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
-        <x>1143</x>
-        <y>590</y>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>1142</x>
+        <y>639</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=56a002d9db3b9bc0b3fb56d4ce96195e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8d04a621db37dbc0b3fb56d4ce96198f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce96195e</document_key>
-        <order>1</order>
+        <document_key>8d04a621db37dbc0b3fb56d4ce96198f</document_key>
+        <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d6a002d9db3b9bc0b3fb56d4ce96195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:08:05</sys_created_on>
+        <sys_id>8f04a621db37dbc0b3fb56d4ce96190a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>current.state = '4';</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <sys_updated_on>2018-08-08 12:08:54</sys_updated_on>
+        <value>state=3^work_notes=Tracy's workflow completed.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>56a002d9db3b9bc0b3fb56d4ce96195e</document_key>
-        <order>1</order>
+        <document_key>8d04a621db37dbc0b3fb56d4ce96198f</document_key>
+        <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d6a002d9db3b9bc0b3fb56d4ce96195e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:08:05</sys_created_on>
+        <sys_id>8f04a621db37dbc0b3fb56d4ce96190a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>current.state = '4';</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <sys_updated_on>2018-08-08 12:08:54</sys_updated_on>
+        <value>state=3^work_notes=Tracy's workflow completed.^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Story's state to completed">56a002d9db3b9bc0b3fb56d4ce96195e</activity>
+        <activity display_value="Set Story's state to completed">8d04a621db37dbc0b3fb56d4ce96198f</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1023,11 +1167,11 @@ current.work_notes = 'Workflow cancelled by Tracy';</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>daa002d9db3b9bc0b3fb56d4ce96195e</sys_id>
+        <sys_created_on>2018-08-08 12:08:05</sys_created_on>
+        <sys_id>c304a621db37dbc0b3fb56d4ce96190b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:08:05</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -1043,32 +1187,46 @@ current.work_notes = 'Workflow cancelled by Tracy';</value>
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Testing">16a002d9db3b9bc0b3fb56d4ce961955</stage>
+        <stage display_value="Testing">37832221db37dbc0b3fb56d4ce96198f</stage>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f7836221db37dbc0b3fb56d4ce9619b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>448</x>
         <y>149</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=96a002d9db3b9bc0b3fb56d4ce96195d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f7836221db37dbc0b3fb56d4ce9619b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>96a002d9db3b9bc0b3fb56d4ce96195d</document_key>
+        <document_key>f7836221db37dbc0b3fb56d4ce9619b8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <value>state=-8^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f7836221db37dbc0b3fb56d4ce9619b8</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -1076,50 +1234,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>96a002d9db3b9bc0b3fb56d4ce96195d</document_key>
+        <document_key>f7836221db37dbc0b3fb56d4ce9619b8</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>daa002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>state=-8^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>96a002d9db3b9bc0b3fb56d4ce96195d</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>daa002d9db3b9bc0b3fb56d4ce96195d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <value>state=-8^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>96a002d9db3b9bc0b3fb56d4ce96195d</document_key>
+        <document_key>f7836221db37dbc0b3fb56d4ce9619b8</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619b8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="State is set to Testing">96a002d9db3b9bc0b3fb56d4ce96195d</activity>
+        <activity display_value="State is set to Testing">f7836221db37dbc0b3fb56d4ce9619b8</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1133,11 +1277,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>dea002d9db3b9bc0b3fb56d4ce96195d</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>33836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
@@ -1155,21 +1299,21 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>58</x>
         <y>245</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=52a002d9db3b9bc0b3fb56d4ce96195f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77836221db37dbc0b3fb56d4ce9619b3"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Story can be cancelled always">52a002d9db3b9bc0b3fb56d4ce96195f</activity>
+        <activity display_value="Story can be cancelled always">77836221db37dbc0b3fb56d4ce9619b3</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1183,11 +1327,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce96195f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -1205,44 +1349,44 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9ea002d9db3b9bc0b3fb56d4ce961955</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77836221db37dbc0b3fb56d4ce9619bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-20 11:09:53</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
-        <x>1141</x>
-        <y>366</y>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>1142</x>
+        <y>404</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9ea002d9db3b9bc0b3fb56d4ce961955"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77836221db37dbc0b3fb56d4ce9619bc"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce961955</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619bc</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>56a002d9db3b9bc0b3fb56d4ce961956</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce961955</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619bc</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce961956</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f7836221db37dbc0b3fb56d4ce9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -1250,36 +1394,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce961955</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619bc</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>56a002d9db3b9bc0b3fb56d4ce961956</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9ea002d9db3b9bc0b3fb56d4ce961955</document_key>
+        <document_key>77836221db37dbc0b3fb56d4ce9619bc</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce961956</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f7836221db37dbc0b3fb56d4ce9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for deployment is a successful or unsuccessful">9ea002d9db3b9bc0b3fb56d4ce961955</activity>
+        <activity display_value="Wait for deployment is a successful or unsuccessful">77836221db37dbc0b3fb56d4ce9619bc</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1293,11 +1437,199 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5aa002d9db3b9bc0b3fb56d4ce961956</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait for Retrieval to complete</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Deployment">bb832221db37dbc0b3fb56d4ce96198f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:04</sys_created_on>
+        <sys_id>faf190e5db442b000414d141ce9619ca</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:17</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>785</x>
+        <y>288</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=faf190e5db442b000414d141ce9619ca"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>faf190e5db442b000414d141ce9619ca</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:04</sys_created_on>
+        <sys_id>18525c69db442b000414d141ce961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:04</sys_updated_on>
+        <value>tracy_update_sets_retrieved</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>faf190e5db442b000414d141ce9619ca</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:04</sys_created_on>
+        <sys_id>18525c69db442b000414d141ce961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:04</sys_updated_on>
+        <value>tracy_update_sets_retrieved</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait for Retrieval to complete">faf190e5db442b000414d141ce9619ca</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 11:47:04</sys_created_on>
+        <sys_id>64525c69db442b000414d141ce961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 11:47:04</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>21</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Wait until "Deploy" is clicked</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage display_value="Deployment">bb832221db37dbc0b3fb56d4ce96198f</stage>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:15</sys_created_on>
+        <sys_id>5735d8e9db442b000414d141ce9619a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:21</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>358</x>
+        <y>274</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5735d8e9db442b000414d141ce9619a4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5735d8e9db442b000414d141ce9619a4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:16</sys_created_on>
+        <sys_id>3d551ce9db442b000414d141ce96191f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:16</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5735d8e9db442b000414d141ce9619a4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:16</sys_created_on>
+        <sys_id>f1551ce9db442b000414d141ce961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:16</sys_updated_on>
+        <value>state=5^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5735d8e9db442b000414d141ce9619a4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:16</sys_created_on>
+        <sys_id>f1551ce9db442b000414d141ce961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:16</sys_updated_on>
+        <value>state=5^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>5735d8e9db442b000414d141ce9619a4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:16</sys_created_on>
+        <sys_id>3d551ce9db442b000414d141ce96191f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:16</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Wait until &quot;Deploy&quot; is clicked">5735d8e9db442b000414d141ce9619a4</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 12:00:16</sys_created_on>
+        <sys_id>7d551ce9db442b000414d141ce961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-20 12:00:16</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -1315,44 +1647,44 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f3836221db37dbc0b3fb56d4ce9619b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
         <x>914</x>
         <y>153</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=1aa002d9db3b9bc0b3fb56d4ce96196e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f3836221db37dbc0b3fb56d4ce9619b0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1aa002d9db3b9bc0b3fb56d4ce96196e</document_key>
+        <document_key>f3836221db37dbc0b3fb56d4ce9619b0</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>stateIN2,3^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1aa002d9db3b9bc0b3fb56d4ce96196e</document_key>
+        <document_key>f3836221db37dbc0b3fb56d4ce9619b0</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -1360,36 +1692,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1aa002d9db3b9bc0b3fb56d4ce96196e</document_key>
+        <document_key>f3836221db37dbc0b3fb56d4ce9619b0</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>stateIN2,3^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>1aa002d9db3b9bc0b3fb56d4ce96196e</document_key>
+        <document_key>f3836221db37dbc0b3fb56d4ce9619b0</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Waiting for testing success or failure">1aa002d9db3b9bc0b3fb56d4ce96196e</activity>
+        <activity display_value="Waiting for testing success or failure">f3836221db37dbc0b3fb56d4ce9619b0</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1403,11 +1735,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce96196f</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b3836221db37dbc0b3fb56d4ce9619b1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -1425,44 +1757,44 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce961957</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b7836221db37dbc0b3fb56d4ce9619b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-20 11:09:52</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
-        <x>1142</x>
-        <y>469</y>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
+        <x>1143</x>
+        <y>516</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=9aa002d9db3b9bc0b3fb56d4ce961957"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b7836221db37dbc0b3fb56d4ce9619b9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce961958</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -1480,57 +1812,57 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>dea002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1ea002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3b836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value/>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>dea002d9db3b9bc0b3fb56d4ce961957</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>fb836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>9aa002d9db3b9bc0b3fb56d4ce961957</document_key>
+        <document_key>b7836221db37dbc0b3fb56d4ce9619b9</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>92a002d9db3b9bc0b3fb56d4ce961958</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bf836221db37dbc0b3fb56d4ce9619b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -1547,7 +1879,7 @@ answer = true;&#13;
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Was deployment successful or unsuccessful?">9aa002d9db3b9bc0b3fb56d4ce961957</activity>
+        <activity display_value="Was deployment successful or unsuccessful?">b7836221db37dbc0b3fb56d4ce9619b9</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -1561,14 +1893,14 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce961958</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b3836221db37dbc0b3fb56d4ce9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Was deployment successful or unsuccessful?">9aa002d9db3b9bc0b3fb56d4ce961957</activity>
+        <activity display_value="Was deployment successful or unsuccessful?">b7836221db37dbc0b3fb56d4ce9619b9</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -1582,212 +1914,256 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce961958</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>37836221db37dbc0b3fb56d4ce9619ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">5aa002d9db3b9bc0b3fb56d4ce961956</condition>
-        <from display_value="Wait for deployment is a successful or unsuccessful">9ea002d9db3b9bc0b3fb56d4ce961955</from>
+        <condition display_value="Always">236210a9db442b000414d141ce961997</condition>
+        <from display_value="Deploy Update Sets">7c62dc69db442b000414d141ce9619dd</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce961971</sys_id>
+        <sys_created_on>2018-08-20 11:47:44</sys_created_on>
+        <sys_id>0a7250a9db442b000414d141ce961996</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Was deployment successful or unsuccessful?">9aa002d9db3b9bc0b3fb56d4ce961957</to>
+        <sys_updated_on>2018-08-20 11:47:44</sys_updated_on>
+        <to display_value="Wait for deployment is a successful or unsuccessful">77836221db37dbc0b3fb56d4ce9619bc</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">12a002d9db3b9bc0b3fb56d4ce96195d</condition>
-        <from display_value="Cancel Tracy Update set">9aa002d9db3b9bc0b3fb56d4ce96195c</from>
+        <condition display_value="Fired">64525c69db442b000414d141ce961925</condition>
+        <from display_value="Wait for Retrieval to complete">faf190e5db442b000414d141ce9619ca</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-20 11:47:42</sys_created_on>
+        <sys_id>297210a9db442b000414d141ce9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Set Story's state to cancelled">92a002d9db3b9bc0b3fb56d4ce96195b</to>
+        <sys_updated_on>2018-08-20 11:47:42</sys_updated_on>
+        <to display_value="Deploy Update Sets">7c62dc69db442b000414d141ce9619dd</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Successful">1aa002d9db3b9bc0b3fb56d4ce961958</condition>
-        <from display_value="Was deployment successful or unsuccessful?">9aa002d9db3b9bc0b3fb56d4ce961957</from>
+        <condition display_value="Always">7d551ce9db442b000414d141ce961920</condition>
+        <from display_value="Wait until &quot;Deploy&quot; is clicked">5735d8e9db442b000414d141ce9619a4</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>12a002d9db3b9bc0b3fb56d4ce961973</sys_id>
+        <sys_created_on>2018-08-20 12:00:24</sys_created_on>
+        <sys_id>2b55d8e9db442b000414d141ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Set Story's state to completed">56a002d9db3b9bc0b3fb56d4ce96195e</to>
+        <sys_updated_on>2018-08-20 12:00:24</sys_updated_on>
+        <to display_value="Retreive Update Sets">b3832221db37dbc0b3fb56d4ce961990</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">dea002d9db3b9bc0b3fb56d4ce96195d</condition>
-        <from display_value="State is set to Testing">96a002d9db3b9bc0b3fb56d4ce96195d</from>
+        <condition display_value="Always">b5c3e221db37dbc0b3fb56d4ce96199f</condition>
+        <from display_value="Set Story's state to cancelled">9fa3e221db37dbc0b3fb56d4ce961993</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>16a002d9db3b9bc0b3fb56d4ce961970</sys_id>
+        <sys_created_on>2018-08-08 12:07:42</sys_created_on>
+        <sys_id>2df3a621db37dbc0b3fb56d4ce961909</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Deploy to Test environment">9ea002d9db3b9bc0b3fb56d4ce96195b</to>
+        <sys_updated_on>2018-08-08 12:07:42</sys_updated_on>
+        <to display_value="End">77836221db37dbc0b3fb56d4ce9619bd</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16a002d9db3b9bc0b3fb56d4ce96195f</condition>
-        <from display_value="Story can be cancelled always">52a002d9db3b9bc0b3fb56d4ce96195f</from>
+        <condition display_value="Always">ff836221db37dbc0b3fb56d4ce9619bb</condition>
+        <from display_value="If State is set to cancelled">b7836221db37dbc0b3fb56d4ce9619bb</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>1aa002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>33836221db37dbc0b3fb56d4ce9619c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="If State is set to cancelled">9aa002d9db3b9bc0b3fb56d4ce96195f</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Cancel Tracy Update set">bb836221db37dbc0b3fb56d4ce9619ba</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">52a002d9db3b9bc0b3fb56d4ce96196f</condition>
-        <from display_value="Waiting for testing success or failure">1aa002d9db3b9bc0b3fb56d4ce96196e</from>
+        <condition display_value="Always">7b836221db37dbc0b3fb56d4ce9619af</condition>
+        <from display_value="Retreive Update Sets">b3832221db37dbc0b3fb56d4ce961990</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>52a002d9db3b9bc0b3fb56d4ce961970</sys_id>
+        <sys_created_on>2018-08-20 11:47:10</sys_created_on>
+        <sys_id>3552dc69db442b000414d141ce9619dd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Did the test fail?">56a002d9db3b9bc0b3fb56d4ce961959</to>
+        <sys_updated_on>2018-08-20 11:47:10</sys_updated_on>
+        <to display_value="Wait for Retrieval to complete">faf190e5db442b000414d141ce9619ca</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16a002d9db3b9bc0b3fb56d4ce961957</condition>
-        <from display_value="Begin">52a002d9db3b9bc0b3fb56d4ce961957</from>
+        <condition display_value="Successful">b3836221db37dbc0b3fb56d4ce9619ba</condition>
+        <from display_value="Was deployment successful or unsuccessful?">b7836221db37dbc0b3fb56d4ce9619b9</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce961970</sys_id>
+        <sys_created_on>2018-08-08 12:09:09</sys_created_on>
+        <sys_id>3e446a21db37dbc0b3fb56d4ce96190d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Story can be cancelled always">52a002d9db3b9bc0b3fb56d4ce96195f</to>
+        <sys_updated_on>2018-08-08 12:09:09</sys_updated_on>
+        <to display_value="Set Story's state to completed">8d04a621db37dbc0b3fb56d4ce96198f</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">1aa002d9db3b9bc0b3fb56d4ce96195b</condition>
-        <from display_value="Set Story's state to cancelled">92a002d9db3b9bc0b3fb56d4ce96195b</from>
+        <condition display_value="Always">c304a621db37dbc0b3fb56d4ce96190b</condition>
+        <from display_value="Set Story's state to completed">8d04a621db37dbc0b3fb56d4ce96198f</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce961971</sys_id>
+        <sys_created_on>2018-08-08 12:09:46</sys_created_on>
+        <sys_id>3f646a21db37dbc0b3fb56d4ce961995</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="End">9ea002d9db3b9bc0b3fb56d4ce961958</to>
+        <sys_updated_on>2018-08-08 12:09:46</sys_updated_on>
+        <to display_value="End">77836221db37dbc0b3fb56d4ce9619bd</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">d2a002d9db3b9bc0b3fb56d4ce96195a</condition>
-        <from display_value="Did the test fail?">56a002d9db3b9bc0b3fb56d4ce961959</from>
+        <condition display_value="Always">33836221db37dbc0b3fb56d4ce9619b9</condition>
+        <from display_value="State is set to Testing">f7836221db37dbc0b3fb56d4ce9619b8</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>5ea002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>3f836221db37dbc0b3fb56d4ce9619c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Deploy to Production">12a002d9db3b9bc0b3fb56d4ce96196d</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Deploy to Test environment">b3836221db37dbc0b3fb56d4ce9619be</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">d2a002d9db3b9bc0b3fb56d4ce961960</condition>
-        <from display_value="If State is set to cancelled">9aa002d9db3b9bc0b3fb56d4ce96195f</from>
+        <condition display_value="Unsuccessful">37836221db37dbc0b3fb56d4ce9619ba</condition>
+        <from display_value="Was deployment successful or unsuccessful?">b7836221db37dbc0b3fb56d4ce9619b9</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce961971</sys_id>
+        <sys_created_on>2018-08-08 12:09:11</sys_created_on>
+        <sys_id>57446a21db37dbc0b3fb56d4ce96190e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Cancel Tracy Update set">9aa002d9db3b9bc0b3fb56d4ce96195c</to>
+        <sys_updated_on>2018-08-08 12:09:11</sys_updated_on>
+        <to display_value="End">77836221db37dbc0b3fb56d4ce9619bd</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16a002d9db3b9bc0b3fb56d4ce96195f</condition>
-        <from display_value="Story can be cancelled always">52a002d9db3b9bc0b3fb56d4ce96195f</from>
+        <condition display_value="Always">33836221db37dbc0b3fb56d4ce9619bb</condition>
+        <from display_value="Cancel Tracy Update set">bb836221db37dbc0b3fb56d4ce9619ba</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>96a002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-08 12:07:33</sys_created_on>
+        <sys_id>5be32621db37dbc0b3fb56d4ce96196d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Create Update set on dev">1ea002d9db3b9bc0b3fb56d4ce96196d</to>
+        <sys_updated_on>2018-08-08 12:07:33</sys_updated_on>
+        <to display_value="Set Story's state to cancelled">9fa3e221db37dbc0b3fb56d4ce961993</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">92a002d9db3b9bc0b3fb56d4ce96196e</condition>
-        <from display_value="Create Update set on dev">1ea002d9db3b9bc0b3fb56d4ce96196d</from>
+        <condition display_value="No">7b836221db37dbc0b3fb56d4ce9619b5</condition>
+        <from display_value="Did the test fail?">77836221db37dbc0b3fb56d4ce9619b4</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce961970</sys_id>
+        <sys_created_on>2018-08-20 12:00:28</sys_created_on>
+        <sys_id>6865d8e9db442b000414d141ce9619d8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="State is set to Testing">96a002d9db3b9bc0b3fb56d4ce96195d</to>
+        <sys_updated_on>2018-08-20 12:00:28</sys_updated_on>
+        <to display_value="Wait until &quot;Deploy&quot; is clicked">5735d8e9db442b000414d141ce9619a4</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">1ea002d9db3b9bc0b3fb56d4ce96195a</condition>
-        <from display_value="Rollback to development">5aa002d9db3b9bc0b3fb56d4ce96195a</from>
+        <condition display_value="Always">b3836221db37dbc0b3fb56d4ce9619b1</condition>
+        <from display_value="Waiting for testing success or failure">f3836221db37dbc0b3fb56d4ce9619b0</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>9aa002d9db3b9bc0b3fb56d4ce961971</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Create Update set on dev">1ea002d9db3b9bc0b3fb56d4ce96196d</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Did the test fail?">77836221db37dbc0b3fb56d4ce9619b4</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">16a002d9db3b9bc0b3fb56d4ce96195c</condition>
-        <from display_value="Deploy to Test environment">9ea002d9db3b9bc0b3fb56d4ce96195b</from>
+        <condition display_value="Always">bf836221db37dbc0b3fb56d4ce9619bc</condition>
+        <from display_value="Wait for deployment is a successful or unsuccessful">77836221db37dbc0b3fb56d4ce9619bc</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d2a002d9db3b9bc0b3fb56d4ce961971</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7b836221db37dbc0b3fb56d4ce9619c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Waiting for testing success or failure">1aa002d9db3b9bc0b3fb56d4ce96196e</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Was deployment successful or unsuccessful?">b7836221db37dbc0b3fb56d4ce9619b9</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">daa002d9db3b9bc0b3fb56d4ce96195e</condition>
-        <from display_value="Set Story's state to completed">56a002d9db3b9bc0b3fb56d4ce96195e</from>
+        <condition display_value="Always">3b836221db37dbc0b3fb56d4ce9619be</condition>
+        <from display_value="Deploy to Test environment">b3836221db37dbc0b3fb56d4ce9619be</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d2a002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7f836221db37dbc0b3fb56d4ce9619bf</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="End">9ea002d9db3b9bc0b3fb56d4ce961958</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Waiting for testing success or failure">f3836221db37dbc0b3fb56d4ce9619b0</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">96a002d9db3b9bc0b3fb56d4ce96196d</condition>
-        <from display_value="Deploy to Production">12a002d9db3b9bc0b3fb56d4ce96196d</from>
+        <condition display_value="Always">bf836221db37dbc0b3fb56d4ce9619b3</condition>
+        <from display_value="Story can be cancelled always">77836221db37dbc0b3fb56d4ce9619b3</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d6a002d9db3b9bc0b3fb56d4ce961970</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>7f836221db37dbc0b3fb56d4ce9619c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Wait for deployment is a successful or unsuccessful">9ea002d9db3b9bc0b3fb56d4ce961955</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="If State is set to cancelled">b7836221db37dbc0b3fb56d4ce9619bb</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">52a002d9db3b9bc0b3fb56d4ce96195a</condition>
-        <from display_value="Did the test fail?">56a002d9db3b9bc0b3fb56d4ce961959</from>
+        <condition display_value="Always">bf836221db37dbc0b3fb56d4ce9619b1</condition>
+        <from display_value="Create Update set on dev">3b836221db37dbc0b3fb56d4ce9619b1</from>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>daa002d9db3b9bc0b3fb56d4ce961972</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b3836221db37dbc0b3fb56d4ce9619c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <to display_value="Rollback to development">5aa002d9db3b9bc0b3fb56d4ce96195a</to>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="State is set to Testing">f7836221db37dbc0b3fb56d4ce9619b8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bf836221db37dbc0b3fb56d4ce9619b2</condition>
+        <from display_value="Begin">77836221db37dbc0b3fb56d4ce9619b2</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>b7836221db37dbc0b3fb56d4ce9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Story can be cancelled always">77836221db37dbc0b3fb56d4ce9619b3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">f7836221db37dbc0b3fb56d4ce9619b5</condition>
+        <from display_value="Did the test fail?">77836221db37dbc0b3fb56d4ce9619b4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>bb836221db37dbc0b3fb56d4ce9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Rollback to development">3f836221db37dbc0b3fb56d4ce9619b6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">77836221db37dbc0b3fb56d4ce9619b7</condition>
+        <from display_value="Rollback to development">3f836221db37dbc0b3fb56d4ce9619b6</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>f3836221db37dbc0b3fb56d4ce9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Create Update set on dev">3b836221db37dbc0b3fb56d4ce9619b1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bf836221db37dbc0b3fb56d4ce9619b3</condition>
+        <from display_value="Story can be cancelled always">77836221db37dbc0b3fb56d4ce9619b3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>ff836221db37dbc0b3fb56d4ce9619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <to display_value="Create Update set on dev">3b836221db37dbc0b3fb56d4ce9619b1</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-07 14:54:59</sys_created_on>
-        <sys_id>d2a002d9db3b9bc0b3fb56d4ce961954</sys_id>
+        <sys_created_on>2018-08-08 12:05:56</sys_created_on>
+        <sys_id>77832221db37dbc0b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-07 14:54:59</sys_updated_on>
-        <workflow_version display_value="Tracy - Story and deployment workflow">52a002d9db3b9bc0b3fb56d4ce961954</workflow_version>
+        <sys_updated_on>2018-08-08 12:05:56</sys_updated_on>
+        <workflow_version display_value="Tracy - Story and deployment workflow">73832221db37dbc0b3fb56d4ce96198d</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=c1d67dd9dbf79bc0b3fb56d4ce961938^sys_id!=52a002d9db3b9bc0b3fb56d4ce961954">
+    <wf_workflow_version action="update_multiple" query="workflow=c1d67dd9dbf79bc0b3fb56d4ce961938^sys_id!=73832221db37dbc0b3fb56d4ce96198d">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
