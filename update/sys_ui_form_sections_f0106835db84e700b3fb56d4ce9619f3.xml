@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="f0106835db84e700b3fb56d4ce9619f3" sys_domain="global" table="x_trz_story" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c910a835db84e700b3fb56d4ce961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_story" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">f0106835db84e700b3fb56d4ce9619f3</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">7810a835db84e700b3fb56d4ce961903</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8106835db84e700b3fb56d4ce9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_story" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">f0106835db84e700b3fb56d4ce9619f3</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">3c106835db84e700b3fb56d4ce9619f4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7410a835db84e700b3fb56d4ce961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_story" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">f0106835db84e700b3fb56d4ce9619f3</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">b410a835db84e700b3fb56d4ce961902</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_trz_story</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f0106835db84e700b3fb56d4ce9619f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_trz_story</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f0106835db84e700b3fb56d4ce9619f3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Scrum" name="scrum">7d1ba14e7f00000122b0bf6a282d2247</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

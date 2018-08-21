@@ -12,14 +12,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>sys_update_version</collection>
+        <collection>sys_script</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy - Version control</name>
+        <name>Tracy - Version control (business rules)</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,9 +31,9 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
 	
-	gs.info('Tracy Version control (BR) running on sys_update_version');
-// 	var trz = new TracyService();
-// 	trz.updateVersion(current);
+	gs.info('Tracy Version control (BR) running on sys_script');
+	var trz = new TracyService();
+	trz.updateVersion(current);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -42,17 +42,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2ddeff4dbdf9b800414d141ce961934</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Tracy - Version control</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Tracy - Version control (business rules)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_b2ddeff4dbdf9b800414d141ce961934</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-08 13:17:17</sys_updated_on>
+        <sys_updated_on>2018-08-21 07:58:14</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=b2ddeff4dbdf9b800414d141ce961934"/>
 </record_update>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" type="collection"/>
+</database>

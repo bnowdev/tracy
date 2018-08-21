@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Related Records" section_id="b410a835db84e700b3fb56d4ce961902" sys_domain="global" table="x_trz_story" version="3" view="scrum">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>defect</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_id>7010a835db84e700b3fb56d4ce961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">b410a835db84e700b3fb56d4ce961902</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enhancement</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_id>f010a835db84e700b3fb56d4ce961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_trz_story" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">b410a835db84e700b3fb56d4ce961902</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Related Records</caption>
+            <header>false</header>
+            <name>x_trz_story</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-21 07:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b410a835db84e700b3fb56d4ce961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Related Records</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_section_b410a835db84e700b3fb56d4ce961902</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-21 07:25:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Scrum" name="scrum">7d1ba14e7f00000122b0bf6a282d2247</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
