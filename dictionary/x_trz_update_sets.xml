@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Update Sets" max_length="40" name="x_trz_update_sets" type="collection">
+        <element label="Completed On (Dev)" max_length="40" name="completed_on" type="glide_date_time"/>
         <element label="Configuration" max_length="32" name="configuration" reference="x_trz_config" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Deployment Status" max_length="40" name="deployment_status" type="string">
             <choice>
@@ -17,7 +18,7 @@
             <choice>
                 <element label="In Progress" sequence="100" value="in progress"/>
                 <element label="Complete" sequence="200" value="complete"/>
-                <element label="ignore" sequence="300" value="Ignore"/>
+                <element label="Ignore" sequence="300" value="ignore"/>
             </choice>
         </element>
         <element choice="1" default="Dev" label="Instance Status" max_length="40" name="status" type="string">

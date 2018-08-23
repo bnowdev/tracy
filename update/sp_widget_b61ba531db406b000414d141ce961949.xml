@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Tracy Test widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var record = new GlideRecord("sys_script");
+	record.get("a036203ddb8c2b000414d141ce9619e9");
+	
+	var tracy = new TracyService();
+	var response = tracy.updateVersion(record);
+	console.log(JSON.stringify(response));
+	
+	
+	/*var updateVersionUtil = new UpdateVersionUtil();
+  var latestVersionRecord = updateVersionUtil.findLatestVersion(record);
+	var versionData = updateVersionUtil.getVersionData(latestVersionRecord);
+	
+	console.log(JSON.stringify(latestVersionRecord));
+	console.log(JSON.stringify(versionData));
+	
+	var response = sendRequest(versionData);
+	console.log(JSON.stringify(response));
+	*/
+	
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-21 13:01:19</sys_created_on>
+        <sys_id>b61ba531db406b000414d141ce961949</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Tracy Test widget</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sp_widget_b61ba531db406b000414d141ce961949</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-21 13:34:40</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -6,12 +6,16 @@
         <name>tracyUpdateSetStateReceiver</name>
         <scoped_name>x_trz_tracyUpdateSetStateReceiver</scoped_name>
         <script><![CDATA[(function scriptedWebServiceOperation(request, response) {
+	
+	//see if you need to pass the completed on date/time so that order can be calculated rather than assigning them
+	//get parent for batching
 	var gr = new GlideRecord('x_trz_update_sets');
 	if(gr.get('dev_sys_id', request.sys_id)) {
 		gr.name        = request.name;
 		gr.story       = request.story;
 		gr.state       = request.state;
 		gr.link        = request.link;
+		gr.completed=request.completed;
 		//gr.dev_hash    = request.hash;
 		gr.update();
 		
@@ -34,14 +38,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-06 09:30:11</sys_created_on>
         <sys_id>14fb6774dbbb5bc0b3fb56d4ce96197f</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>tracyUpdateSetStateReceiver</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_web_service_14fb6774dbbb5bc0b3fb56d4ce96197f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-13 12:14:48</sys_updated_on>
+        <sys_updated_on>2018-08-23 08:21:42</sys_updated_on>
         <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyUpdateSetStateReceiver.do?WSDL</wsdl>
         <wsdl_compliance>false</wsdl_compliance>
     </sys_web_service>

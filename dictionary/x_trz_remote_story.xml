@@ -3,6 +3,17 @@
     <element label="Remote Story" max_length="40" name="x_trz_remote_story" type="collection">
         <element label="Description" max_length="100" name="description" type="string"/>
         <element label="Number" max_length="40" name="number" type="string"/>
-        <element label="State" max_length="40" name="state" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element label="Draft" sequence="50" value="-6"/>
+                <element label="Ready" sequence="100" value="1"/>
+                <element label="Work in progress" sequence="200" value="2"/>
+                <element label="Ready for testing" sequence="300" value="-7"/>
+                <element label="Testing" sequence="400" value="-8"/>
+                <element label="Deployment in progress" sequence="500" value="5"/>
+                <element label="Complete" sequence="600" value="3"/>
+                <element label="Cancelled" sequence="700" value="4"/>
+            </choice>
+        </element>
     </element>
 </database>

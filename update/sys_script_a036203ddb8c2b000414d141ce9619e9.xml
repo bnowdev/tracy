@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy - test business rule </name>
+        <name>Tracy - test business rule 6</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,7 +31,7 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	gs.info("Tracy - test business rule 4");
+	gs.info("Tracy - test business rule 9");
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -40,15 +40,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a036203ddb8c2b000414d141ce9619e9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Tracy - test business rule </sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Tracy - test business rule 6</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_a036203ddb8c2b000414d141ce9619e9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-21 08:12:38</sys_updated_on>
+        <sys_updated_on>2018-08-22 13:05:19</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

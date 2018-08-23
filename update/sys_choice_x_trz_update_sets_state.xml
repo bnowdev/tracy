@@ -44,7 +44,7 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>ignore</label>
+            <label>Ignore</label>
             <language>en</language>
             <name>x_trz_update_sets</name>
             <sequence>300</sequence>
@@ -53,10 +53,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7cc21cdfdb379300b3fb56d4ce961972</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:03:02</sys_updated_on>
-            <value>Ignore</value>
+            <sys_updated_on>2018-08-22 12:49:25</sys_updated_on>
+            <value>ignore</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>

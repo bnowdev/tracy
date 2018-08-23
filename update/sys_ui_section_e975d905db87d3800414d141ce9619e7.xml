@@ -2,184 +2,184 @@
 <record_update>
     <sys_ui_section caption="" section_id="e975d905db87d3800414d141ce9619e7" sys_domain="global" table="x_trz_update_sets" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>d27298dfdb379300b3fb56d4ce96192f</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>54e08bd6db442300b3fb56d4ce9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>name</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>5a7298dfdb379300b3fb56d4ce96192f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dev_sys_id</element>
-            <position>2</position>
+            <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>da7298dfdb379300b3fb56d4ce96192f</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>d4e08bd6db442300b3fb56d4ce9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>link</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>5e7298dfdb379300b3fb56d4ce96192f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>order</element>
-            <position>4</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>de7298dfdb379300b3fb56d4ce96192f</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>58e08bd6db442300b3fb56d4ce9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>527298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>d8e08bd6db442300b3fb56d4ce9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>completed_on</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>5ce08bd6db442300b3fb56d4ce9619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>d27298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>dce08bd6db442300b3fb56d4ce9619e2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>status</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>567298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>50e08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>test_move_status</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>d67298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>d0e08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>deployment_status</element>
-            <position>9</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>5a7298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>54e08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>da7298dfdb379300b3fb56d4ce961930</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
             <element>story</element>
-            <position>11</position>
+            <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>5e7298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>d4e08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>configuration</element>
-            <position>12</position>
+            <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>de7298dfdb379300b3fb56d4ce961930</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>58e08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>d8e08bd6db442300b3fb56d4ce9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>link</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>5ce08bd6db442300b3fb56d4ce9619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>work_notes</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-08-13 12:01:25</sys_created_on>
-            <sys_id>527298dfdb379300b3fb56d4ce961931</sys_id>
+            <sys_created_on>2018-08-23 08:25:11</sys_created_on>
+            <sys_id>dce08bd6db442300b3fb56d4ce9619e3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_trz_update_sets" sys_domain="global" view="Default view">e975d905db87d3800414d141ce9619e7</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-13 12:01:25</sys_updated_on>
+            <sys_updated_on>2018-08-23 08:25:11</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -6,10 +6,11 @@
         <element label="Instance name" max_length="200" name="instance_name" type="string"/>
         <element display="true" label="Name" max_length="250" name="name" type="string"/>
         <element label="Payload" max_length="4096000" name="payload" type="string_full_utf8"/>
+        <element label="Remote Script Sys ID" max_length="1000" name="remote_script_sys_id" type="string"/>
         <element choice="1" default="current" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element label="Current" sequence="1" value="current"/>
-                <element label="Previous" sequence="2" value="previus"/>
+                <element label="Previous" sequence="2" value="previous"/>
             </choice>
         </element>
         <element label="Type" max_length="2000" name="type" type="string"/>
