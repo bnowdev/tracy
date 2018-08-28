@@ -10,10 +10,13 @@
                 <element label="Work in progress" sequence="200" value="2"/>
                 <element label="Ready for testing" sequence="300" value="-7"/>
                 <element label="Testing" sequence="400" value="-8"/>
+                <element label="Testing failed" sequence="450" value="-9"/>
+                <element label="Testing Success" sequence="475" value="-10"/>
                 <element label="Deployment in progress" sequence="500" value="5"/>
                 <element label="Complete" sequence="600" value="3"/>
                 <element label="Cancelled" sequence="700" value="4"/>
             </choice>
         </element>
+        <element default="1" label="Update Set Number" max_length="40" name="update_set_number" read_only="true" type="integer"/>
     </element>
 </database>

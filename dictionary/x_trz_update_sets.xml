@@ -12,13 +12,15 @@
         </element>
         <element label="Dev Sys ID" max_length="40" name="dev_sys_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Link" max_length="1024" name="link" type="url"/>
+        <element default="true" label="Marked for Deployment" max_length="40" name="marked_for_deployment" type="boolean"/>
         <element label="Name" max_length="40" name="name" type="string"/>
-        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
             <choice>
                 <element label="In Progress" sequence="100" value="in progress"/>
                 <element label="Complete" sequence="200" value="complete"/>
                 <element label="Ignore" sequence="300" value="ignore"/>
+                <element label="Delete" sequence="400" value="delete"/>
             </choice>
         </element>
         <element choice="1" default="Dev" label="Instance Status" max_length="40" name="status" type="string">

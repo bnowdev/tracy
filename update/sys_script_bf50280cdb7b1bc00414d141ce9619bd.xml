@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_update_set</collection>
-        <condition>gs.getProperty('x_trz.environment') != "Development"&amp;&amp;gs.getProperty('x_trz.prod_instance_endpoint')!="" </condition>
+        <condition>gs.getProperty('x_trz.environment') == "Dev"&amp;&amp;gs.getProperty('x_trz.prod_instance_endpoint')!="" </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -36,7 +36,7 @@
 		s.setStringParameter('execute.state', 'delete');
 		s.setStringParameter('execute.name', current.name.toString());
 		s.setStringParameter('execute.link', gs.getProperty('glide.servlet.uri') + current.getLink() );
-		//s.setStringParameter('execute.story', current.u_configuration.toString() );
+		s.setStringParameter('execute.story', current.story );
 		s.setStringParameter('execute.hash', 0 );
 		var response = s.execute();
 	}
@@ -51,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf50280cdb7b1bc00414d141ce9619bd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Tracy-Delete update set state from Dev</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_bf50280cdb7b1bc00414d141ce9619bd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-03 10:41:53</sys_updated_on>
+        <sys_updated_on>2018-08-23 08:42:58</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

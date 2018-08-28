@@ -3,7 +3,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>deploy</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments>//condition&#13;
 current.state=="ready for deployment"&amp;&amp;</comments>
         <condition>gs.getProperty('x_trz.environment') == "Production"</condition>
@@ -22,9 +22,33 @@ current.state=="ready for deployment"&amp;&amp;</comments>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <name>Deploy</name>
-        <onclick/>
+        <onclick>confirmDeploy()</onclick>
         <order>200</order>
-        <script><![CDATA[/*var story=new GlideRecord("x_trz_update_sets");
+        <script><![CDATA[function confirmDeploy(){
+	if(confirm("Are you sure you wish to Deploy?If you dont mark the update sets as explicity 'Marked for Deployment:False', all the update sets in Complete state will be deployed to production")){
+	gsftSubmit(null, g_form.getFormElement(), 'deploy'); 
+}
+	else
+		return false;
+	
+}
+ 
+if(typeof window == 'undefined')
+   serverCode();
+
+
+function serverCode(){
+	var str=new GlideRecord("x_trz_story");
+	str.addQuery("state",5);
+	str.query();
+	if(str.next()){
+		gs.addErrorMessage("There is another story being deployed at the moment, please note that you can only deploy one story at a time");
+		action.setRedirectURL(current);
+		return false;
+		
+	}
+	
+/*var story=new GlideRecord("x_trz_update_sets");
 story.addQuery("story",current.sys_id);
 //story.addQuery("deployment_status","!=","Committed");
 //story.addQuery("status","!=","Prod");
@@ -83,10 +107,13 @@ while(story.next()){
 		story.update();
 	}
 }*/
+	
+else{
 current.state=5;
 gs.addInfoMessage("Deployment in progress, you can navigate away from the page if you wish");
 action.setRedirectURL(current);
-current.update();]]></script>
+current.update();}
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -97,7 +124,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce0dc29ddbcfd3800414d141ce9619aa</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Deploy</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -105,7 +132,7 @@ current.update();]]></script>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_ce0dc29ddbcfd3800414d141ce9619aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-20 12:03:39</sys_updated_on>
+        <sys_updated_on>2018-08-28 09:47:49</sys_updated_on>
         <table>rm_story</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

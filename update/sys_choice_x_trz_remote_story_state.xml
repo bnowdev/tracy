@@ -101,6 +101,44 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Testing failed</label>
+            <language>en</language>
+            <name>x_trz_remote_story</name>
+            <sequence>450</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-28 11:31:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>976b9508dbd8e300b3fb56d4ce961987</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-28 11:31:41</sys_updated_on>
+            <value>-9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Testing Success</label>
+            <language>en</language>
+            <name>x_trz_remote_story</name>
+            <sequence>475</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-28 11:32:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06ab5148dbd8e300b3fb56d4ce961911</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-28 11:32:37</sys_updated_on>
+            <value>-10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Deployment in progress</label>
             <language>en</language>
             <name>x_trz_remote_story</name>
@@ -148,9 +186,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>bfef470adb0c6b000414d141ce9619fb</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-22 14:54:44</sys_updated_on>
+            <sys_updated_on>2018-08-28 11:32:25</sys_updated_on>
             <value>4</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">

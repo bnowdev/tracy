@@ -7,19 +7,22 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>rm_story</collection>
-        <condition>gs.getProperty('x_trz.config_receiver_endpoint') != '' &amp;&amp; gs.getProperty('x_trz.prod_instance_name') == gs.getProperty('instance_name') </condition>
+        <collection>sys_update_set</collection>
+        <condition>gs.getProperty('x_trz.environment') == "Production"</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="sys_update_set">state=complete^u_storyISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
+            <item endquery="false" field="u_story" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy-Send story to dev/test</name>
+        <name>Tracy-Update story after commit</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,36 +32,33 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {	
-	gs.info("This got called","Hari Webservice");
-	try {
-		var s = new sn_ws.SOAPMessageV2('tracyStoryReceiver', 'execute');
-		s.setEndpoint(gs.getProperty('x_trz.config_receiver_endpoint'));
-		s.setStringParameter('execute.sys_id', current.sys_id.toString());
-		s.setStringParameter('execute.number', current.number.toString());
-		s.setStringParameter('execute.short_description', current.short_description.toString());
-		s.setStringParameter('execute.state', current.state.toString());
-		var response = s.execute();
-	} catch(ex) {
+	//update the related update set on the story
+	var rups=new GlideRecord("x_trz_update_sets");
+	rups.addQuery("dev_sys_id",current.remote_sys_id);
+	rups.query();
+	if(rups.next()){
+		rups.deployment_status="Committed";
+		rups.status="Prod";
+		rups.update();
 	}
-	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-08-03 11:28:53</sys_created_on>
+        <sys_created_on>2018-08-28 09:37:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c4e96080dbbb1bc00414d141ce9619f0</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>Tracy-Send story to dev/test</sys_name>
+        <sys_id>e2518588db98e300b3fb56d4ce96190d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Tracy-Update story after commit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>sys_script_c4e96080dbbb1bc00414d141ce9619f0</sys_update_name>
+        <sys_update_name>sys_script_e2518588db98e300b3fb56d4ce96190d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-23 09:30:04</sys_updated_on>
+        <sys_updated_on>2018-08-28 09:41:41</sys_updated_on>
         <template/>
-        <when>async</when>
+        <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=c4e96080dbbb1bc00414d141ce9619f0"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2518588db98e300b3fb56d4ce96190d"/>
 </record_update>
