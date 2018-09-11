@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" sizeclass="6" type="collection"/>
+    <element extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" sizeclass="12" type="collection"/>
 </database>

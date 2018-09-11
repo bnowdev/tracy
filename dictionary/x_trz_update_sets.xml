@@ -7,7 +7,8 @@
             <choice>
                 <element label="Missing" sequence="0" value="Missing"/>
                 <element label="Previewed" sequence="1" value="Previewed"/>
-                <element label="Committed" sequence="2" value="Committed"/>
+                <element label="Error" sequence="2" value="Error"/>
+                <element label="Committed" sequence="3" value="Committed"/>
             </choice>
         </element>
         <element label="Dev Sys ID" max_length="40" name="dev_sys_id" type="string"/>

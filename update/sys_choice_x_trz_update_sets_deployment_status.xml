@@ -44,18 +44,37 @@
             <element>deployment_status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Committed</label>
+            <label>Error</label>
             <language>en</language>
             <name>x_trz_update_sets</name>
             <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-11 12:40:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7791b12cdbac2f000414d141ce961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-11 12:40:55</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Committed</label>
+            <language>en</language>
+            <name>x_trz_update_sets</name>
+            <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-08-03 12:37:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>23eaf4c8dbbb1bc00414d141ce961913</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-08-03 12:37:55</sys_updated_on>
+            <sys_updated_on>2018-09-11 12:40:55</sys_updated_on>
             <value>Committed</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
