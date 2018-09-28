@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Tracy">966bdcb8db839380b3fb56d4ce9619ae</application>
+        <application display_value="Tracy - Admin">6eeeaaa0db606f000414d141ce961918</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -19,22 +19,22 @@
         <override_menu_roles>false</override_menu_roles>
         <query>/$pa_dashboard.do?sysparm_dashboard=459506d5db47d380b3fb56d4ce96192f&amp;sysparm_tab=e7b91ca4533003003bf1d9109ec58795&amp;sysparm_cancelable=true&amp;sysparm_editable=false&amp;sysparm_active_panel=false&amp;sysparm_ignore_default_filter=false</query>
         <report/>
-        <roles>admin</roles>
+        <roles>admin,x_trz.tracy_admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-01 10:17:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f3e1e95db87d380b3fb56d4ce9619b8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Admin Dashboard</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_app_module_8f3e1e95db87d380b3fb56d4ce9619b8</sys_update_name>
-        <sys_updated_by>bnow-ph</sys_updated_by>
-        <sys_updated_on>2018-09-06 09:37:14</sys_updated_on>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-09-28 09:09:02</sys_updated_on>
         <timeline_page/>
         <title>Admin Dashboard</title>
         <uncancelable>false</uncancelable>

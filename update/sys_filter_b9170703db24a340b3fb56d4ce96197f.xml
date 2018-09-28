@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_filter">
+    <sys_filter action="INSERT_OR_UPDATE">
+        <filter table="x_trz_version">state=current^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="current"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <group/>
+        <last_used/>
+        <mobile>false</mobile>
+        <roles/>
+        <sys_class_name>sys_filter</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-09-19 13:19:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9170703db24a340b3fb56d4ce96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Current scripts</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_filter_b9170703db24a340b3fb56d4ce96197f</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-09-19 13:19:10</sys_updated_on>
+        <table>x_trz_version</table>
+        <title>Current scripts</title>
+        <user/>
+    </sys_filter>
+</record_update>

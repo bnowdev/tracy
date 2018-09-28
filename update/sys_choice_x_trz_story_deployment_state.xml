@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="deployment_state" table="x_trz_story" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending deployment</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>1</sequence>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:56:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad8fb315dbacaf000414d141ce961924</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:56:34</sys_updated_on>
+            <value>pending_deployment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deployment in progress</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>2</sequence>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:57:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d9fb315dbacaf000414d141ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:57:07</sys_updated_on>
+            <value>deployment_in_progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deployed to test</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>3</sequence>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:57:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42bf3715dbacaf000414d141ce961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:57:37</sys_updated_on>
+            <value>deployed_to_test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deployed to prod</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>4</sequence>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:57:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cdf3715dbacaf000414d141ce9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:57:51</sys_updated_on>
+            <value>deployed_to_prod</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>deployment_state</element>
+            <name>x_trz_story</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:56:35</sys_created_on>
+            <sys_id>8d9fb315dbacaf000414d141ce961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>deployment_state</sys_name>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_choice_x_trz_story_deployment_state</sys_update_name>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:56:35</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

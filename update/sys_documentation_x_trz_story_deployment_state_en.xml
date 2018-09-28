@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="deployment_state" label="Deployment" language="en" table="x_trz_story">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>deployment_state</element>
+            <help/>
+            <hint/>
+            <label>Deployment</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <plural>Deployments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:56:13</sys_created_on>
+            <sys_id>ab7f7315dbacaf000414d141ce96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Deployment</sys_name>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_documentation_x_trz_story_deployment_state_en</sys_update_name>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-09-14 06:56:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

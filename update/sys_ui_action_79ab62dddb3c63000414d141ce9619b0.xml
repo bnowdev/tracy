@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>deploy_test</action_name>
+        <active>false</active>
+        <client>true</client>
+        <comments>//condition&#13;
+current.state=="ready for deployment"&amp;&amp;</comments>
+        <condition>gs.getProperty('x_trz.environment') == "Production" &amp;&amp; gs.hasRole('admin')</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style>destructive</form_style>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Deploy to Test</name>
+        <onclick>confirmDeploy()</onclick>
+        <order>-400</order>
+        <script><![CDATA[function confirmDeploy(){
+	if(confirm("Are you sure you wish to Deploy?If you dont mark the update sets as explicity 'Marked for Deployment:False', all the update sets in Complete state will be deployed to production")){
+		gsftSubmit(null, g_form.getFormElement(), 'deploy_prod'); 
+	}
+	else
+		return false;
+
+}
+
+if(typeof window == 'undefined')
+	serverCode();
+
+
+function serverCode(){
+	var str=new GlideRecord("x_trz_story");
+	str.addQuery("state",5);
+	str.query();
+	if(str.next()){
+		gs.addErrorMessage("There is another story being deployed at the moment, please note that you can only deploy one story at a time");
+		action.setRedirectURL(current);
+		return false;
+
+	}
+
+	/*var story=new GlideRecord("x_trz_update_sets");
+story.addQuery("story",current.sys_id);
+//story.addQuery("deployment_status","!=","Committed");
+//story.addQuery("status","!=","Prod");
+story.orderBy("order");
+story.query();
+gs.addInfoMessage("count:"+story.getRowCount());
+while(story.next()){
+
+	// tracyDeployUpdateSet should only return 
+	// missing - update set not located ( missing config ? )
+	// previewed - preview worked but it is not clean
+	// commited - clean preview and commited as in installed
+
+	try {
+		var s = new sn_ws.SOAPMessageV2('tracyDeployUpdateSet', 'execute');*/
+	//s.setEndpoint(s.getEndpoint().replace(/\/[^.]*/,'//' + gs.getProperty('x_trz.prod_instance_name')));
+	/*s.setStringParameter('execute.sys_id', story.dev_sys_id);
+		var response = s.execute();
+		var responseBody = response.getBody();
+		var status = response.getStatusCode();
+
+
+		if(status == 200) {
+			var doc = new XMLDocument(responseBody);
+			var result = doc.getNodeText("//result");
+			var report = doc.getNodeText("//report");		
+			if(result == 'missing') {
+			story.work_notes = 'Automatic deployment of update set ' + story.name + ' to Prod failed. Test server failed to locate the update set';
+			story.deployment_status = "Missing"; 
+				}
+			if(result == 'previewed') {
+				story.work_notes = 'Preview of update set ' + story.name + ' on Prod has findings. ' + report;
+				story.deployment_status = "Previewed"; 
+			}
+			if(result == 'commited') {
+				story.deployment_status = "Committed";
+				story.work_notes = 'Update set ' + story.name + ' deployed to Prod';	
+				story.status="Prod";
+			}
+			story.update();	    
+		}
+		else{
+			story.work_notes = 'Update set ' + story.name + ' returned an unexpected result ' + result;
+			story.update();			
+		} 
+    	//story.work_notes = 'Automatic deployment of ' + story.name + ' to Prod, failed with http error ' + status;
+		//story.state = 2;
+	//	story.update();
+		//return ;		
+
+	}
+	catch(ex) {
+		var message = ex.getMessage();
+
+		story.work_notes = 'Update set ' + story.name + ' returned an exception ' + message;
+		story.update();
+	}
+}*/
+
+	else{
+		current.state=5;
+		gs.addInfoMessage("Deployment in progress, you can navigate away from the page if you wish");
+		action.setRedirectURL(current);
+		current.update();
+	}
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-09-26 11:05:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>79ab62dddb3c63000414d141ce9619b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Deploy to Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_ui_action_79ab62dddb3c63000414d141ce9619b0</sys_update_name>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-09-26 11:06:05</sys_updated_on>
+        <table>rm_story</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

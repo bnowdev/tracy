@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow write for all fields in x_trz_version, if the ACL script returns true.</description>
+        <name>x_trz_version.*</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[answer=false;]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-09-28 11:57:18</sys_created_on>
+        <sys_id>e36ac50edbf0e3000414d141ce961913</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_trz_version.*</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_security_acl_e36ac50edbf0e3000414d141ce961913</sys_update_name>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-09-28 12:08:04</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

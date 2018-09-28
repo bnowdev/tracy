@@ -14,5 +14,24 @@
                 <element label="No" sequence="2" value="no"/>
             </choice>
         </element>
+        <element attributes="field_decorations=x_trz_compare_script_versions_button" choice="1" label="Production and Development" max_length="40" name="production_development_equality" read_only="true" type="choice">
+            <choice>
+                <element label="xml's are equal" value="equal"/>
+                <element label="xml's are not equal" value="not equal"/>
+            </choice>
+        </element>
+        <element attributes="field_decorations=x_trz_compare_script_versions_button" choice="1" default="equal" label="Production and Test" max_length="40" name="production_test_equality" read_only="true" type="choice">
+            <choice>
+                <element label="xml's are equal" value="equal"/>
+                <element label="xml's are not equal" value="not equal"/>
+            </choice>
+        </element>
+        <element label="Record ID" max_length="100" name="record_id" read_only="true" type="string"/>
+        <element attributes="field_decorations=x_trz_compare_script_versions_button" choice="1" label="Test and Development" max_length="40" name="test_development_equality" read_only="true" type="choice">
+            <choice>
+                <element label="xml's are equal" value="equal"/>
+                <element label="xml's are not equal" value="not equal"/>
+            </choice>
+        </element>
     </element>
 </database>

@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Tracy">966bdcb8db839380b3fb56d4ce9619ae</application>
+        <application display_value="Tracy - Admin">6eeeaaa0db606f000414d141ce961918</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c513287cdb839380b3fb56d4ce96195a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>New Configuration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_app_module_c513287cdb839380b3fb56d4ce96195a</sys_update_name>
         <sys_updated_by>bnow-ph</sys_updated_by>
-        <sys_updated_on>2018-09-06 09:35:41</sys_updated_on>
+        <sys_updated_on>2018-09-11 17:10:19</sys_updated_on>
         <timeline_page/>
         <title>New Configuration</title>
         <uncancelable>false</uncancelable>

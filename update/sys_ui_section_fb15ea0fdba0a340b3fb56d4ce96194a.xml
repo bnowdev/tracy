@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Other" section_id="fb15ea0fdba0a340b3fb56d4ce96194a" sys_domain="global" table="x_trz_version" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>0</position>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-09-19 11:45:55</sys_created_on>
+            <sys_id>44c17207dbe0a340b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other" display_value="Other" name="x_trz_version" sys_domain="global" view="Default view">fb15ea0fdba0a340b3fb56d4ce96194a</sys_ui_section>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-09-19 11:45:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>1</position>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-09-19 11:45:55</sys_created_on>
+            <sys_id>c4c17207dbe0a340b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other" display_value="Other" name="x_trz_version" sys_domain="global" view="Default view">fb15ea0fdba0a340b3fb56d4ce96194a</sys_ui_section>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-09-19 11:45:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>2</position>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-09-19 11:45:55</sys_created_on>
+            <sys_id>48c17207dbe0a340b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other" display_value="Other" name="x_trz_version" sys_domain="global" view="Default view">fb15ea0fdba0a340b3fb56d4ce96194a</sys_ui_section>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-09-19 11:45:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>3</position>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-09-19 11:45:55</sys_created_on>
+            <sys_id>c8c17207dbe0a340b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other" display_value="Other" name="x_trz_version" sys_domain="global" view="Default view">fb15ea0fdba0a340b3fb56d4ce96194a</sys_ui_section>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-09-19 11:45:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Other</caption>
+            <header>false</header>
+            <name>x_trz_version</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-09-19 10:50:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb15ea0fdba0a340b3fb56d4ce96194a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Other</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_section_fb15ea0fdba0a340b3fb56d4ce96194a</sys_update_name>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-09-19 10:50:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

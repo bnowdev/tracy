@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_trz.TracyDifferAjax</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>TracyDifferAjax</name>
+        <script><![CDATA[var TracyDifferAjax = Class.create();
+TracyDifferAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getScriptXMLDifferenceAsync: function() {
+    var record_id = this.getParameter("sysparm_record_id");
+    var environmentsCompareField = this.getParameter("sysparm_environments_compare_field");
+
+    var payloadsByEnvironment;
+		
+	gs.info(environmentsCompareField, "environmentsCompareField");
+
+    switch (environmentsCompareField) {
+      case "production_test_equality":
+        payloadsByEnvironment = this._getCurrentVersionsPayloadByEnvironment(record_id, "Production", "Test");
+        break;
+
+      case "production_development_equality":
+        payloadsByEnvironment = this._getCurrentVersionsPayloadByEnvironment(record_id, "Production", "Development");
+        break;
+
+      case "test_development_equality":
+        payloadsByEnvironment = this._getCurrentVersionsPayloadByEnvironment(record_id, "Test", "Development");
+        break;
+
+      default:
+        break;
+    }
+		
+	
+    var xmlWithDifferences = this._getDifference(payloadsByEnvironment);
+		
+	gs.info(xmlWithDifferences, "xmlWithDifferences");
+
+
+    return xmlWithDifferences;
+  },
+  
+  _getDifference: function(payloadsByEnvironment) {
+    var differ = new global.TracyDiffHelperGlobal();
+    var difference = differ.diffXMLString(payloadsByEnvironment[0].payload, payloadsByEnvironment[1].payload);
+	var template = differ.getTemplate(difference, payloadsByEnvironment[0].environment, payloadsByEnvironment[1].environment);
+    return template;
+  },
+
+  _getCurrentVersionsPayloadByEnvironment: function(record_id, environment1, environment2) {
+    var payloadsByEnvironment = [];
+
+    var gr = new GlideRecord("x_trz_version");
+    gr.addQuery("remote_script_sys_id", record_id);
+    gr.addQuery("state", "current");
+    gr.addEncodedQuery("environment=" + environment1 + "^ORenvironment=" + environment2);
+    gr.setLimit(2);
+    gr.query();
+
+    while(gr.next()){
+      var environmentPayload = {
+        environment: gr.getValue("environment"),
+        payload:  gr.getValue("payload")
+      }
+      payloadsByEnvironment.push(environmentPayload);
+    }
+
+    return payloadsByEnvironment;
+  },
+
+    type: 'TracyDifferAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-09-25 13:52:09</sys_created_on>
+        <sys_id>27d28e8ddbb06300b3fb56d4ce9619ab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>TracyDifferAjax</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_27d28e8ddbb06300b3fb56d4ce9619ab</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-09-26 12:57:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

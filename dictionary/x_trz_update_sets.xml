@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Update Sets" max_length="40" name="x_trz_update_sets" type="collection">
+    <element audit="true" label="Update Sets" max_length="40" name="x_trz_update_sets" type="collection">
         <element label="Completed On (Dev)" max_length="40" name="completed_on" type="glide_date_time"/>
         <element label="Configuration" max_length="32" name="configuration" reference="x_trz_config" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Deployment Status" max_length="40" name="deployment_status" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Previewed" label="Deployment Status" max_length="40" name="deployment_status" type="string">
             <choice>
                 <element label="Missing" sequence="0" value="Missing"/>
                 <element label="Previewed" sequence="1" value="Previewed"/>
