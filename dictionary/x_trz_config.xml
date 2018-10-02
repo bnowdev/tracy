@@ -38,7 +38,6 @@
                 <element label="Deployed" sequence="5" value="deployed"/>
             </choice>
         </element>
-        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" read_only="true" type="sys_class_name" use_dynamic_default="true"/>
         <element label="Table" max_length="200" name="table" type="string"/>
         <element choice="1" label="Up to date" mandatory="true" max_length="40" name="up_to_date" type="choice">
             <choice>

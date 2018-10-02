@@ -17,7 +17,6 @@
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="sys_update_set">state=complete^u_storyISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
-            <item endquery="false" field="u_story" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>

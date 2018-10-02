@@ -49,15 +49,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-28 11:44:44</sys_created_on>
-        <sys_id>c08e9588dbd8e300b3fb56d4ce961986</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>ce2405dfdbb86700b3fb56d4ce9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Update Set Number</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_dictionary_x_trz_remote_story_update_set_number</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-28 11:45:36</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-10-02 08:41:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

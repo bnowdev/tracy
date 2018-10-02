@@ -5,23 +5,23 @@
         <description>test instance URL</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
-        <name>x_trz.test_instance_endpoint</name>
+        <name>x_trz.test_instance</name>
         <read_roles/>
         <suffix>test_instance</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-03 12:26:30</sys_created_on>
         <sys_id>5458f008dbbb1bc00414d141ce96195d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>x_trz.test_instance_endpoint</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>x_trz.test_instance</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_properties_5458f008dbbb1bc00414d141ce96195d</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 07:55:02</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:03:41</sys_updated_on>
         <type>string</type>
-        <value>https://businessnowsvsdemo12.service-now.com/tracyUpdateSetStateReceiver.do?SOAP</value>
+        <value>businessnowsvsdemo10</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=5458f008dbbb1bc00414d141ce96195d"/>

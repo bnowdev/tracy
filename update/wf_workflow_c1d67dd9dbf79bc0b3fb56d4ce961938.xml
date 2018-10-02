@@ -2,7 +2,7 @@
 <record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"ends":["4ed2c91fdbb86700b3fb56d4ce9619d1"],"subflows":[],"stages":{"c6d2891fdbb86700b3fb56d4ce96196d":{"order":300,"duration":"","stageId":"c6d2891fdbb86700b3fb56d4ce96196d","name":"Deployment","value":"deployment"},"4ed2891fdbb86700b3fb56d4ce96196d":{"order":200,"duration":"","stageId":"4ed2891fdbb86700b3fb56d4ce96196d","name":"Testing","value":"testing"},"4ad2891fdbb86700b3fb56d4ce96196d":{"order":400,"duration":"","stageId":"4ad2891fdbb86700b3fb56d4ce96196d","name":"Production","value":"production"},"ced2891fdbb86700b3fb56d4ce96196d":{"order":100,"duration":"","stageId":"ced2891fdbb86700b3fb56d4ce96196d","name":"Development","value":"development"},"cad2891fdbb86700b3fb56d4ce96196d":{"order":500,"duration":"","stageId":"cad2891fdbb86700b3fb56d4ce96196d","name":"Cancelled","value":"cancelled"}},"activities":{"ced2c91fdbb86700b3fb56d4ce9619df":"c6d2891fdbb86700b3fb56d4ce96196d","82d2c91fdbb86700b3fb56d4ce9619dd":"4ed2891fdbb86700b3fb56d4ce96196d","cad2c91fdbb86700b3fb56d4ce9619d8":"c6d2891fdbb86700b3fb56d4ce96196d","06d2c91fdbb86700b3fb56d4ce9619cd":"c6d2891fdbb86700b3fb56d4ce96196d","ced2c91fdbb86700b3fb56d4ce9619e0":"4ed2891fdbb86700b3fb56d4ce96196d","c6d2c91fdbb86700b3fb56d4ce9619e2":"c6d2891fdbb86700b3fb56d4ce96196d","8ed2c91fdbb86700b3fb56d4ce9619de":"4ad2891fdbb86700b3fb56d4ce96196d","0ed2c91fdbb86700b3fb56d4ce9619d0":"c6d2891fdbb86700b3fb56d4ce96196d","cad2c91fdbb86700b3fb56d4ce9619e1":"cad2891fdbb86700b3fb56d4ce96196d","42d2c91fdbb86700b3fb56d4ce9619d7":"c6d2891fdbb86700b3fb56d4ce96196d","86d2c91fdbb86700b3fb56d4ce9619dc":"ced2891fdbb86700b3fb56d4ce96196d"}}</activity_stages>
+        <activity_stages>{"ends":["56ea8197dbf86700b3fb56d4ce961988"],"subflows":[],"stages":{"8eea8197dbf86700b3fb56d4ce96196e":{"order":500,"duration":"","stageId":"8eea8197dbf86700b3fb56d4ce96196e","name":"Cancelled","value":"cancelled"},"02ea8197dbf86700b3fb56d4ce96196f":{"order":100,"duration":"","stageId":"02ea8197dbf86700b3fb56d4ce96196f","name":"Development","value":"development"},"c6ea8197dbf86700b3fb56d4ce96196e":{"order":400,"duration":"","stageId":"c6ea8197dbf86700b3fb56d4ce96196e","name":"Production","value":"production"},"0eea8197dbf86700b3fb56d4ce96196e":{"order":300,"duration":"","stageId":"0eea8197dbf86700b3fb56d4ce96196e","name":"Deployment","value":"deployment"},"8aea8197dbf86700b3fb56d4ce96196e":{"order":200,"duration":"","stageId":"8aea8197dbf86700b3fb56d4ce96196e","name":"Testing","value":"testing"}},"activities":{"92ea8197dbf86700b3fb56d4ce961989":"8aea8197dbf86700b3fb56d4ce96196e","12ea8197dbf86700b3fb56d4ce961991":"0eea8197dbf86700b3fb56d4ce96196e","4eea8197dbf86700b3fb56d4ce961981":"0eea8197dbf86700b3fb56d4ce96196e","5eea8197dbf86700b3fb56d4ce961993":"8eea8197dbf86700b3fb56d4ce96196e","56ea8197dbf86700b3fb56d4ce961995":"8aea8197dbf86700b3fb56d4ce96196e","9aea8197dbf86700b3fb56d4ce96198c":"c6ea8197dbf86700b3fb56d4ce96196e","0aea8197dbf86700b3fb56d4ce96196f":"0eea8197dbf86700b3fb56d4ce96196e","ceea8197dbf86700b3fb56d4ce961982":"0eea8197dbf86700b3fb56d4ce96196e","92ea8197dbf86700b3fb56d4ce961992":"0eea8197dbf86700b3fb56d4ce96196e","52ea8197dbf86700b3fb56d4ce96198a":"02ea8197dbf86700b3fb56d4ce96196f","5aea8197dbf86700b3fb56d4ce961994":"0eea8197dbf86700b3fb56d4ce96196e"}}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -12,10 +12,10 @@
         </condition>
         <condition_type>run_match</condition_type>
         <description/>
-        <expected_sequences>c6d2c91fdbb86700b3fb56d4ce9619cc,06d2c91fdbb86700b3fb56d4ce9619d6,86d2c91fdbb86700b3fb56d4ce9619dc,0ed2c91fdbb86700b3fb56d4ce9619cf,82d2c91fdbb86700b3fb56d4ce9619dd,8ad2c91fdbb86700b3fb56d4ce9619db,c6d2891fdbb86700b3fb56d4ce96196e,cad2c91fdbb86700b3fb56d4ce9619e1,c6d2c91fdbb86700b3fb56d4ce9619d9,4ed2c91fdbb86700b3fb56d4ce9619d1,ced2c91fdbb86700b3fb56d4ce9619e0,8ed2c91fdbb86700b3fb56d4ce9619d7</expected_sequences>
+        <expected_sequences>1eea8197dbf86700b3fb56d4ce96198e,c6ea8197dbf86700b3fb56d4ce961973,52ea8197dbf86700b3fb56d4ce96198a,4eea8197dbf86700b3fb56d4ce961980,92ea8197dbf86700b3fb56d4ce961989,5eea8197dbf86700b3fb56d4ce96198a,1eea8197dbf86700b3fb56d4ce96198d,5eea8197dbf86700b3fb56d4ce961993,daea8197dbf86700b3fb56d4ce96198f,56ea8197dbf86700b3fb56d4ce961988,56ea8197dbf86700b3fb56d4ce961995,9aea8197dbf86700b3fb56d4ce96198b</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>c6d2c91fdbb86700b3fb56d4ce9619cc,06d2c91fdbb86700b3fb56d4ce9619d6,86d2c91fdbb86700b3fb56d4ce9619dc,0ed2c91fdbb86700b3fb56d4ce9619cf,82d2c91fdbb86700b3fb56d4ce9619dd,8ad2c91fdbb86700b3fb56d4ce9619db,c6d2891fdbb86700b3fb56d4ce96196e,cad2c91fdbb86700b3fb56d4ce9619e1,c6d2c91fdbb86700b3fb56d4ce9619d9,4ed2c91fdbb86700b3fb56d4ce9619d1,ced2c91fdbb86700b3fb56d4ce9619e0,06d2c91fdbb86700b3fb56d4ce9619cd,8ed2c91fdbb86700b3fb56d4ce9619d7,cad2c91fdbb86700b3fb56d4ce9619d8,c6d2c91fdbb86700b3fb56d4ce9619e2,42d2c91fdbb86700b3fb56d4ce9619d7,cad2c91fdbb86700b3fb56d4ce9619da,ced2c91fdbb86700b3fb56d4ce9619df,06d2c91fdbb86700b3fb56d4ce9619ce,0ed2c91fdbb86700b3fb56d4ce9619d0,42d2c91fdbb86700b3fb56d4ce9619de,8ed2c91fdbb86700b3fb56d4ce9619de,4ad2c91fdbb86700b3fb56d4ce9619d2</full_sequences>
+        <full_sequences>1eea8197dbf86700b3fb56d4ce96198e,c6ea8197dbf86700b3fb56d4ce961973,52ea8197dbf86700b3fb56d4ce96198a,4eea8197dbf86700b3fb56d4ce961980,92ea8197dbf86700b3fb56d4ce961989,5eea8197dbf86700b3fb56d4ce96198a,1eea8197dbf86700b3fb56d4ce96198d,5eea8197dbf86700b3fb56d4ce961993,daea8197dbf86700b3fb56d4ce96198f,56ea8197dbf86700b3fb56d4ce961988,56ea8197dbf86700b3fb56d4ce961995,0aea8197dbf86700b3fb56d4ce96196f,9aea8197dbf86700b3fb56d4ce96198b,92ea8197dbf86700b3fb56d4ce961992,12ea8197dbf86700b3fb56d4ce961991,ceea8197dbf86700b3fb56d4ce961982,5aea8197dbf86700b3fb56d4ce961994,9eea8197dbf86700b3fb56d4ce961992,4eea8197dbf86700b3fb56d4ce961981,0eea8197dbf86700b3fb56d4ce961971,1aea8197dbf86700b3fb56d4ce961984,caea8197dbf86700b3fb56d4ce961983,9aea8197dbf86700b3fb56d4ce96198c</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>Tracy - Story and deployment workflow</name>
@@ -30,13 +30,13 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">c6d2c91fdbb86700b3fb56d4ce9619cc</start>
+        <start display_value="Begin">1eea8197dbf86700b3fb56d4ce96198e</start>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:32</sys_created_on>
-        <sys_id>ced2891fdbb86700b3fb56d4ce96196b</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>46ea8197dbf86700b3fb56d4ce96196c</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:36:20</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:16:54</sys_updated_on>
         <table>x_trz_story</table>
         <timezone/>
         <validated>false</validated>
@@ -71,65 +71,65 @@
         <ola>1970-01-01 00:00:00</ola>
         <order>500</order>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2891fdbb86700b3fb56d4ce96196d</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>8eea8197dbf86700b3fb56d4ce96196e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
         <value>cancelled</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Deployment</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>300</order>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2891fdbb86700b3fb56d4ce96196d</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>0eea8197dbf86700b3fb56d4ce96196e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
         <value>deployment</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Development</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>100</order>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2891fdbb86700b3fb56d4ce96196d</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>02ea8197dbf86700b3fb56d4ce96196f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
         <value>development</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Production</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>400</order>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2891fdbb86700b3fb56d4ce96196d</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>c6ea8197dbf86700b3fb56d4ce96196e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
         <value>production</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_stage>
     <wf_stage action="INSERT_OR_UPDATE">
         <name>Testing</name>
         <ola>1970-01-01 00:00:00</ola>
         <order>200</order>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2891fdbb86700b3fb56d4ce96196d</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>8aea8197dbf86700b3fb56d4ce96196e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
         <value>testing</value>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_stage>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
@@ -147,22 +147,22 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619cc</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce96198e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=c6d2c91fdbb86700b3fb56d4ce9619cc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1eea8197dbf86700b3fb56d4ce96198e"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">c6d2c91fdbb86700b3fb56d4ce9619cc</activity>
-        <condition>gs.getProperty('x_trz.environment') == "Production"</condition>
+        <activity display_value="Begin">1eea8197dbf86700b3fb56d4ce96198e</activity>
+        <condition>gs.getProperty('instance_name')==gs.getProperty('x_trz.prod_instance')</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
         <else_flag>false</else_flag>
@@ -175,11 +175,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619cc</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce96198f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:36:12</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:14:29</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -197,49 +197,49 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ad2c91fdbb86700b3fb56d4ce9619db</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce96198a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>470</x>
         <y>484</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=8ad2c91fdbb86700b3fb56d4ce9619db"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5eea8197dbf86700b3fb56d4ce96198a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>8ad2c91fdbb86700b3fb56d4ce9619db</document_key>
+        <document_key>5eea8197dbf86700b3fb56d4ce96198a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619db</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce96198a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>8ad2c91fdbb86700b3fb56d4ce9619db</document_key>
+        <document_key>5eea8197dbf86700b3fb56d4ce96198a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619db</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce96198a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Cancel Tracy Update set">8ad2c91fdbb86700b3fb56d4ce9619db</activity>
+        <activity display_value="Cancel Tracy Update set">5eea8197dbf86700b3fb56d4ce96198a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -253,11 +253,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619dc</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96198b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -273,33 +273,36 @@
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Development">ced2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Development">02ea8197dbf86700b3fb56d4ce96196f</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce96198a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:16:48</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>232</x>
         <y>166</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=86d2c91fdbb86700b3fb56d4ce9619dc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=52ea8197dbf86700b3fb56d4ce96198a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>86d2c91fdbb86700b3fb56d4ce9619dc</document_key>
+        <document_key>52ea8197dbf86700b3fb56d4ce96198a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96198a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));&#13;
+        <sys_updated_on>2018-10-02 09:16:48</sys_updated_on>
+        <value>var dev_endpoint="https://"+gs.getProperty('x_trz.dev_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";&#13;
+var test_endpoint="https://"+gs.getProperty('x_trz.test_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";&#13;
+&#13;
+insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));&#13;
 insertStory(gs.getProperty('x_trz.test_receiver_endpoint'));&#13;
 &#13;
 function insertStory(uri){&#13;
@@ -319,16 +322,19 @@ try {&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>86d2c91fdbb86700b3fb56d4ce9619dc</document_key>
+        <document_key>52ea8197dbf86700b3fb56d4ce96198a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96198a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));&#13;
+        <sys_updated_on>2018-10-02 09:16:48</sys_updated_on>
+        <value>var dev_endpoint="https://"+gs.getProperty('x_trz.dev_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";&#13;
+var test_endpoint="https://"+gs.getProperty('x_trz.test_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";&#13;
+&#13;
+insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));&#13;
 insertStory(gs.getProperty('x_trz.test_receiver_endpoint'));&#13;
 &#13;
 function insertStory(uri){&#13;
@@ -347,7 +353,7 @@ try {&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Create Story in Dev/Test">86d2c91fdbb86700b3fb56d4ce9619dc</activity>
+        <activity display_value="Create Story in Dev/Test">52ea8197dbf86700b3fb56d4ce96198a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -361,11 +367,11 @@ try {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619dc</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce96198a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -381,32 +387,32 @@ try {&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>ceea8197dbf86700b3fb56d4ce961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1068</x>
         <y>302</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=42d2c91fdbb86700b3fb56d4ce9619d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ceea8197dbf86700b3fb56d4ce961982"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>42d2c91fdbb86700b3fb56d4ce9619d7</document_key>
+        <document_key>ceea8197dbf86700b3fb56d4ce961982</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619d7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>var story=new GlideRecord("x_trz_update_sets");&#13;
 story.addQuery("story",current.sys_id);&#13;
 story.addQuery("deployment_status","Previewed");&#13;
@@ -438,15 +444,15 @@ else&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>42d2c91fdbb86700b3fb56d4ce9619d7</document_key>
+        <document_key>ceea8197dbf86700b3fb56d4ce961982</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619d7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>var story=new GlideRecord("x_trz_update_sets");&#13;
 story.addQuery("story",current.sys_id);&#13;
 story.addQuery("deployment_status","Previewed");&#13;
@@ -477,7 +483,7 @@ else&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Deploy Update Sets">42d2c91fdbb86700b3fb56d4ce9619d7</activity>
+        <activity display_value="Deploy Update Sets">ceea8197dbf86700b3fb56d4ce961982</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -491,11 +497,11 @@ else&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619d7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>46ea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -513,58 +519,58 @@ else&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>930</x>
         <y>169</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=c6d2c91fdbb86700b3fb56d4ce9619d9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=daea8197dbf86700b3fb56d4ce96198f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=-9^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -582,43 +588,43 @@ else&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce96198f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=-9^EQ</value>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619d9</document_key>
+        <document_key>daea8197dbf86700b3fb56d4ce96198f</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -635,7 +641,7 @@ else&#13;
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Did the test fail?">c6d2c91fdbb86700b3fb56d4ce9619d9</activity>
+        <activity display_value="Did the test fail?">daea8197dbf86700b3fb56d4ce96198f</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -649,14 +655,14 @@ else&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619da</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Did the test fail?">c6d2c91fdbb86700b3fb56d4ce9619d9</activity>
+        <activity display_value="Did the test fail?">daea8197dbf86700b3fb56d4ce96198f</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -670,11 +676,11 @@ else&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619da</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -692,19 +698,19 @@ else&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce961988</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>917</x>
         <y>780</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=4ed2c91fdbb86700b3fb56d4ce9619d1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=56ea8197dbf86700b3fb56d4ce961988"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -721,44 +727,44 @@ else&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619cf</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>4eea8197dbf86700b3fb56d4ce961980</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>231</x>
         <y>483</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=0ed2c91fdbb86700b3fb56d4ce9619cf"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4eea8197dbf86700b3fb56d4ce961980"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619cf</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961980</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>82ea8197dbf86700b3fb56d4ce961981</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619cf</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961980</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619cf</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>ceea8197dbf86700b3fb56d4ce961980</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -766,36 +772,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619cf</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961980</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>82ea8197dbf86700b3fb56d4ce961981</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=4^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619cf</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961980</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619cf</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>ceea8197dbf86700b3fb56d4ce961980</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="If State is set to cancelled">0ed2c91fdbb86700b3fb56d4ce9619cf</activity>
+        <activity display_value="If State is set to cancelled">4eea8197dbf86700b3fb56d4ce961980</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -809,11 +815,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619d0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>86ea8197dbf86700b3fb56d4ce961981</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -829,32 +835,32 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619d0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>4eea8197dbf86700b3fb56d4ce961981</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1418</x>
         <y>153</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=0ed2c91fdbb86700b3fb56d4ce9619d0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4eea8197dbf86700b3fb56d4ce961981"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619d0</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961981</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619d1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>c2ea8197dbf86700b3fb56d4ce961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>/*var name="";&#13;
 var relUps=new GlideRecord("x_trz_update_sets");&#13;
 gs.info("Workflow update set:"+workflow.scratchpad.relUpdateSet);&#13;
@@ -868,15 +874,15 @@ current.work_notes="Update Set:"+name+" committed successfully";*/</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>0ed2c91fdbb86700b3fb56d4ce9619d0</document_key>
+        <document_key>4eea8197dbf86700b3fb56d4ce961981</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619d1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>c2ea8197dbf86700b3fb56d4ce961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>/*var name="";&#13;
 var relUps=new GlideRecord("x_trz_update_sets");&#13;
 gs.info("Workflow update set:"+workflow.scratchpad.relUpdateSet);&#13;
@@ -889,7 +895,7 @@ current.work_notes="Update Set:"+name+" committed successfully";*/</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Not used-Set current rel update set as complete">0ed2c91fdbb86700b3fb56d4ce9619d0</activity>
+        <activity display_value="Not used-Set current rel update set as complete">4eea8197dbf86700b3fb56d4ce961981</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -903,11 +909,11 @@ current.work_notes="Update Set:"+name+" committed successfully";*/</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619d1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>4aea8197dbf86700b3fb56d4ce961982</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -925,30 +931,30 @@ current.work_notes="Update Set:"+name+" committed successfully";*/</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619de</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>caea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1399</x>
         <y>450</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=42d2c91fdbb86700b3fb56d4ce9619de"/>
+    <sys_variable_value action="delete_multiple" query="document_key=caea8197dbf86700b3fb56d4ce961983"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>42d2c91fdbb86700b3fb56d4ce9619de</document_key>
+        <document_key>caea8197dbf86700b3fb56d4ce961983</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619de</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>4eea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>var gr = new GlideRecord('incident');&#13;
 gr.initialize();&#13;
 gr.short_description = current.number + " failed it's deployment.";&#13;
@@ -958,15 +964,15 @@ gr.insert();</value>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>42d2c91fdbb86700b3fb56d4ce9619de</document_key>
+        <document_key>caea8197dbf86700b3fb56d4ce961983</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619de</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>4eea8197dbf86700b3fb56d4ce961983</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>var gr = new GlideRecord('incident');&#13;
 gr.initialize();&#13;
 gr.short_description = current.number + " failed it's deployment.";&#13;
@@ -975,7 +981,7 @@ gr.insert();</value>
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Raise Incident">42d2c91fdbb86700b3fb56d4ce9619de</activity>
+        <activity display_value="Raise Incident">caea8197dbf86700b3fb56d4ce961983</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -989,11 +995,11 @@ gr.insert();</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619de</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961984</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1009,32 +1015,32 @@ gr.insert();</value>
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619d8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>92ea8197dbf86700b3fb56d4ce961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>584</x>
         <y>312</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=cad2c91fdbb86700b3fb56d4ce9619d8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=92ea8197dbf86700b3fb56d4ce961992"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619d8</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961992</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>//script to start the progress worker, this will just trigger the method and then the next activity will wait till its complete&#13;
 current.deployment_state="deployment_in_progress";&#13;
 var gr = new GlideRecord('sys_update_set_source');&#13;
@@ -1052,15 +1058,15 @@ if(gr.next()){&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619d8</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961992</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>//script to start the progress worker, this will just trigger the method and then the next activity will wait till its complete&#13;
 current.deployment_state="deployment_in_progress";&#13;
 var gr = new GlideRecord('sys_update_set_source');&#13;
@@ -1077,7 +1083,7 @@ if(gr.next()){&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Retreive Update Sets">cad2c91fdbb86700b3fb56d4ce9619d8</activity>
+        <activity display_value="Retreive Update Sets">92ea8197dbf86700b3fb56d4ce961992</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1091,11 +1097,11 @@ if(gr.next()){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d9</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Rollback To">bd5711773b230000dada82c09ccf3d0d</activity_definition>
@@ -1113,21 +1119,21 @@ if(gr.next()){&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619d7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9aea8197dbf86700b3fb56d4ce96198b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>227</x>
         <y>71</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=8ed2c91fdbb86700b3fb56d4ce9619d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9aea8197dbf86700b3fb56d4ce96198b"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Rollback to development">8ed2c91fdbb86700b3fb56d4ce9619d7</activity>
+        <activity display_value="Rollback to development">9aea8197dbf86700b3fb56d4ce96198b</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1141,11 +1147,11 @@ if(gr.next()){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619d8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96198c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -1161,51 +1167,51 @@ if(gr.next()){&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Cancelled">cad2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Cancelled">8eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>698</x>
         <y>477</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=cad2c91fdbb86700b3fb56d4ce9619e1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5eea8197dbf86700b3fb56d4ce961993"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619e1</document_key>
+        <document_key>5eea8197dbf86700b3fb56d4ce961993</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=4^work_notes=Workflow cancelled by Tracy^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619e1</document_key>
+        <document_key>5eea8197dbf86700b3fb56d4ce961993</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=4^work_notes=Workflow cancelled by Tracy^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Story's state to cancelled">cad2c91fdbb86700b3fb56d4ce9619e1</activity>
+        <activity display_value="Set Story's state to cancelled">5eea8197dbf86700b3fb56d4ce961993</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1219,11 +1225,11 @@ if(gr.next()){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619e2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
@@ -1239,51 +1245,51 @@ if(gr.next()){&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Production">4ad2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Production">c6ea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619de</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9aea8197dbf86700b3fb56d4ce96198c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1305</x>
         <y>656</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=8ed2c91fdbb86700b3fb56d4ce9619de"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9aea8197dbf86700b3fb56d4ce96198c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>8ed2c91fdbb86700b3fb56d4ce9619de</document_key>
+        <document_key>9aea8197dbf86700b3fb56d4ce96198c</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619df</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=3^work_notes=Tracy's workflow completed.^deployment_state=deployed_to_prod^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>8ed2c91fdbb86700b3fb56d4ce9619de</document_key>
+        <document_key>9aea8197dbf86700b3fb56d4ce96198c</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619df</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=3^work_notes=Tracy's workflow completed.^deployment_state=deployed_to_prod^EQ</value>
         <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Set Story's state to completed">8ed2c91fdbb86700b3fb56d4ce9619de</activity>
+        <activity display_value="Set Story's state to completed">9aea8197dbf86700b3fb56d4ce96198c</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1297,11 +1303,11 @@ if(gr.next()){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619df</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -1317,32 +1323,32 @@ if(gr.next()){&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Testing">4ed2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Testing">8aea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>92ea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>458</x>
         <y>171</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=82d2c91fdbb86700b3fb56d4ce9619dd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=92ea8197dbf86700b3fb56d4ce961989"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>82d2c91fdbb86700b3fb56d4ce9619dd</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961989</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -1350,50 +1356,50 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>82d2c91fdbb86700b3fb56d4ce9619dd</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961989</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=-8^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>82d2c91fdbb86700b3fb56d4ce9619dd</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961989</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=-8^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>82d2c91fdbb86700b3fb56d4ce9619dd</document_key>
+        <document_key>92ea8197dbf86700b3fb56d4ce961989</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="State is set to Testing">82d2c91fdbb86700b3fb56d4ce9619dd</activity>
+        <activity display_value="State is set to Testing">92ea8197dbf86700b3fb56d4ce961989</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1407,11 +1413,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619dd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961989</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
@@ -1429,21 +1435,21 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619d6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>c6ea8197dbf86700b3fb56d4ce961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>68</x>
         <y>267</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=06d2c91fdbb86700b3fb56d4ce9619d6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c6ea8197dbf86700b3fb56d4ce961973"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Story can be cancelled always">06d2c91fdbb86700b3fb56d4ce9619d6</activity>
+        <activity display_value="Story can be cancelled always">c6ea8197dbf86700b3fb56d4ce961973</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1457,11 +1463,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619d6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>c6ea8197dbf86700b3fb56d4ce961980</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1477,32 +1483,32 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Testing">4ed2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Testing">8aea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619e0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce961995</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>637</x>
         <y>41</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=ced2c91fdbb86700b3fb56d4ce9619e0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=56ea8197dbf86700b3fb56d4ce961995"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>ced2c91fdbb86700b3fb56d4ce9619e0</document_key>
+        <document_key>56ea8197dbf86700b3fb56d4ce961995</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961995</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>try {&#13;
 		var s = new sn_ws.SOAPMessageV2('tracyStoryReceiver', 'execute');&#13;
 		s.setEndpoint(gs.getProperty('x_trz.config_receiver_endpoint'));&#13;
@@ -1517,15 +1523,15 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>ced2c91fdbb86700b3fb56d4ce9619e0</document_key>
+        <document_key>56ea8197dbf86700b3fb56d4ce961995</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961995</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>try {&#13;
 		var s = new sn_ws.SOAPMessageV2('tracyStoryReceiver', 'execute');&#13;
 		s.setEndpoint(gs.getProperty('x_trz.config_receiver_endpoint'));&#13;
@@ -1539,7 +1545,7 @@ answer = true;&#13;
         <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Update the story in Dev/test">ced2c91fdbb86700b3fb56d4ce9619e0</activity>
+        <activity display_value="Update the story in Dev/test">56ea8197dbf86700b3fb56d4ce961995</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1553,11 +1559,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619e1</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961995</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
@@ -1575,443 +1581,443 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619d2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961984</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1203</x>
         <y>109</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=4ad2c91fdbb86700b3fb56d4ce9619d2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1aea8197dbf86700b3fb56d4ce961984"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961987</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>1970-01-01 00:00:01</value>
         <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>92ea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9aea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = 0;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961984</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1350</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1320</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
-        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619d3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
-        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961984</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>500</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>1970-01-01 00:00:01</value>
-        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value/>
-        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1310</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619d3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
         <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
-        <order>1320</order>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1310</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value/>
-        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value>1970-01-01 00:00:01</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1320</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
         <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1350</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>92ea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>1360</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619d4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961986</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>4ad2c91fdbb86700b3fb56d4ce9619d2</document_key>
+        <document_key>1aea8197dbf86700b3fb56d4ce961984</document_key>
         <order>3000</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619d3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9aea8197dbf86700b3fb56d4ce961985</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set 'answer' to the number of seconds this timer should wait&#13;
 answer = 0;</value>
         <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait 1 sec for update to reflect">4ad2c91fdbb86700b3fb56d4ce9619d2</activity>
+        <activity display_value="Wait 1 sec for update to reflect">1aea8197dbf86700b3fb56d4ce961984</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -2025,11 +2031,11 @@ answer = 0;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619d5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -2047,44 +2053,30 @@ answer = 0;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619da</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961992</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1173</x>
         <y>437</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=cad2c91fdbb86700b3fb56d4ce9619da"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9eea8197dbf86700b3fb56d4ce961992"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619da</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>stateIN8,9^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619da</document_key>
+        <document_key>9eea8197dbf86700b3fb56d4ce961992</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619da</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -2092,36 +2084,50 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619da</document_key>
+        <document_key>9eea8197dbf86700b3fb56d4ce961992</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619db</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>stateIN8,9^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>cad2c91fdbb86700b3fb56d4ce9619da</document_key>
+        <document_key>9eea8197dbf86700b3fb56d4ce961992</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value>stateIN8,9^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>9eea8197dbf86700b3fb56d4ce961992</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619da</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for deployment is a successful or unsuccessful">cad2c91fdbb86700b3fb56d4ce9619da</activity>
+        <activity display_value="Wait for deployment is a successful or unsuccessful">9eea8197dbf86700b3fb56d4ce961992</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -2135,11 +2141,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619db</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d6ea8197dbf86700b3fb56d4ce961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
@@ -2155,51 +2161,51 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619e2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961991</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>823</x>
         <y>304</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=c6d2c91fdbb86700b3fb56d4ce9619e2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=12ea8197dbf86700b3fb56d4ce961991"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619e2</document_key>
+        <document_key>12ea8197dbf86700b3fb56d4ce961991</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619e2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961991</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>tracy_update_sets_retrieved</value>
         <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2c91fdbb86700b3fb56d4ce9619e2</document_key>
+        <document_key>12ea8197dbf86700b3fb56d4ce961991</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619e2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961991</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>tracy_update_sets_retrieved</value>
         <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for Retrieval to complete">c6d2c91fdbb86700b3fb56d4ce9619e2</activity>
+        <activity display_value="Wait for Retrieval to complete">12ea8197dbf86700b3fb56d4ce961991</activity>
         <condition>activity.state == 'finished'</condition>
         <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
         <condition_type>standard</condition_type>
@@ -2213,11 +2219,11 @@ answer = true;&#13;
         <short_description>The event we were waiting on has been fired</short_description>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619e2</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce961991</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
@@ -2233,51 +2239,51 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619df</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1307</x>
         <y>310</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=ced2c91fdbb86700b3fb56d4ce9619df"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5aea8197dbf86700b3fb56d4ce961994"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>ced2c91fdbb86700b3fb56d4ce9619df</document_key>
+        <document_key>5aea8197dbf86700b3fb56d4ce961994</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619e0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>tracy_update_set_committed</value>
         <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>ced2c91fdbb86700b3fb56d4ce9619df</document_key>
+        <document_key>5aea8197dbf86700b3fb56d4ce961994</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619e0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>tracy_update_set_committed</value>
         <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait for update set to commit">ced2c91fdbb86700b3fb56d4ce9619df</activity>
+        <activity display_value="Wait for update set to commit">5aea8197dbf86700b3fb56d4ce961994</activity>
         <condition>activity.state == 'finished'</condition>
         <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
         <condition_type>standard</condition_type>
@@ -2291,11 +2297,11 @@ answer = true;&#13;
         <short_description>The event we were waiting on has been fired</short_description>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619e0</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -2311,46 +2317,32 @@ answer = true;&#13;
         <parent/>
         <pinned>false</pinned>
         <pinned_version/>
-        <stage display_value="Deployment">c6d2891fdbb86700b3fb56d4ce96196d</stage>
+        <stage display_value="Deployment">0eea8197dbf86700b3fb56d4ce96196e</stage>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619cd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>0aea8197dbf86700b3fb56d4ce96196f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>352</x>
         <y>304</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=06d2c91fdbb86700b3fb56d4ce9619cd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0aea8197dbf86700b3fb56d4ce96196f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619cd</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619cd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value>state=5^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619cd</document_key>
+        <document_key>0aea8197dbf86700b3fb56d4ce96196f</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619cd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961970</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -2358,36 +2350,50 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619cd</document_key>
+        <document_key>0aea8197dbf86700b3fb56d4ce96196f</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619cd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>caea8197dbf86700b3fb56d4ce961970</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>state=5^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619cd</document_key>
+        <document_key>0aea8197dbf86700b3fb56d4ce96196f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>caea8197dbf86700b3fb56d4ce961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value>state=5^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0aea8197dbf86700b3fb56d4ce96196f</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619cd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961970</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Wait until &quot;Deploy&quot; is clicked">06d2c91fdbb86700b3fb56d4ce9619cd</activity>
+        <activity display_value="Wait until &quot;Deploy&quot; is clicked">0aea8197dbf86700b3fb56d4ce96196f</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -2401,11 +2407,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ed2c91fdbb86700b3fb56d4ce9619cd</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>42ea8197dbf86700b3fb56d4ce961971</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
@@ -2423,44 +2429,44 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2891fdbb86700b3fb56d4ce96196e</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>691</x>
         <y>174</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=c6d2891fdbb86700b3fb56d4ce96196e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1eea8197dbf86700b3fb56d4ce96198d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2891fdbb86700b3fb56d4ce96196e</document_key>
+        <document_key>1eea8197dbf86700b3fb56d4ce96198d</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619cb</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce96198e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>stateIN-9,-10^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2891fdbb86700b3fb56d4ce96196e</document_key>
+        <document_key>1eea8197dbf86700b3fb56d4ce96198d</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619cb</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
@@ -2468,36 +2474,36 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2891fdbb86700b3fb56d4ce96196e</document_key>
+        <document_key>1eea8197dbf86700b3fb56d4ce96198d</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619cb</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce96198e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>stateIN-9,-10^EQ</value>
         <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>c6d2891fdbb86700b3fb56d4ce96196e</document_key>
+        <document_key>1eea8197dbf86700b3fb56d4ce96198d</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619cb</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce96198d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
         <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Waiting for testing success or failure">c6d2891fdbb86700b3fb56d4ce96196e</activity>
+        <activity display_value="Waiting for testing success or failure">1eea8197dbf86700b3fb56d4ce96198d</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -2511,11 +2517,11 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619cb</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce96198e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -2533,44 +2539,30 @@ answer = true;&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>0eea8197dbf86700b3fb56d4ce961971</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
         <x>1177</x>
         <y>537</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=06d2c91fdbb86700b3fb56d4ce9619ce"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0eea8197dbf86700b3fb56d4ce961971"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619ce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>0aea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -2588,57 +2580,71 @@ answer = true;&#13;
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>46ea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>82ea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value/>
         <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>82ea8197dbf86700b3fb56d4ce961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>46ea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>0</value>
         <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>06d2c91fdbb86700b3fb56d4ce9619ce</document_key>
+        <document_key>0eea8197dbf86700b3fb56d4ce961971</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619ce</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>0aea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
         <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
 //&#13;
 // For example,&#13;
@@ -2655,7 +2661,7 @@ answer = true;&#13;
         <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Was deployment successful or unsuccessful?">06d2c91fdbb86700b3fb56d4ce9619ce</activity>
+        <activity display_value="Was deployment successful or unsuccessful?">0eea8197dbf86700b3fb56d4ce961971</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -2669,14 +2675,14 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619cf</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>8eea8197dbf86700b3fb56d4ce961972</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Was deployment successful or unsuccessful?">06d2c91fdbb86700b3fb56d4ce9619ce</activity>
+        <activity display_value="Was deployment successful or unsuccessful?">0eea8197dbf86700b3fb56d4ce961971</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -2690,311 +2696,311 @@ answer = true;&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619cf</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>02ea8197dbf86700b3fb56d4ce961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Successful">06d2c91fdbb86700b3fb56d4ce9619cf</condition>
-        <from display_value="Was deployment successful or unsuccessful?">06d2c91fdbb86700b3fb56d4ce9619ce</from>
+        <condition display_value="Always">46ea8197dbf86700b3fb56d4ce961983</condition>
+        <from display_value="Deploy Update Sets">ceea8197dbf86700b3fb56d4ce961982</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>02d2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Set Story's state to completed">8ed2c91fdbb86700b3fb56d4ce9619de</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Wait for update set to commit">5aea8197dbf86700b3fb56d4ce961994</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Fired">4ed2c91fdbb86700b3fb56d4ce9619e2</condition>
-        <from display_value="Wait for Retrieval to complete">c6d2c91fdbb86700b3fb56d4ce9619e2</from>
+        <condition display_value="Unsuccessful">02ea8197dbf86700b3fb56d4ce961973</condition>
+        <from display_value="Was deployment successful or unsuccessful?">0eea8197dbf86700b3fb56d4ce961971</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Deploy Update Sets">42d2c91fdbb86700b3fb56d4ce9619d7</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Raise Incident">caea8197dbf86700b3fb56d4ce961983</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">c2d2c91fdbb86700b3fb56d4ce9619da</condition>
-        <from display_value="Did the test fail?">c6d2c91fdbb86700b3fb56d4ce9619d9</from>
+        <condition display_value="Always">d2ea8197dbf86700b3fb56d4ce961994</condition>
+        <from display_value="Set Story's state to cancelled">5eea8197dbf86700b3fb56d4ce961993</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619e5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>12ea8197dbf86700b3fb56d4ce96199b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Wait until &quot;Deploy&quot; is clicked">06d2c91fdbb86700b3fb56d4ce9619cd</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="End">56ea8197dbf86700b3fb56d4ce961988</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">cad2c91fdbb86700b3fb56d4ce9619d6</condition>
-        <from display_value="Story can be cancelled always">06d2c91fdbb86700b3fb56d4ce9619d6</from>
+        <condition display_value="Always">c6ea8197dbf86700b3fb56d4ce961980</condition>
+        <from display_value="Story can be cancelled always">c6ea8197dbf86700b3fb56d4ce961973</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>06d2c91fdbb86700b3fb56d4ce9619e8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>16ea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Create Story in Dev/Test">86d2c91fdbb86700b3fb56d4ce9619dc</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Create Story in Dev/Test">52ea8197dbf86700b3fb56d4ce96198a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">4ed2c91fdbb86700b3fb56d4ce9619cd</condition>
-        <from display_value="Wait until &quot;Deploy&quot; is clicked">06d2c91fdbb86700b3fb56d4ce9619cd</from>
+        <condition display_value="Always">d6ea8197dbf86700b3fb56d4ce961993</condition>
+        <from display_value="Wait for deployment is a successful or unsuccessful">9eea8197dbf86700b3fb56d4ce961992</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619e5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Retreive Update Sets">cad2c91fdbb86700b3fb56d4ce9619d8</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Was deployment successful or unsuccessful?">0eea8197dbf86700b3fb56d4ce961971</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">42d2c91fdbb86700b3fb56d4ce9619e2</condition>
-        <from display_value="Set Story's state to cancelled">cad2c91fdbb86700b3fb56d4ce9619e1</from>
+        <condition display_value="Yes">d6ea8197dbf86700b3fb56d4ce961990</condition>
+        <from display_value="Did the test fail?">daea8197dbf86700b3fb56d4ce96198f</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ad2c91fdbb86700b3fb56d4ce9619e7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1aea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="End">4ed2c91fdbb86700b3fb56d4ce9619d1</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Update the story in Dev/test">56ea8197dbf86700b3fb56d4ce961995</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">c6d2c91fdbb86700b3fb56d4ce9619de</condition>
-        <from display_value="Raise Incident">42d2c91fdbb86700b3fb56d4ce9619de</from>
+        <condition display_value="Always">1aea8197dbf86700b3fb56d4ce961992</condition>
+        <from display_value="Retreive Update Sets">92ea8197dbf86700b3fb56d4ce961992</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>1eea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="End">4ed2c91fdbb86700b3fb56d4ce9619d1</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Wait for Retrieval to complete">12ea8197dbf86700b3fb56d4ce961991</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">46d2c91fdbb86700b3fb56d4ce9619d0</condition>
-        <from display_value="If State is set to cancelled">0ed2c91fdbb86700b3fb56d4ce9619cf</from>
+        <condition display_value="Always">daea8197dbf86700b3fb56d4ce961989</condition>
+        <from display_value="State is set to Testing">92ea8197dbf86700b3fb56d4ce961989</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>0ed2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>52ea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Cancel Tracy Update set">8ad2c91fdbb86700b3fb56d4ce9619db</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Waiting for testing success or failure">1eea8197dbf86700b3fb56d4ce96198d</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">46d2c91fdbb86700b3fb56d4ce9619e1</condition>
-        <from display_value="Update the story in Dev/test">ced2c91fdbb86700b3fb56d4ce9619e0</from>
+        <condition display_value="Always">96ea8197dbf86700b3fb56d4ce96198d</condition>
+        <from display_value="Set Story's state to completed">9aea8197dbf86700b3fb56d4ce96198c</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>56ea8197dbf86700b3fb56d4ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Rollback to development">8ed2c91fdbb86700b3fb56d4ce9619d7</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="End">56ea8197dbf86700b3fb56d4ce961988</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">cad2c91fdbb86700b3fb56d4ce9619dd</condition>
-        <from display_value="State is set to Testing">82d2c91fdbb86700b3fb56d4ce9619dd</from>
+        <condition display_value="Always">9eea8197dbf86700b3fb56d4ce961987</condition>
+        <from display_value="Wait 1 sec for update to reflect">1aea8197dbf86700b3fb56d4ce961984</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>42d2c91fdbb86700b3fb56d4ce9619e8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Waiting for testing success or failure">c6d2891fdbb86700b3fb56d4ce96196e</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Deploy Update Sets">ceea8197dbf86700b3fb56d4ce961982</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Fired">4ad2c91fdbb86700b3fb56d4ce9619e0</condition>
-        <from display_value="Wait for update set to commit">ced2c91fdbb86700b3fb56d4ce9619df</from>
+        <condition display_value="Fired">1eea8197dbf86700b3fb56d4ce961991</condition>
+        <from display_value="Wait for Retrieval to complete">12ea8197dbf86700b3fb56d4ce961991</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>46d2c91fdbb86700b3fb56d4ce9619e7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5aea8197dbf86700b3fb56d4ce96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Not used-Set current rel update set as complete">0ed2c91fdbb86700b3fb56d4ce9619d0</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Deploy Update Sets">ceea8197dbf86700b3fb56d4ce961982</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">c6d2c91fdbb86700b3fb56d4ce9619d7</condition>
-        <from display_value="Deploy Update Sets">42d2c91fdbb86700b3fb56d4ce9619d7</from>
+        <condition display_value="Always">86ea8197dbf86700b3fb56d4ce961981</condition>
+        <from display_value="If State is set to cancelled">4eea8197dbf86700b3fb56d4ce961980</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce961996</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Wait for deployment is a successful or unsuccessful">cad2c91fdbb86700b3fb56d4ce9619da</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Cancel Tracy Update set">5eea8197dbf86700b3fb56d4ce96198a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">06d2c91fdbb86700b3fb56d4ce9619db</condition>
-        <from display_value="Wait for deployment is a successful or unsuccessful">cad2c91fdbb86700b3fb56d4ce9619da</from>
+        <condition display_value="Always">4aea8197dbf86700b3fb56d4ce961982</condition>
+        <from display_value="Not used-Set current rel update set as complete">4eea8197dbf86700b3fb56d4ce961981</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>4ad2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>5eea8197dbf86700b3fb56d4ce96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Was deployment successful or unsuccessful?">06d2c91fdbb86700b3fb56d4ce9619ce</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Wait 1 sec for update to reflect">1aea8197dbf86700b3fb56d4ce961984</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">46d2c91fdbb86700b3fb56d4ce9619da</condition>
-        <from display_value="Did the test fail?">c6d2c91fdbb86700b3fb56d4ce9619d9</from>
+        <condition display_value="Only in Prod">56ea8197dbf86700b3fb56d4ce96198f</condition>
+        <from display_value="Begin">1eea8197dbf86700b3fb56d4ce96198e</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619e5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>92ea8197dbf86700b3fb56d4ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Update the story in Dev/test">ced2c91fdbb86700b3fb56d4ce9619e0</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Story can be cancelled always">c6ea8197dbf86700b3fb56d4ce961973</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">42d2c91fdbb86700b3fb56d4ce9619d9</condition>
-        <from display_value="Retreive Update Sets">cad2c91fdbb86700b3fb56d4ce9619d8</from>
+        <condition display_value="Always">c6ea8197dbf86700b3fb56d4ce961980</condition>
+        <from display_value="Story can be cancelled always">c6ea8197dbf86700b3fb56d4ce961973</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>82d2c91fdbb86700b3fb56d4ce9619e7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Wait for Retrieval to complete">c6d2c91fdbb86700b3fb56d4ce9619e2</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="If State is set to cancelled">4eea8197dbf86700b3fb56d4ce961980</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">02d2c91fdbb86700b3fb56d4ce9619dc</condition>
-        <from display_value="Cancel Tracy Update set">8ad2c91fdbb86700b3fb56d4ce9619db</from>
+        <condition display_value="No">5aea8197dbf86700b3fb56d4ce961990</condition>
+        <from display_value="Did the test fail?">daea8197dbf86700b3fb56d4ce96198f</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Set Story's state to cancelled">cad2c91fdbb86700b3fb56d4ce9619e1</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Wait until &quot;Deploy&quot; is clicked">0aea8197dbf86700b3fb56d4ce96196f</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">cad2c91fdbb86700b3fb56d4ce9619d6</condition>
-        <from display_value="Story can be cancelled always">06d2c91fdbb86700b3fb56d4ce9619d6</from>
+        <condition display_value="Always">42ea8197dbf86700b3fb56d4ce961984</condition>
+        <from display_value="Raise Incident">caea8197dbf86700b3fb56d4ce961983</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>86d2c91fdbb86700b3fb56d4ce9619e8</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="If State is set to cancelled">0ed2c91fdbb86700b3fb56d4ce9619cf</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="End">56ea8197dbf86700b3fb56d4ce961988</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">8ed2c91fdbb86700b3fb56d4ce9619cb</condition>
-        <from display_value="Waiting for testing success or failure">c6d2891fdbb86700b3fb56d4ce96196e</from>
+        <condition display_value="Always">d2ea8197dbf86700b3fb56d4ce96198c</condition>
+        <from display_value="Rollback to development">9aea8197dbf86700b3fb56d4ce96198b</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619e3</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>96ea8197dbf86700b3fb56d4ce96199b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Did the test fail?">c6d2c91fdbb86700b3fb56d4ce9619d9</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Create Story in Dev/Test">52ea8197dbf86700b3fb56d4ce96198a</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Unsuccessful">86d2c91fdbb86700b3fb56d4ce9619cf</condition>
-        <from display_value="Was deployment successful or unsuccessful?">06d2c91fdbb86700b3fb56d4ce9619ce</from>
+        <condition display_value="Always">46ea8197dbf86700b3fb56d4ce961983</condition>
+        <from display_value="Deploy Update Sets">ceea8197dbf86700b3fb56d4ce961982</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619e5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Raise Incident">42d2c91fdbb86700b3fb56d4ce9619de</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Wait for deployment is a successful or unsuccessful">9eea8197dbf86700b3fb56d4ce961992</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">86d2c91fdbb86700b3fb56d4ce9619d1</condition>
-        <from display_value="Not used-Set current rel update set as complete">0ed2c91fdbb86700b3fb56d4ce9619d0</from>
+        <condition display_value="Successful">8eea8197dbf86700b3fb56d4ce961972</condition>
+        <from display_value="Was deployment successful or unsuccessful?">0eea8197dbf86700b3fb56d4ce961971</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>8ed2c91fdbb86700b3fb56d4ce9619e7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>9eea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Wait 1 sec for update to reflect">4ad2c91fdbb86700b3fb56d4ce9619d2</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Set Story's state to completed">9aea8197dbf86700b3fb56d4ce96198c</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">4ed2c91fdbb86700b3fb56d4ce9619d5</condition>
-        <from display_value="Wait 1 sec for update to reflect">4ad2c91fdbb86700b3fb56d4ce9619d2</from>
+        <condition display_value="Fired">deea8197dbf86700b3fb56d4ce961994</condition>
+        <from display_value="Wait for update set to commit">5aea8197dbf86700b3fb56d4ce961994</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c2d2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Deploy Update Sets">42d2c91fdbb86700b3fb56d4ce9619d7</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Not used-Set current rel update set as complete">4eea8197dbf86700b3fb56d4ce961981</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">c6d2c91fdbb86700b3fb56d4ce9619d7</condition>
-        <from display_value="Deploy Update Sets">42d2c91fdbb86700b3fb56d4ce9619d7</from>
+        <condition display_value="Always">42ea8197dbf86700b3fb56d4ce961971</condition>
+        <from display_value="Wait until &quot;Deploy&quot; is clicked">0aea8197dbf86700b3fb56d4ce96196f</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>c6d2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Wait for update set to commit">ced2c91fdbb86700b3fb56d4ce9619df</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Retreive Update Sets">92ea8197dbf86700b3fb56d4ce961992</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">0ed2c91fdbb86700b3fb56d4ce9619dc</condition>
-        <from display_value="Create Story in Dev/Test">86d2c91fdbb86700b3fb56d4ce9619dc</from>
+        <condition display_value="Always">d6ea8197dbf86700b3fb56d4ce96198a</condition>
+        <from display_value="Create Story in Dev/Test">52ea8197dbf86700b3fb56d4ce96198a</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619e5</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>d2ea8197dbf86700b3fb56d4ce96199b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="State is set to Testing">82d2c91fdbb86700b3fb56d4ce9619dd</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="State is set to Testing">92ea8197dbf86700b3fb56d4ce961989</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">0ad2c91fdbb86700b3fb56d4ce9619df</condition>
-        <from display_value="Set Story's state to completed">8ed2c91fdbb86700b3fb56d4ce9619de</from>
+        <condition display_value="Always">56ea8197dbf86700b3fb56d4ce96198e</condition>
+        <from display_value="Waiting for testing success or failure">1eea8197dbf86700b3fb56d4ce96198d</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>cad2c91fdbb86700b3fb56d4ce9619e7</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="End">4ed2c91fdbb86700b3fb56d4ce9619d1</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Did the test fail?">daea8197dbf86700b3fb56d4ce96198f</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Only in Prod">8ed2c91fdbb86700b3fb56d4ce9619cc</condition>
-        <from display_value="Begin">c6d2c91fdbb86700b3fb56d4ce9619cc</from>
+        <condition display_value="Always">d2ea8197dbf86700b3fb56d4ce96198b</condition>
+        <from display_value="Cancel Tracy Update set">5eea8197dbf86700b3fb56d4ce96198a</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619e4</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>daea8197dbf86700b3fb56d4ce961999</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Story can be cancelled always">06d2c91fdbb86700b3fb56d4ce9619d6</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Set Story's state to cancelled">5eea8197dbf86700b3fb56d4ce961993</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">46d2c91fdbb86700b3fb56d4ce9619d8</condition>
-        <from display_value="Rollback to development">8ed2c91fdbb86700b3fb56d4ce9619d7</from>
+        <condition display_value="Always">daea8197dbf86700b3fb56d4ce961995</condition>
+        <from display_value="Update the story in Dev/test">56ea8197dbf86700b3fb56d4ce961995</from>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:33</sys_created_on>
-        <sys_id>ced2c91fdbb86700b3fb56d4ce9619e6</sys_id>
+        <sys_created_on>2018-10-02 09:10:47</sys_created_on>
+        <sys_id>deea8197dbf86700b3fb56d4ce961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:33</sys_updated_on>
-        <to display_value="Create Story in Dev/Test">86d2c91fdbb86700b3fb56d4ce9619dc</to>
+        <sys_updated_on>2018-10-02 09:10:47</sys_updated_on>
+        <to display_value="Rollback to development">9aea8197dbf86700b3fb56d4ce96198b</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>bnow-hv</sys_created_by>
-        <sys_created_on>2018-10-02 08:35:32</sys_created_on>
-        <sys_id>c2d2891fdbb86700b3fb56d4ce96196c</sys_id>
+        <sys_created_on>2018-10-02 09:10:46</sys_created_on>
+        <sys_id>4aea8197dbf86700b3fb56d4ce96196c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:35:32</sys_updated_on>
-        <workflow_version display_value="Tracy - Story and deployment workflow">ced2891fdbb86700b3fb56d4ce96196b</workflow_version>
+        <sys_updated_on>2018-10-02 09:10:46</sys_updated_on>
+        <workflow_version display_value="Tracy - Story and deployment workflow">46ea8197dbf86700b3fb56d4ce96196c</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=c1d67dd9dbf79bc0b3fb56d4ce961938^sys_id!=ced2891fdbb86700b3fb56d4ce96196b">
+    <wf_workflow_version action="update_multiple" query="workflow=c1d67dd9dbf79bc0b3fb56d4ce961938^sys_id!=46ea8197dbf86700b3fb56d4ce96196c">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
