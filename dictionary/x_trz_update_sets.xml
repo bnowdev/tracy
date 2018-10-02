@@ -16,6 +16,7 @@
         <element default="true" label="Marked for Deployment" max_length="40" name="marked_for_deployment" type="boolean"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Remote Story" max_length="32" name="remote_story" reference="x_trz_remote_story" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
             <choice>
                 <element label="In Progress" sequence="100" value="in progress"/>
@@ -41,9 +42,12 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="work_notes" type="journal"/>
         <index name="index">
-            <element name="configuration"/>
+            <element name="remote_story"/>
         </index>
         <index name="index2">
+            <element name="configuration"/>
+        </index>
+        <index name="index3">
             <element name="story"/>
         </index>
     </element>

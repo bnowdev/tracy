@@ -33,7 +33,8 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-          var str=new GlideRecord("x_trz_story");
+    
+	var str=new GlideRecord("x_trz_story");
 	      str.addQuery("state",5);
 	      str.query();
 	      if(str.next()){
@@ -50,15 +51,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>483cc8a5db442b000414d141ce96194d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Tracy - Retrieve updates,broadcast event</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_483cc8a5db442b000414d141ce96194d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-23 13:12:04</sys_updated_on>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-02 08:33:53</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
