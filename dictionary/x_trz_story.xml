@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=false" extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" type="collection">
-        <element choice="1" default="pending_deployment" label="Deployment" max_length="40" name="deployment_state" read_only="true" type="choice">
+    <element attributes="live_feed=false" extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" sizeclass="36" type="collection">
+        <element choice="1" default="pending_test_deployment" label="Deployment Status" max_length="40" name="deployment_state" read_only="true" type="choice">
             <choice>
-                <element label="Pending deployment" sequence="1" value="pending_deployment"/>
-                <element label="Deployment in progress" sequence="2" value="deployment_in_progress"/>
-                <element label="Deployed to test" sequence="3" value="deployed_to_test"/>
-                <element label="Deployed to prod" sequence="4" value="deployed_to_prod"/>
+                <element label="Pending test deployment" sequence="1" value="pending_test_deployment"/>
+                <element label="Test Deployment in progress" sequence="2" value="deploy_test_progress"/>
+                <element label="Test deployment successful" sequence="3" value="deploy_test_success"/>
+                <element label="Test deployment failed" sequence="4" value="deploy_test_failed"/>
+                <element label="Pending prod deployment" sequence="5" value="pending_prod_deployment"/>
+                <element label="Prod Deployment in progress" sequence="6" value="deploy_prod_progress"/>
+                <element label="Prod deployment successful" sequence="7" value="deploy_prod_success"/>
+                <element label="Prod deployment failed" sequence="8" value="deploy_prod_failed"/>
             </choice>
         </element>
+        <element default="1" label="Update set number" max_length="40" name="update_set_number" type="integer"/>
     </element>
 </database>

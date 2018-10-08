@@ -6,26 +6,26 @@
             <element>deployment_state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Pending deployment</label>
+            <label>Pending test deployment</label>
             <language>en</language>
             <name>x_trz_story</name>
             <sequence>1</sequence>
-            <sys_created_by>bnow-ph</sys_created_by>
-            <sys_created_on>2018-09-14 06:56:34</sys_created_on>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-08 11:55:16</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ad8fb315dbacaf000414d141ce961924</sys_id>
+            <sys_id>061ae81ddbc96b00b3fb56d4ce9619fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>bnow-ph</sys_updated_by>
-            <sys_updated_on>2018-09-14 06:56:34</sys_updated_on>
-            <value>pending_deployment</value>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:55:16</sys_updated_on>
+            <value>pending_test_deployment</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>deployment_state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Deployment in progress</label>
+            <label>Test Deployment in progress</label>
             <language>en</language>
             <name>x_trz_story</name>
             <sequence>2</sequence>
@@ -34,17 +34,17 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7d9fb315dbacaf000414d141ce96193d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>bnow-ph</sys_updated_by>
-            <sys_updated_on>2018-09-14 06:57:07</sys_updated_on>
-            <value>deployment_in_progress</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 09:11:38</sys_updated_on>
+            <value>deploy_test_progress</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>deployment_state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Deployed to test</label>
+            <label>Test deployment successful</label>
             <language>en</language>
             <name>x_trz_story</name>
             <sequence>3</sequence>
@@ -53,29 +53,105 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>42bf3715dbacaf000414d141ce961911</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>bnow-ph</sys_updated_by>
-            <sys_updated_on>2018-09-14 06:57:37</sys_updated_on>
-            <value>deployed_to_test</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 09:11:17</sys_updated_on>
+            <value>deploy_test_success</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>deployment_state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Deployed to prod</label>
+            <label>Test deployment failed</label>
             <language>en</language>
             <name>x_trz_story</name>
             <sequence>4</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-08 11:37:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ff5e059dbc96b00b3fb56d4ce9619c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:37:19</sys_updated_on>
+            <value>deploy_test_failed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending prod deployment</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>5</sequence>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-09-14 06:56:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad8fb315dbacaf000414d141ce961924</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:54:54</sys_updated_on>
+            <value>pending_prod_deployment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prod Deployment in progress</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>6</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-08 09:12:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>69d40855db896b00b3fb56d4ce961963</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:54:37</sys_updated_on>
+            <value>deploy_prod_progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prod deployment successful</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>7</sequence>
             <sys_created_by>bnow-ph</sys_created_by>
             <sys_created_on>2018-09-14 06:57:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3cdf3715dbacaf000414d141ce9619c3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>bnow-ph</sys_updated_by>
-            <sys_updated_on>2018-09-14 06:57:51</sys_updated_on>
-            <value>deployed_to_prod</value>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:54:39</sys_updated_on>
+            <value>deploy_prod_success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prod deployment failed</label>
+            <language>en</language>
+            <name>x_trz_story</name>
+            <sequence>8</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-08 11:36:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88d5a059dbc96b00b3fb56d4ce96193a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 11:54:40</sys_updated_on>
+            <value>deploy_prod_failed</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>deployment_state</element>

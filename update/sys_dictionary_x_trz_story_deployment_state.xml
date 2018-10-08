@@ -15,10 +15,10 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Deployment</column_label>
+        <column_label>Deployment Status</column_label>
         <comments/>
         <create_roles/>
-        <default_value>pending_deployment</default_value>
+        <default_value>pending_test_deployment</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -55,14 +55,14 @@
         <sys_created_by>bnow-ph</sys_created_by>
         <sys_created_on>2018-09-14 06:56:12</sys_created_on>
         <sys_id>7d2405dfdbb86700b3fb56d4ce961953</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Deployment</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Deployment Status</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_dictionary_x_trz_story_deployment_state</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:41:25</sys_updated_on>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-08 11:57:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
