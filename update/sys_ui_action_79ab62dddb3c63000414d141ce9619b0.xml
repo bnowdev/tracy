@@ -6,7 +6,7 @@
         <client>true</client>
         <comments>//condition&#13;
 current.state=="ready for deployment"&amp;&amp;</comments>
-        <condition>gs.getProperty('x_trz.prod_instance') == gs.getProperty('instance_name') &amp;&amp; current.deployment_state=="pending_deployment"&amp;&amp;current.state==2</condition>
+        <condition>gs.getProperty('x_trz.prod_instance') == gs.getProperty('instance_name') &amp;&amp; current.deployment_state=="pending_test_deployment"&amp;&amp;current.state==2</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -125,7 +125,7 @@ while(story.next()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>79ab62dddb3c63000414d141ce9619b0</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Deploy to Test -Not ready yet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -133,7 +133,7 @@ while(story.next()){
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_79ab62dddb3c63000414d141ce9619b0</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-08 11:53:07</sys_updated_on>
+        <sys_updated_on>2018-10-08 12:35:58</sys_updated_on>
         <table>rm_story</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

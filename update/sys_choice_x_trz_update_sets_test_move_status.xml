@@ -44,6 +44,25 @@
             <element>test_move_status</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Previewed with Errors</label>
+            <language>en</language>
+            <name>x_trz_update_sets</name>
+            <sequence>1</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-10 10:39:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>45ebaab5dbc1eb000414d141ce961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-10 10:39:18</sys_updated_on>
+            <value>Previewed with Errors</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_move_status</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Committed</label>
             <language>en</language>
             <name>x_trz_update_sets</name>
@@ -57,6 +76,25 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-08-03 13:12:52</sys_updated_on>
             <value>Committed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_move_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>x_trz_update_sets</name>
+            <sequence>3</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-08 12:11:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6add64dddbc96b00b3fb56d4ce961999</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-08 12:11:53</sys_updated_on>
+            <value>Error</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>test_move_status</element>

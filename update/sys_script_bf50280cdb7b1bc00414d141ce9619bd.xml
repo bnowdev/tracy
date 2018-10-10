@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_update_set</collection>
-        <condition>gs.getProperty('x_trz.dev_instance') == gs.getProperty('x_trz.instance_name') &amp;&amp;gs.getProperty('x_trz.prod_instance')!="" &amp;&amp;gs.getProperty('x_trz.test_instance')!="" </condition>
+        <condition>gs.getProperty('x_trz.dev_instance') == gs.getProperty('instance_name') &amp;&amp;gs.getProperty('x_trz.prod_instance')!="" &amp;&amp;gs.getProperty('x_trz.test_instance')!="" </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -39,13 +39,13 @@
 	function deleteUpdateSet(endpoint){
 	try {
 		var s = new sn_ws.SOAPMessageV2('tracyUpdateSetStateReceiver', 'execute');
-		s.setEndpoint(gs.getProperty('x_trz.prod_instance_endpoint'));
+		s.setEndpoint(endpoint);
 		s.setStringParameter('execute.sys_id', current.sys_id.toString());
 		s.setStringParameter('execute.state', 'delete');
 		s.setStringParameter('execute.name', current.name.toString());
 		s.setStringParameter('execute.link', gs.getProperty('glide.servlet.uri') + current.getLink() );
-		s.setStringParameter('execute.story', current.story );
-		s.setStringParameter('execute.hash', 0 );
+		s.setStringParameter('execute.story', current.u_story );
+		//s.setStringParameter('execute.hash', 0 );
 		var response = s.execute();
 	}
 	catch(ex) {
@@ -59,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf50280cdb7b1bc00414d141ce9619bd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Tracy-Delete update set state from Dev</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_bf50280cdb7b1bc00414d141ce9619bd</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 09:30:02</sys_updated_on>
+        <sys_updated_on>2018-10-10 07:14:19</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

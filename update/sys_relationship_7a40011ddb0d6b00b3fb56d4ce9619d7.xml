@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_trz_story</basic_apply_to>
+        <basic_query_from>x_trz_config_script</basic_query_from>
+        <insert_callback/>
+        <name>Related script documentations</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	//TODO
+	//current.addQuery('')
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-10-08 14:33:11</sys_created_on>
+        <sys_id>7a40011ddb0d6b00b3fb56d4ce9619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Related script documentations</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_relationship_7a40011ddb0d6b00b3fb56d4ce9619d7</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-08 14:33:11</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=7a40011ddb0d6b00b3fb56d4ce9619d7"/>
+</record_update>

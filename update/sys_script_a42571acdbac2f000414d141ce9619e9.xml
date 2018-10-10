@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_progress_worker</collection>
-        <condition/>
+        <condition>gs.getProperty('x_trz.dev_instance')!=gs.getProperty('instance_name')</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="sys_progress_worker">nameLIKECommitting update set: Tracy_^stateCHANGESTOcomplete^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="LIKE" or="false" value="Committing update set: Tracy_"/>
@@ -33,20 +33,35 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var stat="";
+    var inst="";	
+	if(gs.getProperty("instance_name")==gs.getProperty('x_trz.prod_instance')){
+		stat="deploy_prod_progress";
+		inst="Prod";
+	}
+		
+	else if(gs.getProperty("instance_name")==gs.getProperty('x_trz.test_instance')){
+		stat="deploy_test_progress";
+		inst="Test";
+	}
 	
+	broadcast(stat,inst);
+	
+	function broadcast(env_state,inst){ 
           var str=new GlideRecord("x_trz_story");
-	      str.addQuery("state",5);
+	      str.addQuery("deployment_state",env_state);
 	      str.query();
 	      if(str.next()){
 	       var wf = new global.Workflow().getRunningFlows(str);
-            while(wf.next()) {   
+            while(wf.next()) {
+				//if update set commit is success
 				if(current.state_code=="success"){
 					new global.Workflow().broadcastEvent(wf.sys_id, 'tracy_update_set_committed');
 					/*Mark tracy update set as complete*/
 					var encode="sys_created_onONLast minute@javascript:gs.beginningOfLastMinute()@javascript:gs.endOfLastMinute()";
 					var loc=new GlideRecord("sys_update_set");
 					loc.addEncodedQuery(encode);
-					loc.orderByDesc("sys_created_by");
+					loc.orderByDesc("sys_created_on");
 					loc.query();
 					loc.setLimit(1);
 					if(loc.next()){
@@ -54,25 +69,33 @@
 						rem.addQuery("dev_sys_id",loc.remote_sys_id.remote_sys_id.toString());
 						rem.query();
 						if(rem.next()){
-							rem.deployment_status="Committed";
-							rem.status="Prod";
-							rem.work_notes="Deployed successfully";
+							if(inst=="Prod")rem.deployment_status="Committed";
+							else if(inst=="Test")rem.test_move_status="Committed";	
+							rem.status=inst;
+							rem.work_notes="Deployed successfully in "+inst;
 							rem.update();
 						}
 					}
-				    /*End of code */
+				    
 				}
+				//if update set commit is fail
 				else{
-					str.deployment_state="deployed_to_prod";
-					//str.state=8;
-					str.work_notes="Deployment complete";
+					str.work_notes="Unexpected error occured while "+current.name+". Progress worker stopped with state:"+current.state_code.getDisplayValue();
+					str.deployment_status="deploy_prod_fail";
+					new global.Workflow().cancel(str);
+					gs.addInfoMessage(gs.getMessage("Workflows for {0} have been cancelled", str.getDisplayValue()));
 					str.update();
+					/*if(inst=="Prod")str.deployment_state="deploy_prod_success";
+					else if(inst=="Test")str.deployment_state="deploy_test_success";
+					//str.state=8;
+					str.work_notes="Deployment completed in "+inst;
+					str.update();*/
 					
 				}
 					
             }
 		  }
-
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -80,7 +103,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a42571acdbac2f000414d141ce9619e9</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Tracy - Commit updates,broadcast event</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -88,7 +111,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_a42571acdbac2f000414d141ce9619e9</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:34:53</sys_updated_on>
+        <sys_updated_on>2018-10-10 12:12:41</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

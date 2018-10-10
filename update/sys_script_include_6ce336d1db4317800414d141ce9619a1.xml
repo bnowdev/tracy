@@ -38,9 +38,15 @@ UpdateVersionUtil.prototype = {
 			action: updateVersionRecord.getValue("action"), 
 			update_set: updateVersionRecord.getValue("source"),
 			type: updateVersionRecord.getValue("type"),
-			environment: _environment
+			environment: _environment,
+			story: updateVersionRecord.getValue('source.u_story'),
+			
 		};
 		return versionData;
+	},
+	
+	isVersionFromUpdateSet: function(updatedRecord){
+		return updatedRecord.getValue('source_table') === 'sys_update_set';
 	},
 
 	type: 'UpdateVersionUtil'
@@ -49,13 +55,13 @@ UpdateVersionUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-07-01 11:52:07</sys_created_on>
         <sys_id>6ce336d1db4317800414d141ce9619a1</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>UpdateVersionUtil</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_include_6ce336d1db4317800414d141ce9619a1</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-09-19 11:57:31</sys_updated_on>
+        <sys_updated_on>2018-10-09 08:36:28</sys_updated_on>
     </sys_script_include>
 </record_update>

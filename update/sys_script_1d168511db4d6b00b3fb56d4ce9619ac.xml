@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_trz_version</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_trz_version">remote_script_sys_idISNOTEMPTY^EQ<item endquery="false" field="remote_script_sys_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create script documentation if missing</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var gr = new GlideRecord('x_trz_config_script');
+	gr.addQuery('record_id', current.remote_script_sys_id.toString());
+	gr.query();
+	
+	// Exit because there is already an existing documention for any versions with this sys_id.
+	//add some additional comment
+	if(gr.hasNext()) return;
+	
+	gr.initialize();
+	gr.setValue('record_id', current.remote_script_sys_id.toString());
+	gr.setWorkflow(false);
+	var inserted;
+	
+	try {
+		inserted = gr.insert();
+	}catch(e){
+		gs.error(e.message);
+	}
+	
+	if(!inserted) {
+		gs.error('Failed to create a x_trz_config_script (documentation) record based on the inserted x_trz_version (record) -> sys_id: ' + current.sys_id.toString());
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-10-08 14:31:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d168511db4d6b00b3fb56d4ce9619ac</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Create script documentation if missing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_1d168511db4d6b00b3fb56d4ce9619ac</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-09 11:55:09</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1d168511db4d6b00b3fb56d4ce9619ac"/>
+</record_update>

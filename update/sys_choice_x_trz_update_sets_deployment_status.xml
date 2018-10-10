@@ -44,6 +44,25 @@
             <element>deployment_status</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Previewed with Errors</label>
+            <language>en</language>
+            <name>x_trz_update_sets</name>
+            <sequence>1</sequence>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-10 10:39:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b80c2eb5dbc1eb000414d141ce96190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-10 10:39:50</sys_updated_on>
+            <value>Previewed with Errors</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>deployment_status</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Error</label>
             <language>en</language>
             <name>x_trz_update_sets</name>

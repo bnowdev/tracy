@@ -10,7 +10,7 @@
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_security_acl display_value="x_trz_version.*">1c26ecc6dbb0e3000414d141ce96199b</sys_security_acl>
+        <sys_security_acl display_value="x_trz_version">1c26ecc6dbb0e3000414d141ce96199b</sys_security_acl>
         <sys_update_name>sys_security_acl_role_0926200adbb0e3000414d141ce961976</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
         <sys_updated_on>2018-09-28 09:32:59</sys_updated_on>

@@ -13,16 +13,16 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_update_set</collection>
-        <condition>gs.getProperty('x_trz.environment') == "Production"</condition>
+        <condition>gs.getProperty('instance_name') !=gs.getProperty('dev_instance')</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="sys_update_set">state=complete^u_storyISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
+        <filter_condition table="sys_update_set">stateVALCHANGES^u_storyISNOTEMPTY^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="u_story" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy-Update story after commit</name>
+        <name>Tracy-Update remote UpdSet after commit</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -34,11 +34,17 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {	
 	//update the related update set on the story
 	var rups=new GlideRecord("x_trz_update_sets");
-	rups.addQuery("dev_sys_id",current.remote_sys_id);
+	rups.addQuery("dev_sys_id",current.remote_sys_id.origin_sys_id);
 	rups.query();
 	if(rups.next()){
+		if(gs.getProperty('instance_name') ==gs.getProperty('x_trz.prod_instance')){
 		rups.deployment_status="Committed";
-		rups.status="Prod";
+		rups.status="Prod";	
+		}
+		if(gs.getProperty('instance_name') ==gs.getProperty('x_trz.test_instance')){
+		rups.test_move_status="Committed";
+		rups.status="Test";
+		}		
 		rups.update();
 	}
 })(current, previous);]]></script>
@@ -48,15 +54,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e2518588db98e300b3fb56d4ce96190d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Tracy-Update story after commit</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Tracy-Update remote UpdSet after commit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_e2518588db98e300b3fb56d4ce96190d</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-28 09:41:41</sys_updated_on>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:37:07</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -5,8 +5,9 @@
         <active>true</active>
         <client>true</client>
         <comments>//condition&#13;
-current.state=="ready for deployment"&amp;&amp;</comments>
-        <condition>gs.getProperty('x_trz.prod_instance') == gs.getProperty('instance_name') &amp;&amp; current.deployment_state=="pending_prod_deployment"</condition>
+current.state=="ready for deployment"&amp;&amp;&#13;
+//gs.getProperty('x_trz.prod_instance') == gs.getProperty('instance_name') &amp;&amp; current.deployment_state=="pending_prod_deployment"</comments>
+        <condition/>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -47,69 +48,28 @@ function serverCode(){
 		return false;
 
 	}
-
-	/*var story=new GlideRecord("x_trz_update_sets");
-story.addQuery("story",current.sys_id);
-//story.addQuery("deployment_status","!=","Committed");
-//story.addQuery("status","!=","Prod");
-story.orderBy("order");
-story.query();
-gs.addInfoMessage("count:"+story.getRowCount());
-while(story.next()){
-
-	// tracyDeployUpdateSet should only return 
-	// missing - update set not located ( missing config ? )
-	// previewed - preview worked but it is not clean
-	// commited - clean preview and commited as in installed
-
-	try {
-		var s = new sn_ws.SOAPMessageV2('tracyDeployUpdateSet', 'execute');*/
-	//s.setEndpoint(s.getEndpoint().replace(/\/[^.]*/,'//' + gs.getProperty('x_trz.prod_instance_name')));
-	/*s.setStringParameter('execute.sys_id', story.dev_sys_id);
-		var response = s.execute();
-		var responseBody = response.getBody();
-		var status = response.getStatusCode();
-
-
-		if(status == 200) {
-			var doc = new XMLDocument(responseBody);
-			var result = doc.getNodeText("//result");
-			var report = doc.getNodeText("//report");		
-			if(result == 'missing') {
-			story.work_notes = 'Automatic deployment of update set ' + story.name + ' to Prod failed. Test server failed to locate the update set';
-			story.deployment_status = "Missing"; 
-				}
-			if(result == 'previewed') {
-				story.work_notes = 'Preview of update set ' + story.name + ' on Prod has findings. ' + report;
-				story.deployment_status = "Previewed"; 
-			}
-			if(result == 'commited') {
-				story.deployment_status = "Committed";
-				story.work_notes = 'Update set ' + story.name + ' deployed to Prod';	
-				story.status="Prod";
-			}
-			story.update();	    
-		}
-		else{
-			story.work_notes = 'Update set ' + story.name + ' returned an unexpected result ' + result;
-			story.update();			
-		} 
-    	//story.work_notes = 'Automatic deployment of ' + story.name + ' to Prod, failed with http error ' + status;
-		//story.state = 2;
-	//	story.update();
-		//return ;		
-
+	
+   /*check for any preview errors*/
+	//Get all update set sys_ids
+	var sys=[];
+	var rel=new GlideRecord("x_trz_update_sets");
+	rel.addQuery("story",current.sys_id);
+	rel.addQuery("marked_for_deployment",true);
+	rel.query();
+	while(rel.next())sys.push(rel.dev_sys_id.toString());
+	var pre=new GlideRecord("sys_update_preview_problem");
+	pre.addQuery("type","error");
+	pre.addQuery("status","");
+	pre.addQuery("remote_update_set.remote_sys_id","IN",sys);
+	pre.query();
+	if(pre.next()){
+		gs.addErrorMessage("Please correct all the preview errors before deployment");
+		action.setRedirectURL(current);
+		return false;
 	}
-	catch(ex) {
-		var message = ex.getMessage();
-
-		story.work_notes = 'Update set ' + story.name + ' returned an exception ' + message;
-		story.update();
-	}
-}*/
 
 	else{
-		current.state=5;
+		current.deployment_state="deploy_prod_progress";
 		gs.addInfoMessage("Deployment in progress, you can navigate away from the page if you wish");
 		action.setRedirectURL(current);
 		current.update();
@@ -125,7 +85,7 @@ while(story.next()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce0dc29ddbcfd3800414d141ce9619aa</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Deploy to Prod</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -133,7 +93,7 @@ while(story.next()){
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_ce0dc29ddbcfd3800414d141ce9619aa</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-08 11:57:20</sys_updated_on>
+        <sys_updated_on>2018-10-10 11:11:35</sys_updated_on>
         <table>rm_story</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
