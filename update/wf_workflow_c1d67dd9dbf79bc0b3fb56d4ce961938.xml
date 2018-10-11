@@ -34,12 +34,12 @@
         <sys_created_by>bnow-hv</sys_created_by>
         <sys_created_on>2018-10-10 12:15:08</sys_created_on>
         <sys_id>7cd107f1db05eb000414d141ce961916</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-10 12:15:41</sys_updated_on>
+        <sys_updated_on>2018-10-10 13:25:39</sys_updated_on>
         <table>x_trz_story</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="Tracy -Prod deployment workflow">c1d67dd9dbf79bc0b3fb56d4ce961938</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

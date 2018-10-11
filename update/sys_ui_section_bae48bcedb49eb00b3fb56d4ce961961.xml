@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Deployment Log" section_id="bae48bcedb49eb00b3fb56d4ce961961" sys_domain="global" table="x_trz_story" version="3" view="tracyscrum">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deployment_log</element>
+            <position>0</position>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-11 07:07:17</sys_created_on>
+            <sys_id>89f40fcedb49eb00b3fb56d4ce961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Deployment Log" display_value="Deployment Log" name="x_trz_story" sys_domain="global" view="0d2c3c59db0d6b00b3fb56d4ce9619e0">bae48bcedb49eb00b3fb56d4ce961961</sys_ui_section>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-11 07:07:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Deployment Log</caption>
+            <header>false</header>
+            <name>x_trz_story</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bnow-hv</sys_created_by>
+            <sys_created_on>2018-10-11 07:07:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bae48bcedb49eb00b3fb56d4ce961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Deployment Log</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_section_bae48bcedb49eb00b3fb56d4ce961961</sys_update_name>
+            <sys_updated_by>bnow-hv</sys_updated_by>
+            <sys_updated_on>2018-10-11 07:07:08</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="TracyScrum" name="tracyscrum">0d2c3c59db0d6b00b3fb56d4ce9619e0</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
