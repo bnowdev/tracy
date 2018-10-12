@@ -14,7 +14,7 @@
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>test 2 testfdgfdgfd</id>
+        <id>test-2-testfdgfdgfd</id>
         <internal>false</internal>
         <link/>
         <name>Test widget</name>
@@ -24,6 +24,8 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+	
+	//dasdasdasdasdasdasdasd
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -31,14 +33,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-08 13:01:34</sys_created_on>
         <sys_id>d0407ea9db37dbc0b3fb56d4ce961967</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Test widget</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sp_widget_d0407ea9db37dbc0b3fb56d4ce961967</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-08-08 13:51:07</sys_updated_on>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-12 13:19:41</sys_updated_on>
         <template><![CDATA[<div>
 <!-- your widget template -->
 </div>]]></template>
