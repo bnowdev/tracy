@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Recovery" section_id="5d96235edbc12f00b3fb56d4ce96192e" sys_domain="global" table="x_trz_config_script" version="3" view="configuration">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recovery_description</element>
+            <position>0</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:51</sys_created_on>
+            <sys_id>9796ef1edbc12f00b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recovery" display_value="Recovery" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">5d96235edbc12f00b3fb56d4ce96192e</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recovery_time</element>
+            <position>1</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:51</sys_created_on>
+            <sys_id>5b96ef1edbc12f00b3fb56d4ce96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recovery" display_value="Recovery" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">5d96235edbc12f00b3fb56d4ce96192e</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Recovery</caption>
+            <header>false</header>
+            <name>x_trz_config_script</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d96235edbc12f00b3fb56d4ce96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recovery</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_section_5d96235edbc12f00b3fb56d4ce96192e</sys_update_name>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Configuration" name="configuration">76c5671edbc12f00b3fb56d4ce9619ac</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

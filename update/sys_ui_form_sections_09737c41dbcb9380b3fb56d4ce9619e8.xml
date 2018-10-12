@@ -15,48 +15,6 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-06-30 07:52:06</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-30 07:52:05</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>cd737c41dbcb9380b3fb56d4ce9619ec</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="Default view">09737c41dbcb9380b3fb56d4ce9619e8</sys_ui_form>
-            <sys_ui_section caption="Documentation" display_value="Documentation" name="x_trz_config_script" sys_domain="global" view="Default view">89737c41dbcb9380b3fb56d4ce9619ea</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-30 07:52:05</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-30 07:52:05</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>0d737c41dbcb9380b3fb56d4ce9619ee</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="Default view">09737c41dbcb9380b3fb56d4ce9619e8</sys_ui_form>
-            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="Default view">49737c41dbcb9380b3fb56d4ce9619ed</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-30 07:52:05</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-06-30 07:52:05</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>45737c41dbcb9380b3fb56d4ce9619f0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="Default view">09737c41dbcb9380b3fb56d4ce9619e8</sys_ui_form>
-            <sys_ui_section caption="Recovery" display_value="Recovery" name="x_trz_config_script" sys_domain="global" view="Default view">01737c41dbcb9380b3fb56d4ce9619ef</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-06-30 07:52:05</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_trz_config_script</name>
             <roles/>

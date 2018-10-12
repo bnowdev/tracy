@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="d3366b1edbc12f00b3fb56d4ce961946" sys_domain="global" table="x_trz_config_script" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:11:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f366b1edbc12f00b3fb56d4ce961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">d3366b1edbc12f00b3fb56d4ce961946</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">fec5a71edbc12f00b3fb56d4ce961993</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:11:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:11:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17362f1edbc12f00b3fb56d4ce961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">d3366b1edbc12f00b3fb56d4ce961946</sys_ui_form>
+            <sys_ui_section caption="Documentation" display_value="Documentation" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">57366b1edbc12f00b3fb56d4ce961947</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:11:12</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>74766f1edbc12f00b3fb56d4ce961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">d3366b1edbc12f00b3fb56d4ce961946</sys_ui_form>
+            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">38766f1edbc12f00b3fb56d4ce961966</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d96235edbc12f00b3fb56d4ce961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_trz_config_script" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">d3366b1edbc12f00b3fb56d4ce961946</sys_ui_form>
+            <sys_ui_section caption="Recovery" display_value="Recovery" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">5d96235edbc12f00b3fb56d4ce96192e</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_trz_config_script</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:11:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d3366b1edbc12f00b3fb56d4ce961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_trz_config_script</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d3366b1edbc12f00b3fb56d4ce961946</sys_update_name>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:11:12</sys_updated_on>
+            <sys_user/>
+            <view display_value="Configuration" name="configuration">76c5671edbc12f00b3fb56d4ce9619ac</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

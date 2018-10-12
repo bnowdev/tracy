@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Justification" section_id="38766f1edbc12f00b3fb56d4ce961966" sys_domain="global" table="x_trz_config_script" version="3" view="configuration">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_problem</element>
+            <position>0</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:26</sys_created_on>
+            <sys_id>11866f1edbc12f00b3fb56d4ce96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">38766f1edbc12f00b3fb56d4ce961966</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>available_options</element>
+            <position>1</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:26</sys_created_on>
+            <sys_id>d1866f1edbc12f00b3fb56d4ce96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">38766f1edbc12f00b3fb56d4ce961966</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_benefit_analysis</element>
+            <position>2</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:26</sys_created_on>
+            <sys_id>55866f1edbc12f00b3fb56d4ce96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">38766f1edbc12f00b3fb56d4ce961966</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recommended_solution</element>
+            <position>3</position>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:26</sys_created_on>
+            <sys_id>d5866f1edbc12f00b3fb56d4ce96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Justification" display_value="Justification" name="x_trz_config_script" sys_domain="global" view="76c5671edbc12f00b3fb56d4ce9619ac">38766f1edbc12f00b3fb56d4ce961966</sys_ui_section>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Justification</caption>
+            <header>false</header>
+            <name>x_trz_config_script</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bnow-ph</sys_created_by>
+            <sys_created_on>2018-10-12 04:12:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38766f1edbc12f00b3fb56d4ce961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Justification</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_ui_section_38766f1edbc12f00b3fb56d4ce961966</sys_update_name>
+            <sys_updated_by>bnow-ph</sys_updated_by>
+            <sys_updated_on>2018-10-12 04:12:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Configuration" name="configuration">76c5671edbc12f00b3fb56d4ce9619ac</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
