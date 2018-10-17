@@ -6,22 +6,22 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_trz_version</collection>
+        <collection>clone_instance</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_trz_version">remote_script_sys_idISNOTEMPTY^EQ<item endquery="false" field="remote_script_sys_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <filter_condition table="clone_instance">stateCHANGESTOCompleted^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Completed"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Create script configuration if missing</name>
+        <name>Remote env script exist validation </name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -33,51 +33,27 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	var gr = new GlideRecord('x_trz_config_script');
-	gr.addQuery('record_id', current.remote_script_sys_id.toString());
-	gr.query();
-	
-	// Exit because there is already an existing documention for any versions with this sys_id.
-	// Set the existing configuration to the inserted version
-	if(gr.next()){
-		current.setValue('script_configuration', gr.sys_id.toString());
-		return;
-	} 
-	
-	gr.initialize();
-	gr.setValue('record_id', current.remote_script_sys_id.toString());
-	gr.setWorkflow(false);
-	var inserted;
-	try {
-		inserted = gr.insert();
-		current.setValue('script_configuration', gr.sys_id.toString());
-
-	}catch(e){
-		gs.error(e.message);
-	}
-	
-	if(!inserted) {
-		gs.error('Failed to create a x_trz_config_script (documentation) record based on the inserted x_trz_version (record) -> sys_id: ' + current.sys_id.toString());
-	}
+	var validator = new TracyVersionValidator();
+	validator.run();
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>bnow-ps</sys_created_by>
-        <sys_created_on>2018-10-08 14:31:11</sys_created_on>
+        <sys_created_on>2018-10-16 14:13:01</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>1d168511db4d6b00b3fb56d4ce9619ac</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Create script configuration if missing</sys_name>
+        <sys_id>de351efbdb45ef000414d141ce9619b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Remote env script exist validation </sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>sys_script_1d168511db4d6b00b3fb56d4ce9619ac</sys_update_name>
+        <sys_update_name>sys_script_de351efbdb45ef000414d141ce9619b2</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-10-12 14:20:22</sys_updated_on>
+        <sys_updated_on>2018-10-16 14:13:42</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>async</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=1d168511db4d6b00b3fb56d4ce9619ac"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=de351efbdb45ef000414d141ce9619b2"/>
 </record_update>

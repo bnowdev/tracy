@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_trz.TracyVersionValidator</api_name>
+        <client_callable>false</client_callable>
+        <description>Check in the remote slave instances if the script </description>
+        <name>TracyVersionValidator</name>
+        <script><![CDATA[var TracyVersionValidator = Class.create();
+TracyVersionValidator.prototype = {
+  initialize: function() {},
+
+  run: function() {
+    var scriptsToValidate = this.getScriptVersionsGroupedBySysId();
+    var testUrl = gs.getProperty("x_trz.test_url");
+    var developmentUrl = gs.getProperty("x_trz.dev_url");
+
+    if (testUrl) {
+      this.updateScriptsConfigurationsForEnvironment('test', testUrl, scriptsToValidate);
+    }
+    if(developmentUrl) {
+      this.updateScriptsConfigurationsForEnvironment('development', developmentUrl, scriptsToValidate);
+    }
+
+  },
+
+  getScriptVersionsGroupedBySysId: function() {
+    var scripts = [];
+    var ga = new GlideAggregate("x_trz_version");
+    ga.addNotNullQuery("remote_script_sys_id");
+    ga.addNotNullQuery("table");
+    ga.groupBy("remote_script_sys_id");
+    ga.query();
+
+    while (ga.next()) {
+      scripts.push({
+        sys_id: ga.getValue("remote_script_sys_id"),
+        table: ga.getValue("table")
+      });
+    }
+
+    return scripts;
+  },
+
+  updateScriptsConfigurationsForEnvironment: function( environment, environmentUrl, scriptsToValidate ) {
+    scriptsToValidate.forEach(function(script) {
+      var remoteScriptVersion = this.isVersionExistingInEnvironment(
+        environmentUrl,
+        script.table,
+        script.sys_id
+      );
+      
+      var key = 'exists_in_' + environment;
+      var value = remoteScriptVersion ? 'yes' : 'no';
+      var fieldToUpdate = {};
+      fieldToUpdate[key] = value;
+      this.setConfigScriptGRFieldByRecordId(script.sys_id, fieldToUpdate);
+
+    }, this);
+  },
+
+  isVersionExistingInEnvironment: function(baseUrl, table, script_sys_id) {
+    var apiResponse = this.getScriptVersionFromRemoteInstance(
+      baseUrl,
+      table,
+      script_sys_id
+    );
+    if (apiResponse.status === 404) return null;
+    if (apiResponse.status === 200) return apiResponse.body;
+    else gs.error(JSON.stringify(apiResponse.body));
+    throw apiResponse.body;
+  },
+
+  setConfigScriptGRFieldByRecordId: function(recordId, fieldKeyValue) {
+    var gr = new GlideRecord("x_trz_config_script");
+    gr.addQuery("record_id", recordId);
+    gr.setLimit(1);
+    gr.query();
+    if (gr.next()) {
+      gr.setValue(fieldKeyValue.key, fieldKeyValue.value);
+      return gr.update();
+    } else
+      gr.error(
+        "[TracyVersionValidator.setConfigScriptGRFieldByRecordId]: Did not find x_trz_config_script record to update with recordId: " +
+          recordId
+      );
+      return null;
+  },
+
+  getScriptVersionFromRemoteInstance: function(baseUrl, table, script_sys_id) {
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(
+      baseUrl + "/api/x_trz/tracy/script/exists/" + table + "/" + script_sys_id
+    );
+    request.setHttpMethod("GET");
+
+    //Eg. UserName="admin", Password="admin" for this code sample.
+    var user = gs.getProperty("x_trz.username");
+    var password = gs.getProperty("x_trz.password");
+
+    request.setBasicAuth(user, password);
+    request.setRequestHeader("Accept", "application/json");
+
+    var response = request.execute();
+    var status = response.getStatusCode();
+    var body = response.getBody();
+
+    return {
+      status: status,
+      body: JSON.parse(body)
+    };
+  },
+
+  type: "TracyVersionValidator"
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-10-15 15:53:10</sys_created_on>
+        <sys_id>ac0dc9afdb89af000414d141ce96192d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TracyVersionValidator</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_ac0dc9afdb89af000414d141ce96192d</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-16 14:07:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="live_feed=false" audit="true" extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" sizeclass="51" type="collection">
+    <element attributes="live_feed=false" audit="true" extends="rm_story" label="Tracy story" max_length="40" name="x_trz_story" sizeclass="53" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Deployment Log" max_length="4000" name="deployment_log" type="journal"/>
         <element choice="1" default="pending_test_deployment" label="Deployment Status" max_length="40" name="deployment_state" type="choice">
             <choice>

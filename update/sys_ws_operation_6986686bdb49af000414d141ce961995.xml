@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Script is existing</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	try {
+		
+		var tableName = request.pathParams.tableName;
+		var sys_id = request.pathParams.sys_id;
+		
+		if(!table) throw "The tableName param must be specified.";
+			if(!sys_id) throw "The sys_id param must be specified";
+			
+		var gr = new GlideRecord(tableName);
+		var scriptExists = gr.get(sys_id);
+		
+		if(scriptExists) {
+			response.setContentType('application/json');
+			response.setStatus(200);
+			response.setBody({
+				exists: true,
+				script: {
+					sys_id: gr.getValue('sys_id'),
+					table: tableName,
+					updated: gr.getValue('sys_updated_on'),
+					updated_by: gr.getValue('sys_updated_by')
+				}
+			});
+		}
+		else {
+			response.setContentType('application/json');
+			response.setStatus(404);
+			response.setBody(
+			{
+				exists: false,
+				message:  'The script with sys_id: '+ sys_id + ' in table:' + tableName + "doesn't exist."
+			}
+			);
+		}
+		
+	} catch(e) {
+		response.setContentType('application/json');
+		response.setStatus(400);
+		response.setError({
+			error: {
+				message: e.message,
+				detail: ""
+			},
+			status: "failure"
+		});
+	}
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_trz/tracy/script/exists/{tableName}/{sys_id}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/script/exists/{tableName}/{sys_id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-10-15 13:43:22</sys_created_on>
+        <sys_id>6986686bdb49af000414d141ce961995</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Script is existing</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_ws_operation_6986686bdb49af000414d141ce961995</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-15 15:27:13</sys_updated_on>
+        <web_service_definition display_value="Tracy">6906a46bdb49af000414d141ce96198b</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -14,6 +14,18 @@
                 <element label="No" sequence="2" value="no"/>
             </choice>
         </element>
+        <element choice="1" label="Exists in development " max_length="40" name="exists_in_development" type="choice">
+            <choice>
+                <element label="no" value="no"/>
+                <element label="yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Exists in test" max_length="40" name="exists_in_test" type="choice">
+            <choice>
+                <element label="no" value="no"/>
+                <element label="yes" value="yes"/>
+            </choice>
+        </element>
         <element attributes="field_decorations=x_trz_compare_script_versions_button" choice="1" label="Production and Development" max_length="40" name="production_development_equality" read_only="true" type="choice">
             <choice>
                 <element label="xml's are equal" value="equal"/>

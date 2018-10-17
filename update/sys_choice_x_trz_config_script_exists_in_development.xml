@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="exists_in_development" table="x_trz_config_script" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>exists_in_development</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>no</label>
+            <language>en</language>
+            <name>x_trz_config_script</name>
+            <sequence/>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-10-16 13:51:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d061563bdb45ef000414d141ce961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-10-16 13:52:07</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>exists_in_development</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>yes</label>
+            <language>en</language>
+            <name>x_trz_config_script</name>
+            <sequence/>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-10-16 13:51:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f61963bdb45ef000414d141ce961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-10-16 13:51:40</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>exists_in_development</element>
+            <name>x_trz_config_script</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>bnow-ps</sys_created_by>
+            <sys_created_on>2018-10-16 13:51:29</sys_created_on>
+            <sys_id>6661563bdb45ef000414d141ce961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>exists_in_development</sys_name>
+            <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+            <sys_update_name>sys_choice_x_trz_config_script_exists_in_development</sys_update_name>
+            <sys_updated_by>bnow-ps</sys_updated_by>
+            <sys_updated_on>2018-10-16 13:51:29</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

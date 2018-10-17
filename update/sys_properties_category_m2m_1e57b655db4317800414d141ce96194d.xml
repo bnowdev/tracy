@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_properties_category_m2m">
     <sys_properties_category_m2m action="INSERT_OR_UPDATE">
-        <category display_value="Main">71905981db0f9380b3fb56d4ce9619b8</category>
+        <category display_value="Tracy">71905981db0f9380b3fb56d4ce9619b8</category>
         <order>300</order>
         <property display_value="x_trz.password" name="x_trz.password">3ca6fe15db4317800414d141ce961978</property>
         <sys_class_name>sys_properties_category_m2m</sys_class_name>
