@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_script">
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
-        <access>package_private</access>
+        <access>public</access>
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
@@ -44,7 +44,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8b229283dba0a340b3fb56d4ce96191b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Tracy - set Record ID on insert</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -52,7 +52,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_8b229283dba0a340b3fb56d4ce96191b</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-10-09 08:17:01</sys_updated_on>
+        <sys_updated_on>2018-10-19 12:32:00</sys_updated_on>
         <template>record_id=^EQ</template>
         <when>before</when>
     </sys_script>
