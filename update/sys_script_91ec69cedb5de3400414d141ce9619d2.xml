@@ -2,24 +2,26 @@
 <record_update sys_domain="global" table="sys_script">
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
-        <access>public</access>
+        <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>sys_script</collection>
+        <collection>sys_update_xml</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="sys_update_xml">nameLIKEscript^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="LIKE" or="false" value="script"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy - Config/Version Test BusRule </name>
+        <name>Tracy - Script VC (sys_update_xml)</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,27 +33,35 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	//some additional text 
-	gs.info("Tracy - Config/Version Test BusRule: test 2");
+	
+	gs.info("START: running sys_update_xml versioning for " + current.getValue("name") + " on action: " + current.getValue("action"));
+	
+	gs.debug('debug something 2');
+	
+	var tracyService = new x_trz.TracyService();
+	tracyService.createRemoteVersion(current);
+	
+	gs.info("END: finished sys_update_xml versioning for " + current.getValue("name") + " on action: " + current.getValue("action"));
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>bnow-ps</sys_created_by>
-        <sys_created_on>2018-09-19 12:02:46</sys_created_on>
+        <sys_created_on>2018-10-23 11:03:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>14453687dbe0a340b3fb56d4ce9619d7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Tracy - Config/Version Test BusRule </sys_name>
+        <sys_id>91ec69cedb5de3400414d141ce9619d2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Tracy - Script VC (sys_update_xml)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>sys_script_14453687dbe0a340b3fb56d4ce9619d7</sys_update_name>
+        <sys_update_name>sys_script_91ec69cedb5de3400414d141ce9619d2</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-10-19 12:32:00</sys_updated_on>
+        <sys_updated_on>2018-10-23 14:30:54</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>async</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=14453687dbe0a340b3fb56d4ce9619d7"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=91ec69cedb5de3400414d141ce9619d2"/>
 </record_update>

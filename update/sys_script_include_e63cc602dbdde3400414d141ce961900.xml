@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_trz.TracyService</api_name>
+        <client_callable>false</client_callable>
+        <description>Runs on the table: 'sys_update_xml (Customer updates)' by default. Used to create remote version of &#13;
+created/updated/deleted script in the master (production SN instance).</description>
+        <name>TracyService</name>
+        <script><![CDATA[/**
+ * @description Runs on the table: 'sys_update_xml (Customer updates)' by default. Used to create remote version of
+ * created/updated/deleted script in the master (production SN instance).
+ */
+
+var TracyService = Class.create();
+TracyService.prototype = {
+	initialize: function() {},
+		
+		createRemoteVersion: function(customerUpdateGR) {
+			gs.info("TracyService.createRemoteVersion(): START");
+			gs.info("TracyService.createRemoteVersion(): customerUpdateGR - " + customerUpdateGR.getValue("name"));
+			
+			var versionPayloadFromCustomerUpdate = this._mapCustomerUpdateToRemoteVersionPayload(customerUpdateGR);
+			
+			this._createUpdatedRecordVersionInProductionInstance(versionPayloadFromCustomerUpdate);
+			
+			gs.info("TracyService.createRemoteVersion(): END");
+		},
+		
+		_mapCustomerUpdateToRemoteVersionPayload: function(customerUpdateGR) {
+			var customerUpdateName = customerUpdateGR.getValue("name");
+			var updatedRecordInfo = this._parseCustomerUpdateName(customerUpdateName);
+			
+			var snInstanceEnvironment = gs.getProperty("x_trz.environment");
+			var snInstanceName = gs.getProperty("instance_name");
+			
+			var versionPayload = {
+				action: customerUpdateGR.getValue("action"),
+				environment: snInstanceEnvironment,
+				instance_name: snInstanceName,
+				name: customerUpdateGR.getValue("target_name"),
+				payload: customerUpdateGR.getValue("payload"),
+				remote_script_sys_id: updatedRecordInfo.sys_id,
+				table: updatedRecordInfo.table,
+				type: customerUpdateGR.getValue("type"),
+				story: customerUpdateGR.update_set.u_story.toString(),
+				update_set: customerUpdateGR.getValue("update_set")
+			};
+			
+			return versionPayload;
+		},
+		
+		_parseCustomerUpdateName: function(name) {
+			var lastToken = name.lastIndexOf("_");
+			var sysId = name.slice(lastToken + 1);
+			var tableName = name.slice(0, lastToken);
+			return {
+				sys_id: sysId,
+				table: tableName
+			};
+		},
+		
+		_createUpdatedRecordVersionInProductionInstance: function(versionPayload) {
+			var masterInstanceUrl = gs.getProperty('x_trz.master_instance_url');
+			var basicAuthUser = gs.getProperty("x_trz.username");
+			var basicAuthPassword = gs.getProperty("x_trz.password");
+			var updateTableUrl = "/api/now/table/x_trz_version";
+			
+			try {
+				var request = new sn_ws.RESTMessageV2();
+				request.setEndpoint(masterInstanceUrl + updateTableUrl);
+				request.setHttpMethod("POST");
+				
+				request.setBasicAuth(basicAuthUser, basicAuthPassword);
+				request.setRequestHeader("Accept", "application/json");
+				request.setRequestHeader("Content-Type", "application/json");
+				request.setRequestBody(JSON.stringify(versionPayload));
+				
+				var response = request.execute();
+				var body = response.getBody();
+				var statusCode = JSON.parse(response.getStatusCode());
+				
+				return {
+					body: body,
+					statusCode: statusCode
+				};
+				
+			} catch (exception) {
+				gs.error(exception.getMessage());
+			}
+		},
+		
+		type: "TracyService"
+	};
+	]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2018-10-23 13:15:09</sys_created_on>
+        <sys_id>e63cc602dbdde3400414d141ce961900</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>TracyService</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_e63cc602dbdde3400414d141ce961900</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-23 14:54:18</sys_updated_on>
+    </sys_script_include>
+</record_update>
