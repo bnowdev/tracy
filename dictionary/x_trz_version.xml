@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Version" max_length="40" name="x_trz_version" type="collection">
-        <element label="Action" max_length="200" name="action" type="string"/>
+        <element label="Action" max_length="200" name="action" read_only="true" type="string"/>
         <element label="Documentation Version" max_length="200" name="documentation_version" read_only="true" type="string"/>
         <element label="Environment" max_length="100" name="environment" read_only="true" type="string"/>
-        <element label="Instance name" max_length="200" name="instance_name" type="string"/>
-        <element display="true" label="Name" max_length="250" name="name" type="string"/>
-        <element label="Payload" max_length="4096000" name="payload" type="string_full_utf8"/>
-        <element label="Remote Script Sys ID" max_length="200" name="remote_script_sys_id" type="string"/>
-        <element attributes="readonly_clickthrough=true" label="Configuration" max_length="32" name="script_configuration" reference="x_trz_config_script" type="reference"/>
-        <element choice="1" default="current" label="State" max_length="40" name="state" type="choice">
+        <element label="Instance name" max_length="200" name="instance_name" read_only="true" type="string"/>
+        <element display="true" label="Name" max_length="250" name="name" read_only="true" type="string"/>
+        <element label="Payload" max_length="4096000" name="payload" read_only="true" type="string_full_utf8"/>
+        <element label="Remote Script Sys ID" max_length="200" name="remote_script_sys_id" read_only="true" type="string"/>
+        <element attributes="readonly_clickthrough=true" label="Configuration" max_length="32" name="script_configuration" read_only="true" reference="x_trz_config_script" type="reference"/>
+        <element choice="1" default="current" label="State" max_length="40" name="state" read_only="true" type="choice">
             <choice>
                 <element label="Current" sequence="1" value="current"/>
                 <element label="Previous" sequence="2" value="previous"/>
             </choice>
         </element>
         <element label="Story" max_length="100" name="story" read_only="true" type="string"/>
-        <element label="Table" max_length="100" name="table" type="string"/>
-        <element label="Type" max_length="200" name="type" type="string"/>
-        <element label="Update Set" max_length="200" name="update_set" type="string"/>
+        <element label="Table" max_length="100" name="table" read_only="true" type="string"/>
+        <element label="Type" max_length="200" name="type" read_only="true" type="string"/>
+        <element label="Update Set" max_length="200" name="update_set" read_only="true" type="string"/>
         <index name="index">
             <element name="documentation_version"/>
         </index>
