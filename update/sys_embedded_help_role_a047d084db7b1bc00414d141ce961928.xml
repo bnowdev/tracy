@@ -2,7 +2,7 @@
 <record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
-        <role display_value="x_trz.remote_confiugurations_user" name="x_trz.remote_confiugurations_user">5c47d084db7b1bc00414d141ce961925</role>
+        <role/>
         <sys_class_name>sys_embedded_help_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-03 10:02:04</sys_created_on>

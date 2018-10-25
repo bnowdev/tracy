@@ -5,7 +5,7 @@
         <active>true</active>
         <api_name>x_trz.TracyVersionValidator</api_name>
         <client_callable>false</client_callable>
-        <description>Check in the remote slave instances if the script </description>
+        <description>Check in the remote slave instances/environments if the scripts located in the x_trz.version table in production exists  on postclone.</description>
         <name>TracyVersionValidator</name>
         <script><![CDATA[var TracyVersionValidator = Class.create();
 TracyVersionValidator.prototype = {
@@ -30,6 +30,8 @@ TracyVersionValidator.prototype = {
     var ga = new GlideAggregate("x_trz_version");
     ga.addNotNullQuery("remote_script_sys_id");
     ga.addNotNullQuery("table");
+	ga.addQuery('state', 'current');
+	ga.addQuery('action', 'INSERT_OR_UPDATE');
     ga.groupBy("remote_script_sys_id");
     ga.query();
 
@@ -119,13 +121,13 @@ TracyVersionValidator.prototype = {
         <sys_created_by>bnow-ps</sys_created_by>
         <sys_created_on>2018-10-15 15:53:10</sys_created_on>
         <sys_id>ac0dc9afdb89af000414d141ce96192d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>TracyVersionValidator</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_include_ac0dc9afdb89af000414d141ce96192d</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-10-19 12:19:57</sys_updated_on>
+        <sys_updated_on>2018-10-25 09:32:32</sys_updated_on>
     </sys_script_include>
 </record_update>

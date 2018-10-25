@@ -3,7 +3,7 @@
     <pa_tabs action="INSERT_OR_UPDATE">
         <canvas_page display_value="PA New Tab 3">d009b79adb052f00b3fb56d4ce961933</canvas_page>
         <name>Deployment calendar</name>
-        <page display_value="PA Deployment calendar">5c09b79adb052f00b3fb56d4ce961932</page>
+        <page display_value="PA Deployment Calendar">5c09b79adb052f00b3fb56d4ce961932</page>
         <sys_class_name>pa_tabs</sys_class_name>
         <sys_created_by>bnow-ph</sys_created_by>
         <sys_created_on>2018-10-12 05:33:11</sys_created_on>

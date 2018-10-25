@@ -12,16 +12,16 @@
         <sys_created_by>bnow-hv</sys_created_by>
         <sys_created_on>2018-09-27 12:50:12</sys_created_on>
         <sys_id>a32d48f5db78a3000414d141ce96195d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>glide.ui.x_trz_story_activity.fields</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_properties_a32d48f5db78a3000414d141ce96195d</sys_update_name>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-09-27 12:50:12</sys_updated_on>
+        <sys_updated_by>bnow-ph</sys_updated_by>
+        <sys_updated_on>2018-10-25 10:17:59</sys_updated_on>
         <type>string</type>
-        <value>assigned_to,cmdb_ci,state,impact,priority,opened_by,work_notes,comments,*Attachments*,acceptance_criteria,active,activity_due,work_cost,work_duration,work_effort,work_end,work_start,additional_assignee_list,allow_dates_outside_schedule,approval,approval_history,approval_set,assignment_group,backlog_type,blocked,blocked_reason,budget_cost,business_duration,business_service,calculation_type,classification,close_notes,closed_at,closed_by,comments_and_work_notes,company,contact_type,correlation_id,correlation_display,sys_created_on,sys_created_by,critical_path,defect,delivery_plan,delivery_task,demand,dependency,deployment_state,description,sys_domain,sys_domain_path,due_date,calendar_duration,end_date_derived_from,enhancement,epic,escalation,expected_start,follow_up,time_card_at_top_task,global_rank,group_list,group_rank,html_description,key_milestone,knowledge,level,location,mpp_task_id,made_sla,milestone,number,opened_at,order,orig_sys_id,orig_top_task_id,schedule_end_date,schedule_start_date,parent,parent_feature,percent_complete,phase_type,benefits,duration,effort,end_date,start_date,story_points,product,product_rel_index,product_rank,project,project_index,project_phase,rank,reassignment_count,relation_applied,release,release_index,remaining_duration,remaining_effort,resource_allocated_cost,resource_planned_cost,rollup,sla_due,shadow,short_description,skills,sprint,sprint_index,start_date_derived_from,status,task,sub_tree_root,sys_tags,sys_class_name,team,team_index,theme,time_constraint,time_worked,top_portfolio,top_program,top_task,cost,type,sys_updated_on,sys_updated_by,sys_mod_count,upon_approval,upon_reject,urgency,user_input,version,wbs,wbs_order,watch_list,work_notes_list,*Email*,*Relations*</value>
+        <value>assignment_group,assigned_to,opened_by,work_notes,blocked_reason,*Attachments*</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=a32d48f5db78a3000414d141ce96195d"/>
