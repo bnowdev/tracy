@@ -29,18 +29,20 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-if((current.operation()=="update"&&current.state.changesTo(-9)))
+
+	if((current.operation() == "update" && current.state.changesTo(-9)))
 		++current.update_set_number;	
-if((current.operation()=="insert")||(current.operation()=="update"&&current.state.changesTo(-9))){
-   var upd=new GlideRecord("sys_update_set");
-   upd.initialize();
-   upd.description=current.description;
-   upd.u_story=current.sys_id;
-   upd.name="Tracy_"+current.number+"_V"+current.update_set_number+".0";
-   upd.insert();
 	
+	
+	if((current.operation() == "insert") || (current.operation() == "update" && current.state.changesTo(-9))){
+		var upd=new GlideRecord("sys_update_set");
+		upd.initialize();
+		upd.description=current.description;
+		upd.u_story=current.sys_id;
+		upd.name="Tracy_"+current.number+"_V"+current.update_set_number+".0";
+		upd.insert();
+
 	}
-	
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,15 +51,15 @@ if((current.operation()=="insert")||(current.operation()=="update"&&current.stat
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0909eff0dbbb5bc0b3fb56d4ce961964</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Tracy - Create update set</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_0909eff0dbbb5bc0b3fb56d4ce961964</sys_update_name>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-02 11:44:02</sys_updated_on>
+        <sys_updated_by>bnow-ph</sys_updated_by>
+        <sys_updated_on>2019-02-04 09:33:52</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

@@ -30,11 +30,13 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[var dev_endpoint="https://"+gs.getProperty('x_trz.dev_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";
-var test_endpoint="https://"+gs.getProperty('x_trz.test_instance')+".service-now.com/tracyStoryReceiver.do?SOAP";
+        <script><![CDATA[var dev_endpoint="https://"+gs.getProperty('x_trz.dev_instance')+".service-now.com/x_trz_tracyStoryReceiver.do?SOAP";
+var test_endpoint="https://"+gs.getProperty('x_trz.test_instance')+".service-now.com/x_trz_tracyStoryReceiver.do?SOAP";
 
-insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));
-insertStory(gs.getProperty('x_trz.test_receiver_endpoint'));
+//insertStory(gs.getProperty('x_trz.dev_receiver_endpoint'));
+//insertStory(gs.getProperty('x_trz.test_receiver_endpoint'));
+insertStory(dev_endpoint);
+insertStory(test_endpoint);
 
 function insertStory(uri){
 	try {
@@ -56,15 +58,15 @@ function insertStory(uri){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c4e96080dbbb1bc00414d141ce9619f0</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Tracy-Insert/Update story in dev/test</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_c4e96080dbbb1bc00414d141ce9619f0</sys_update_name>
-        <sys_updated_by>bnow-ph</sys_updated_by>
-        <sys_updated_on>2018-10-25 13:13:31</sys_updated_on>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2019-02-04 09:09:02</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

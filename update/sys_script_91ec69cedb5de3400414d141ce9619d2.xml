@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Tracy - Script VC (sys_update_xml)</name>
+        <name>Tracy - Version control</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -32,10 +32,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	// Add your code here
-
 	gs.info("START: running sys_update_xml versioning for " + current.getValue("name") + " on action: " + current.getValue("action"));
-
 
 	var tracyService = new x_trz.TracyVersionService();
 	tracyService.createRemoteVersion(current);
@@ -50,15 +47,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>91ec69cedb5de3400414d141ce9619d2</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Tracy - Script VC (sys_update_xml)</sys_name>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Tracy - Version control</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_91ec69cedb5de3400414d141ce9619d2</sys_update_name>
         <sys_updated_by>bnow-ps</sys_updated_by>
-        <sys_updated_on>2018-10-25 09:19:55</sys_updated_on>
+        <sys_updated_on>2018-10-30 12:33:10</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

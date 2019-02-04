@@ -18,14 +18,14 @@ TracyVersionService.prototype = {
 	initialize: function() {},
 		
 		createRemoteVersion: function(customerUpdateGR) {
-			gs.info("TracyVersionService.createRemoteVersion(): START");
-			gs.info("TracyVersionService.createRemoteVersion(): customerUpdateGR - " + customerUpdateGR.getValue("name"));
+			gs.info("START", "Tracy version service");
+			gs.info("customerUpdateGR - " + customerUpdateGR.getValue("name"), "Tracy version service");
 			
 			var versionPayloadFromCustomerUpdate = this._mapCustomerUpdateToRemoteVersionPayload(customerUpdateGR);
 			
 			this._createUpdatedRecordVersionInProductionInstance(versionPayloadFromCustomerUpdate);
 			
-			gs.info("TracyVersionService.createRemoteVersion(): END");
+			gs.info("END", "Tracy version service");
 		},
 		
 		_mapCustomerUpdateToRemoteVersionPayload: function(customerUpdateGR) {
@@ -77,14 +77,21 @@ TracyVersionService.prototype = {
 				request.setRequestHeader("Content-Type", "application/json");
 				request.setRequestBody(JSON.stringify(versionPayload));
 				
-				var response = request.execute();
-				var body = response.getBody();
-				var statusCode = JSON.parse(response.getStatusCode());
 				
-				return {
-					body: body,
-					statusCode: statusCode
-				};
+				/**
+				 * Run the request asynchronously. The main thread doesn't wait for the response.
+				 * If using the execute() its blocking ui and the Business rule if not async will throw error: 
+				 * 'Illegal access to outbound HTTP in Tracy. Use an async business rule to perform outbound HTTP requests.'				 * 
+				 */
+				var response = request.executeAsync();
+
+				
+//				var body = response.getBody();
+// 				var statusCode = JSON.parse(response.getStatusCode());				
+// 				return {
+// 					body: body,
+// 					statusCode: statusCode
+// 				};
 				
 			} catch (exception) {
 				gs.error(exception.getMessage());
@@ -98,13 +105,13 @@ TracyVersionService.prototype = {
         <sys_created_by>bnow-ps</sys_created_by>
         <sys_created_on>2018-10-23 13:15:09</sys_created_on>
         <sys_id>e63cc602dbdde3400414d141ce961900</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>TracyVersionService</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_include_e63cc602dbdde3400414d141ce961900</sys_update_name>
-        <sys_updated_by>bnow-ph</sys_updated_by>
-        <sys_updated_on>2018-10-25 13:12:15</sys_updated_on>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2018-10-30 10:16:25</sys_updated_on>
     </sys_script_include>
 </record_update>

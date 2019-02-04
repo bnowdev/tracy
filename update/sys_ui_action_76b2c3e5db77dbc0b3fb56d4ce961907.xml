@@ -42,7 +42,7 @@ function showWorkflowContext() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76b2c3e5db77dbc0b3fb56d4ce961907</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Show Workflow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -50,7 +50,7 @@ function showWorkflowContext() {
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_76b2c3e5db77dbc0b3fb56d4ce961907</sys_update_name>
         <sys_updated_by>bnow-ph</sys_updated_by>
-        <sys_updated_on>2018-10-25 09:19:46</sys_updated_on>
+        <sys_updated_on>2018-10-25 13:35:11</sys_updated_on>
         <table>x_trz_story</table>
         <ui11_compatible>false</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
