@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Sys_id of the assignment group to which created incidents related to exceptions in Tracy are assigned.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_trz.exception_incident_assignment_group</name>
+        <read_roles/>
+        <suffix>exception_incident_assignment_group</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2019-02-05 14:57:55</sys_created_on>
+        <sys_id>9cb15f73dbd3a7400414d141ce9619fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_trz.exception_incident_assignment_group</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_properties_9cb15f73dbd3a7400414d141ce9619fa</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2019-02-05 15:03:21</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=9cb15f73dbd3a7400414d141ce9619fa"/>
+</record_update>

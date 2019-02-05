@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_trz.TracyExceptionUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TracyExceptionUtil</name>
+        <script><![CDATA[var TracyExceptionUtil = Class.create();
+TracyExceptionUtil.prototype = {
+    initialize: function() {
+    },
+	
+	handleException: function(exceptionMessage, sourceScript) {
+		gs.error(exceptionMessage);
+		this.createIncident(exceptionMessage, sourceScript);
+	},
+	
+	/**
+	* Creates a incident for the passed exception, to be 
+	* later handled by service desk or appropiate assignment group. 
+	*/
+	createIncident: function(exceptionMessage, sourceScript) {
+		var tracyExceptionAssignmentGroup = gs.getProperty('x_trz.exception_incident_assignment_group');
+		
+		var gr = new GlideRecord('incident');
+		gr.initialize();
+		gr.setValue("assignment_group", tracyExceptionAssignmentGroup || '');
+		gr.setValue("short_description", "Tracy Exception. Source script: " + source);
+		gr.setValue("description", "Exception message: " +  exceptionMessage);
+		gr.setValue("priority", "3");
+		gr.insert();
+	},
+
+    type: 'TracyExceptionUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2019-02-05 14:53:04</sys_created_on>
+        <sys_id>559b43bfdb93a7400414d141ce961979</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TracyExceptionUtil</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_559b43bfdb93a7400414d141ce961979</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2019-02-05 15:02:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

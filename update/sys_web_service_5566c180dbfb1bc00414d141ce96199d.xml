@@ -9,10 +9,15 @@
 
 	var gr = new GlideRecord('x_trz_story');
 	if(gr.get(request.sys_id)) {
-		gr.number            = request.number;
+		if(request.number)
+		gr.number= request.number;
+		if(request.short_description)
 		gr.short_description = request.short_description;
-		gr.state             = request.state;
+		if(request.state)
+		gr.state = request.state;
+		if(request.deployment_state)
 		gr.deployment_state =  request.deployment_state;
+		if(request.deployment_log)
 		gr.deployment_log =  request.deployment_log;
 		gr.update();
 	} else {
@@ -31,14 +36,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-08-03 13:29:32</sys_created_on>
         <sys_id>5566c180dbfb1bc00414d141ce96199d</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>tracyStoryReceiver</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_web_service_5566c180dbfb1bc00414d141ce96199d</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-11 07:29:04</sys_updated_on>
+        <sys_updated_on>2019-02-05 15:03:47</sys_updated_on>
         <wsdl>https://businessnowsvsdemo11.service-now.com/x_trz_tracyStoryReceiver.do?WSDL</wsdl>
         <wsdl_compliance>false</wsdl_compliance>
     </sys_web_service>

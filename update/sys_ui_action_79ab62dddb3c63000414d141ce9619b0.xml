@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition>gs.getProperty('x_trz.prod_instance') == gs.getProperty('instance_name') &amp;&amp; current.deployment_state=="pending_test_deployment"&amp;&amp;current.state==2</condition>
+        <condition>gs.getProperty('instance_name') == gs.getProperty('x_trz.prod_instance') &amp;&amp; current.deployment_state == "pending_test_deployment" &amp;&amp; current.state=="-7"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -24,8 +24,8 @@
         <onclick>confirmDeploy()</onclick>
         <order>-400</order>
         <script><![CDATA[function confirmDeploy(){
-	if(confirm("Are you sure you wish to Deploy?If you dont mark the update sets as explicity 'Marked for Deployment:False', all the update sets in Complete state will be deployed to production")){
-		gsftSubmit(null, g_form.getFormElement(), 'deploy_prod'); 
+	if(confirm("Are you sure you wish to Deploy?If you dont mark the update sets as explicity 'Marked for Deployment:False', all the update sets in Complete state will be deployed to Test instance")){
+		gsftSubmit(null, g_form.getFormElement(), 'deploy_test'); 
 	}
 	else
 		return false;
@@ -64,16 +64,16 @@ function serverCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>79ab62dddb3c63000414d141ce9619b0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Deploy to Test</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_79ab62dddb3c63000414d141ce9619b0</sys_update_name>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-11 07:13:57</sys_updated_on>
-        <table>rm_story</table>
+        <sys_updated_by>bnow-ph</sys_updated_by>
+        <sys_updated_on>2019-02-04 15:00:33</sys_updated_on>
+        <table>x_trz_story</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

@@ -33,10 +33,10 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 try {
-			var endpoint="https://"+gs.getProperty("x_trz.prod_instance")+".service-now.com/tracyUpdateSetStateReceiver.do?SOAP";
+		var endpoint="https://"+gs.getProperty("x_trz.prod_instance")+".service-now.com/tracyUpdateSetStateReceiver.do?SOAP";
 		var s = new sn_ws.SOAPMessageV2('tracyUpdateSetStateReceiver', 'execute');
 		s.setEndpoint(endpoint);
-		s.setStringParameter('execute.sys_id', current.remote_sys_id.toString());
+		s.setStringParameter('execute.sys_id', current.dev_sys_id.toString());
 		//s.setStringParameter('execute.state', current.state.toString());
 		s.setStringParameter('execute.test_move_status', current.test_move_status);
 		var response = s.execute();
@@ -51,7 +51,7 @@ try {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>087b4379db05eb000414d141ce961924</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Update Prod with Test deployment state</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -59,7 +59,7 @@ try {
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_087b4379db05eb000414d141ce961924</sys_update_name>
         <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-10 12:59:11</sys_updated_on>
+        <sys_updated_on>2019-02-05 14:35:39</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

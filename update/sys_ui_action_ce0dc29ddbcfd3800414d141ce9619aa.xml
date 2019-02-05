@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition/>
+        <condition>current.state == "-10" &amp;&amp; current.deployment_state == "pending_prod_deployment"</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -83,16 +83,16 @@ function serverCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce0dc29ddbcfd3800414d141ce9619aa</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Deploy to Prod</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_ui_action_ce0dc29ddbcfd3800414d141ce9619aa</sys_update_name>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-11 07:14:03</sys_updated_on>
-        <table>rm_story</table>
+        <sys_updated_by>bnow-ph</sys_updated_by>
+        <sys_updated_on>2019-02-04 14:59:12</sys_updated_on>
+        <table>x_trz_story</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

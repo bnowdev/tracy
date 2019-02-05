@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>sys_progress_worker</collection>
-        <condition>gs.getProperty('x_trz.dev_instance')!=gs.getProperty('instance_name')</condition>
+        <condition>gs.getProperty('instance_name') != gs.getProperty('x_trz.dev_instance')</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="sys_progress_worker">nameLIKETracy - Update Source^stateCHANGESTOcomplete^sys_created_onONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="LIKE" or="false" value="Tracy - Update Source"/>
@@ -56,15 +56,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>483cc8a5db442b000414d141ce96194d</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Tracy - Retrieve updates,broadcast event</sys_name>
         <sys_overrides/>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_script_483cc8a5db442b000414d141ce96194d</sys_update_name>
-        <sys_updated_by>bnow-hv</sys_updated_by>
-        <sys_updated_on>2018-10-08 13:06:22</sys_updated_on>
+        <sys_updated_by>bnow-ph</sys_updated_by>
+        <sys_updated_on>2019-02-04 10:27:25</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
