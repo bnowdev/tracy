@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Version" max_length="40" name="x_trz_version" type="collection">
+    <element label="Version" max_length="40" name="x_trz_version" sizeclass="16576" type="collection">
         <element label="Action" max_length="200" name="action" read_only="true" type="string"/>
         <element label="Documentation Version" max_length="200" name="documentation_version" read_only="true" type="string"/>
         <element label="Environment" max_length="100" name="environment" read_only="true" type="string"/>
