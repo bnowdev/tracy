@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_trz.TracyACLUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TracyACLUtil</name>
+        <script><![CDATA[var TracyACLUtil = Class.create();
+TracyACLUtil.prototype = {
+	initialize: function() {
+	},
+	
+	TABLES: {
+		TRACY_UPDATE_SET: 'x_trz_update_sets',
+		TRACY_STORY: 'x_trz_story'
+	},
+	
+	isTableReadyOnly: function(tableName) {
+		var isFullAccess = this.isInstanceInProduction() || this.hasUserTracySecurityAdminRole();	
+		var isReadOnly = !isFullAccess;
+		
+		switch(tableName) {
+			case (this.TABLES.TRACY_STORY):
+				return isReadOnly;
+			case (this.TABLES.TRACY_UPDATE_SET):
+				return isReadOnly;
+			default:
+				return false;
+		}
+	},
+	
+	isInstanceInProduction: function(){
+		var currentInstance = gs.getProperty('instance_name');
+		var prodInstance = gs.getProperty('x_trz.prod_instance');
+		if(currentInstance === prodInstance) {
+			return true;
+		}
+		return false;
+	},
+	
+	hasUserTracySecurityAdminRole: function() {
+		return gs.hasRole("x_trz.tracy_security_admin");
+	},
+	
+	type: 'TracyACLUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2019-02-12 10:36:25</sys_created_on>
+        <sys_id>84e09a06dbefe300b3fb56d4ce961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TracyACLUtil</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_script_include_84e09a06dbefe300b3fb56d4ce961976</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2019-02-12 10:36:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
