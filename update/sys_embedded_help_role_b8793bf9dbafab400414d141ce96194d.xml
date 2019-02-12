@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_trz.tracy_webservice" name="x_trz.tracy_webservice">daf8bbf9dbafab400414d141ce961930</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>bnow-ps</sys_created_by>
+        <sys_created_on>2019-02-11 22:55:08</sys_created_on>
+        <sys_id>b8793bf9dbafab400414d141ce96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>daf8bbf9dbafab400414d141ce961930</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b8793bf9dbafab400414d141ce96194d</sys_update_name>
+        <sys_updated_by>bnow-ps</sys_updated_by>
+        <sys_updated_on>2019-02-11 22:55:08</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

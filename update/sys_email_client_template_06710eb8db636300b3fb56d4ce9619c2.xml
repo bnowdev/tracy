@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_email_client_template">
+    <sys_email_client_template action="INSERT_OR_UPDATE">
+        <blind_copied/>
+        <body/>
+        <body_html><![CDATA[<p><strong>Description</strong>: ${description}</p>]]></body_html>
+        <condition/>
+        <content_type>text/html</content_type>
+        <copied/>
+        <from/>
+        <name>Tracy Story template</name>
+        <order>100</order>
+        <recipients/>
+        <reply_to/>
+        <subject>short_description</subject>
+        <sys_class_name>sys_email_client_template</sys_class_name>
+        <sys_created_by>bnow-hv</sys_created_by>
+        <sys_created_on>2019-02-08 11:38:36</sys_created_on>
+        <sys_id>06710eb8db636300b3fb56d4ce9619c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Tracy Story template</sys_name>
+        <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
+        <sys_update_name>sys_email_client_template_06710eb8db636300b3fb56d4ce9619c2</sys_update_name>
+        <sys_updated_by>bnow-hv</sys_updated_by>
+        <sys_updated_on>2019-02-08 15:25:09</sys_updated_on>
+        <table>x_trz_story</table>
+    </sys_email_client_template>
+</record_update>

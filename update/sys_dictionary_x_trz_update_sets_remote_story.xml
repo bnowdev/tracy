@@ -36,7 +36,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_trz_remote_story">x_trz_remote_story</reference>
+        <reference display_value="">x_trz_remote_story</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
