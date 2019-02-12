@@ -3,7 +3,7 @@
     <sys_ui_related sys_domain="global" table="x_trz_remote_story" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="x_trz_remote_story - Default view" name="x_trz_remote_story" related_list="NULL" sys_domain="global" view="Default view">cfbab01bdbb86700b3fb56d4ce961990</list_id>
+            <list_id display_value="Remote Story - Default view" name="x_trz_remote_story" related_list="NULL" sys_domain="global" view="Default view">cfbab01bdbb86700b3fb56d4ce961990</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_trz_update_sets.remote_story</related_list>
@@ -16,7 +16,7 @@
             <sys_updated_on>2018-10-02 08:00:07</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>x_trz_remote_story - Default view</calculated_name>
+            <calculated_name>Remote Story - Default view</calculated_name>
             <filter/>
             <name>x_trz_remote_story</name>
             <order_by/>

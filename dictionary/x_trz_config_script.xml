@@ -14,7 +14,7 @@
                 <element label="No" sequence="2" value="no"/>
             </choice>
         </element>
-        <element choice="1" label="Exists in development " max_length="40" name="exists_in_development" type="choice">
+        <element choice="1" label="Exists in development" max_length="40" name="exists_in_development" type="choice">
             <choice>
                 <element label="no" value="no"/>
                 <element label="yes" value="yes"/>

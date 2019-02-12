@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_trz_version</name>
+        <name>x_trz_config_script</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-06-30 09:23:54</sys_created_on>
-        <sys_id>f52405dfdbb86700b3fb56d4ce96198d</sys_id>
+        <sys_created_on>2018-06-30 07:36:15</sys_created_on>
+        <sys_id>f5e6de8adbefe300b3fb56d4ce961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_trz_version</sys_name>
+        <sys_name>x_trz_config_script</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>ua_table_licensing_config_f52405dfdbb86700b3fb56d4ce96198d</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_f5e6de8adbefe300b3fb56d4ce961994</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-30 09:23:54</sys_updated_on>
+        <sys_updated_on>2018-06-30 07:36:15</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

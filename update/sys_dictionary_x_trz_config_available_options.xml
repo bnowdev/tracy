@@ -54,7 +54,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-29 11:09:04</sys_created_on>
-        <sys_id>2d24c1dfdbb86700b3fb56d4ce9619fb</sys_id>
+        <sys_id>5de6de8adbefe300b3fb56d4ce961964</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Available options</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_dictionary_x_trz_config_available_options</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-10-02 08:41:22</sys_updated_on>
+        <sys_updated_on>2019-02-12 10:23:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

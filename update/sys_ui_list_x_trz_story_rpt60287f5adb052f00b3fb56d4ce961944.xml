@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="6c287f5adb052f00b3fb56d4ce961948">e4287f5adb052f00b3fb56d4ce961949</list_id>
+            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="35075acadbefe300b3fb56d4ce96197d">e4287f5adb052f00b3fb56d4ce961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="6c287f5adb052f00b3fb56d4ce961948">e4287f5adb052f00b3fb56d4ce961949</list_id>
+            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="35075acadbefe300b3fb56d4ce96197d">e4287f5adb052f00b3fb56d4ce961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assignment_group</element>
-            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="6c287f5adb052f00b3fb56d4ce961948">e4287f5adb052f00b3fb56d4ce961949</list_id>
+            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="35075acadbefe300b3fb56d4ce96197d">e4287f5adb052f00b3fb56d4ce961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="6c287f5adb052f00b3fb56d4ce961948">e4287f5adb052f00b3fb56d4ce961949</list_id>
+            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="35075acadbefe300b3fb56d4ce96197d">e4287f5adb052f00b3fb56d4ce961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -64,7 +64,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>priority</element>
-            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="6c287f5adb052f00b3fb56d4ce961948">e4287f5adb052f00b3fb56d4ce961949</list_id>
+            <list_id display_value="x_trz_story" element="NULL" name="x_trz_story" parent="NULL" relationship="NULL" sys_domain="global" view="35075acadbefe300b3fb56d4ce96197d">e4287f5adb052f00b3fb56d4ce961949</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -101,7 +101,7 @@
             <sys_updated_by>bnow-ph</sys_updated_by>
             <sys_updated_on>2018-10-12 05:29:23</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt60287f5adb052f00b3fb56d4ce961944" name="RPT60287f5adb052f00b3fb56d4ce961944">6c287f5adb052f00b3fb56d4ce961948</view>
+            <view display_value="Rpt60287f5adb052f00b3fb56d4ce961944" name="RPT60287f5adb052f00b3fb56d4ce961944">35075acadbefe300b3fb56d4ce96197d</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
