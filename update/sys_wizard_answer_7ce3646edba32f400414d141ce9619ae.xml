@@ -2,31 +2,31 @@
 <record_update table="sys_wizard_answer">
     <sys_wizard_answer action="INSERT_OR_UPDATE">
         <active>true</active>
-        <answer>Script</answer>
+        <answer>Tracy story</answer>
         <button_label/>
         <dependent_value/>
         <element/>
-        <name>Script</name>
+        <name>Tracy story</name>
         <next_question/>
         <order>100</order>
         <payload_name/>
-        <question display_value="Tracy config" name="Tracy config">729dd83cdb839380b3fb56d4ce9619b4</question>
+        <question display_value="Task" name="Task">7f1df057042113006517fb8f196147c1</question>
         <roles/>
         <script/>
         <sys_class_name>sys_wizard_answer</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-07-01 08:54:13</sys_created_on>
-        <sys_id>894b0e1ddbcfd3800414d141ce9619ac</sys_id>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-13 15:17:31</sys_created_on>
+        <sys_id>7ce3646edba32f400414d141ce9619ae</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Script</sys_name>
+        <sys_name>Tracy story</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
-        <sys_update_name>sys_wizard_answer_894b0e1ddbcfd3800414d141ce9619ac</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-07-01 08:54:13</sys_updated_on>
+        <sys_update_name>sys_wizard_answer_7ce3646edba32f400414d141ce9619ae</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-13 15:17:31</sys_updated_on>
         <table/>
-        <target_url>x_trz_config_script.do</target_url>
+        <target_url>x_trz_story.do</target_url>
         <type>1</type>
     </sys_wizard_answer>
 </record_update>

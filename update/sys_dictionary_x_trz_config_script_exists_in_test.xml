@@ -54,7 +54,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>bnow-ps</sys_created_by>
         <sys_created_on>2018-10-16 13:52:46</sys_created_on>
-        <sys_id>b1e6de8adbefe300b3fb56d4ce96198c</sys_id>
+        <sys_id>a8e3646edba32f400414d141ce961998</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Exists in test</sys_name>
         <sys_package display_value="Tracy" source="x_trz">32de8034db031300147adec0cf96190a</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Tracy">32de8034db031300147adec0cf96190a</sys_scope>
         <sys_update_name>sys_dictionary_x_trz_config_script_exists_in_test</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-02-12 10:23:14</sys_updated_on>
+        <sys_updated_on>2019-02-13 15:17:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
